@@ -16,7 +16,7 @@ For each scheduled run (or fallback run):
 3. **Write HTML Digest**: Produce a complete HTML digest in Traditional Chinese under `digests/YYYY-MM-DD-HHMM.html` (Asia/Taipei time).
 4. **Update Index**: Update `index.html` to highlight the newest digest as a card near the top, and append it to the history list.
 5. **Git Operations**: Commit (`feat: add finance digest for YYYY-MM-DD HH:MM CST`) and push all changed files to `main`.
-6. **Reporting**: Return the GitHub Pages index URL (`https://seagal1125.github.io/yahoo-finance-pages/`) and the specific digest URL to the user.
+6. **Reporting**: Return the GitHub Pages index URL (`https://wwwmjibchatgpt01-byte.github.io/yahoo-finance-pages/`) and the specific digest URL to the user.
 
 ## Digest Structure (HTML)
 - Title with timestamp
