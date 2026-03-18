@@ -26,3 +26,4 @@ For each scheduled run (or fallback run):
 - **PTT Market Sentiment (Method A)** (List top hot posts, summarize retail investor sentiment, FOMO/panic indicators)
 - **Cross-market Takeaways & Risks**
 - **Source Links**
+- At the bottom of the HTML, record which model was used to generate it.
