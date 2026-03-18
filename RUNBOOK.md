@@ -1,33 +1,28 @@
-# Yahoo Finance Digest Runbook
+# Finance Digest Runbook (Master Config)
 
 Repository path: `/Users/mini1/.openclaw/workspace/yahoo-finance-pages`
 
-## Goal
-For each scheduled run:
-1. Fetch and summarize these pages in Traditional Chinese:
-   - https://finance.yahoo.com/
-   - https://tw.stock.yahoo.com/
-2. Use model: `nvidia/minimaxai/minimax-m2.5`
-3. Produce a complete HTML digest under `digests/`.
-4. Update `index.html` so it links to the newest digest first and keeps a history list.
-5. Commit and push the changes to `main`.
+## Data Sources (Must fetch all)
+1. **Yahoo Finance** (US): `https://finance.yahoo.com/`
+2. **Yahoo Stock** (TW): `https://tw.stock.yahoo.com/`
+3. **CNA Finance** (TW): `https://www.cna.com.tw/list/asc.aspx`
+4. **PTT Stock Hot Posts & Sentiment (Method A)**: 
+   Run the local Python script `python3 /Users/mini1/.openclaw/workspace/fetch_ptt_a.py` to get the latest hot posts and sentiment from the PTT Stock board.
 
-## Output naming
-Use: `digests/YYYY-MM-DD-HHMM.html` (Asia/Taipei time)
+## Goal & Execution Steps
+For each scheduled run (or fallback run):
+1. **Fallback Check**: If this is a fallback job, FIRST check if the digest for the target time slot (05:10, 09:00, 13:50, or 21:30) is already published in `digests/`. If it is, exit immediately.
+2. **Fetch Data**: Use `web_fetch` (or browser) for Yahoo/CNA and `exec` for the PTT Python script.
+3. **Write HTML Digest**: Produce a complete HTML digest in Traditional Chinese under `digests/YYYY-MM-DD-HHMM.html` (Asia/Taipei time).
+4. **Update Index**: Update `index.html` to highlight the newest digest as a card near the top, and append it to the history list.
+5. **Git Operations**: Commit (`feat: add finance digest for YYYY-MM-DD HH:MM CST`) and push all changed files to `main`.
+6. **Reporting**: Return the GitHub Pages index URL (`https://wwwmjibchatgpt01-byte.github.io/yahoo-finance-pages/`) and the specific digest URL to the user.
 
-## Digest structure
+## Digest Structure (HTML)
 - Title with timestamp
-- Short executive summary
-- Section for finance.yahoo.com
-- Section for tw.stock.yahoo.com
-- Cross-market takeaways
-- Risk watch / things to monitor
-- Source links
-
-## Index rules
-- Show newest digest as a highlighted card near the top
-- History section should list all digest files, newest first
-
-## Git rules
-Use a commit message like:
-`feat: add yahoo finance digest for YYYY-MM-DD HH:MM CST`
+- **Executive Summary** (Short)
+- **Global Markets** (Yahoo Finance)
+- **Taiwan Markets** (Yahoo Stock & CNA Finance)
+- **PTT Market Sentiment (Method A)** (List top hot posts, summarize retail investor sentiment, FOMO/panic indicators)
+- **Cross-market Takeaways & Risks**
+- **Source Links**
