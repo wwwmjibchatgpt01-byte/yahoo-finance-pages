@@ -13,8 +13,8 @@ Repository path: `/Users/mini1/.openclaw/workspace/yahoo-finance-pages`
 For each scheduled run (or fallback run):
 1. **Fallback Check**: If this is a fallback job, FIRST check if the digest for the target time slot (05:10, 09:00, 13:50, or 21:30) is already published in `digests/`. If it is, exit immediately.
 2. **Fetch Data**: Use `web_fetch` (or browser) for Yahoo/CNA and `exec` for the PTT Python script.
-3. **Write HTML Digest**: Produce a complete HTML digest in Traditional Chinese under `digests/YYYY-MM-DD-HHMM.html` (Asia/Taipei time).
-4. **Update Index**: Update `index.html` to highlight the newest digest as a card near the top, and append it to the history list.
+3. **Write HTML Digest**: Produce a complete HTML digest in Traditional Chinese under `digests/YYYY-MM-DD-HHMM.html` (Asia/Taipei time). **Layout Requirements**: The design must be stylish, clean, and modern, ensuring high readability for the user. Content must remain comprehensive; do not omit important details for the sake of brevity.
+4. **Update Index**: Update `index.html` to highlight the newest digest as a card near the top, and append it to the history list. Ensure the index also follows the stylish and clean layout standards.
 5. **Git Operations**: Commit (`feat: add finance digest for YYYY-MM-DD HH:MM CST`) and push all changed files to `main`.
 6. **Reporting**: Return the GitHub Pages index URL (`https://wwwmjibchatgpt01-byte.github.io/yahoo-finance-pages/`) and the specific digest URL to the user.
 
