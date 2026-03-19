@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>財經早報 | 2026-03-20 05:10 CST</title>
+    <style>
+        :root {
+            --primary: #1a237e;
+            --secondary: #0d47a1;
+            --accent: #2979ff;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #333333;
+            --text-light: #666666;
+            --danger: #d32f2f;
+            --success: #2e7d32;
+        }
+        body {
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        header {
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        h1 { margin: 0; color: var(--primary); font-size: 2.2em; }
+        .timestamp { color: var(--text-light); font-size: 0.9em; }
+        
+        .section { margin-bottom: 40px; }
+        h2 { 
+            color: var(--secondary); 
+            border-left: 5px solid var(--secondary); 
+            padding-left: 15px; 
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        .summary-box {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        
+        .market-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .market-card {
+            background: #fff;
+            border: 1px solid #eee;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .status-down { color: var(--danger); font-weight: bold; }
+        .status-up { color: var(--success); font-weight: bold; }
+        
+        .ptt-item {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+        .ptt-item:last-child { border: none; }
+        .push-count { 
+            display: inline-block; 
+            background: var(--danger); 
+            color: white; 
+            padding: 2px 8px; 
+            border-radius: 4px; 
+            font-size: 0.8em;
+            margin-right: 10px;
+        }
+        
+        .takeaway {
+            background: #fff3e0;
+            padding: 20px;
+            border-radius: 8px;
+            border-right: 5px solid #ff9800;
+        }
+        
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: var(--text-light);
+            font-size: 0.85em;
+            text-align: center;
+        }
+        
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        @media (max-width: 600px) {
+            .market-grid { grid-template-columns: 1fr; }
+            .container { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>財經早報 Digest</h1>
+                <div class="timestamp">2026年3月20日 星期五 05:10 (Asia/Taipei)</div>
+            </div>
+        </header>
+
+        <div class="section summary-box">
+            <strong>執行摘要：</strong><br>
+            中東戰事大幅升級，伊朗封鎖荷莫茲海峽引發全球能源危機。美股多數收跌，台股昨日暴跌658點失守月線。市場目前處於高度恐慌狀態，密切關注歐美日法等國是否採取聯合護航行動。
+        </div>
+
+        <div class="section">
+            <h2>全球市場概況 (Global Markets)</h2>
+            <div class="market-grid">
+                <div class="market-card">
+                    <h3>美股指數</h3>
+                    <ul>
+                        <li>市場情緒低迷，三大指數多數收跌。</li>
+                        <li>能源市場震盪，布倫特原油漲破110美元。</li>
+                        <li>美財長貝森特考慮釋放戰略儲備並解除部分制裁以平抑油價。</li>
+                    </ul>
+                </div>
+                <div class="market-card">
+                    <h3>地緣政治衝突</h3>
+                    <ul>
+                        <li><strong>中東：</strong>伊朗射彈擊中煉油廠，美軍F-35疑似受損。</li>
+                        <li><strong>國際響應：</strong>日英法德意荷等6國表態願為航行安全出力。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>台灣市場動態 (Taiwan Markets)</h2>
+            <div class="market-card">
+                <p><strong>台股表現：</strong>昨日暴跌 <span class="status-down">658.90點 (-1.92%)</span>，收於 33,689.68 點，成交量高達 8457億。</p>
+                <p><strong>重要新聞：</strong></p>
+                <ul>
+                    <li>央行楊金龍表示房市微鬆綁，但中東戰事成為升息變數。</li>
+                    <li>外資大舉賣超 909 億元，創史上第 8 大。</li>
+                    <li>記憶體族群亮眼：創見1月獲利年增1578%，EPS達6.49元。</li>
+                    <li>財政部政策轉彎：小吃店月營收逾20萬開發票政策「暫緩」評估。</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>PTT 散戶情緒觀察 (PTT Sentiment)</h2>
+            <div class="market-card">
+                <div class="ptt-item">
+                    <span class="push-count">爆</span> <a href="https://www.ptt.cc/bbs/Stock/M.1773933598.A.AE7.html" target="_blank">[新聞] 6國表態願為航行安全出力</a>
+                    <p>鄉民觀點：多數認為各國只是「嘴砲護航」，對實際出兵可能性存疑；美財長解除制裁被戲稱為「TACO」(縮了)。</p>
+                </div>
+                <div class="ptt-item">
+                    <span class="push-count">爆</span> <a href="https://www.ptt.cc/bbs/Stock/M.1773900003.A.621.html" target="_blank">2026/03/19 盤後閒聊</a>
+                    <p>鄉民觀點：哀鴻遍野，「多蛙審判日」、「完蛋大爆空」。</p>
+                </div>
+                <div class="ptt-item">
+                    <span class="push-count">83</span> <a href="https://www.ptt.cc/bbs/Stock/M.1773927177.A.4FC.html" target="_blank">信用交易統計：資增</a>
+                    <p>鄉民觀點：融資不減反增，鄉民憂慮「明天多殺多」、「融資慘了」。</p>
+                </div>
+                <p><strong>情緒總結：</strong>市場充斥極度不安與諷刺氛圍。散戶對「護航」消息持懷疑態度，對油價及通膨壓力感到恐懼。融資餘額的增加被視為危險信號。</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>跨市場分析與風險提示</h2>
+            <div class="takeaway">
+                <ol>
+                    <li><strong>能源定價權：</strong>伊朗封鎖海峽已成事實，油價若長期維持高位，全球通膨恐全面失控。</li>
+                    <li><strong>防禦型布局：</strong>在戰事明朗前，現金與黃金避險功能雖有爭議，但資金正撤離高估值電子股。</li>
+                    <li><strong>台股壓力：</strong>失守月線後，下一個支撐位需視美股走勢及中東局勢是否有實質緩和（如各國聯合護航奏效）。</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>參考來源 (Sources)</h2>
+            <ul>
+                <li><a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance (US)</a></li>
+                <li><a href="https://tw.stock.yahoo.com/" target="_blank">Yahoo股市 (TW)</a></li>
+                <li><a href="https://www.cna.com.tw/list/asc.aspx" target="_blank">中央社證券新聞</a></li>
+                <li>PTT Stock 板</li>
+            </ul>
+        </div>
+
+        <footer>
+            Generated by OpenClaw | Model: gemini-3-flash-preview<br>
+            &copy; 2026 Finance Digest Project
+        </footer>
+    </div>
+</body>
+</html>
