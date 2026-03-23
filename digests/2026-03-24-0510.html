@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Digest - 2026-03-24 05:10</title>
+    <style>
+        :root {
+            --primary: #1a237e;
+            --secondary: #0d47a1;
+            --accent: #2979ff;
+            --bg: #f5f7fa;
+            --card-bg: #ffffff;
+            --text: #263238;
+            --danger: #d32f2f;
+            --success: #388e3c;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'PingFang TC', 'Microsoft JhengHei';
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        .timestamp { font-size: 1.1em; opacity: 0.9; margin-top: 10px; }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+            margin-top: 0;
+        }
+        .summary-box {
+            background: #e3f2fd;
+            border: 1px solid #bbdefb;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        .market-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 600px) {
+            .market-grid { grid-template-columns: 1fr; }
+        }
+        .ptt-sentiment {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .fomo { color: var(--danger); font-weight: bold; }
+        .panic { color: var(--secondary); font-weight: bold; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #78909c;
+            margin-top: 50px;
+            padding-bottom: 20px;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>財經資訊精華</h1>
+            <div class="timestamp">2026年3月24日 星期二 — 05:10 CST</div>
+        </header>
+
+        <section class="card">
+            <h2>重點摘要 (Executive Summary)</h2>
+            <div class="summary-box">
+                川普宣布美伊進行「良好對話」並暫緩攻擊5天，美股開盤應聲反彈，油價大跌10%。然而，伊朗官媒隨後火速否認談判，指稱川普「自言自語」並散布假消息，市場情緒轉向極度混亂。台股昨日重挫821點創史上第11大跌幅，夜盤隨川普發言一度暴力反彈千點，後因伊朗否認而大幅震盪。
+            </div>
+        </section>
+
+        <div class="market-grid">
+            <section class="card">
+                <h2>全球市場 (US/Global)</h2>
+                <ul>
+                    <li><strong>美伊局勢：</strong>川普於「真實社群」發文稱雙邊達成5天暫緩攻擊共識，以進行深度談判。</li>
+                    <li><strong>油價反應：</strong>受戰事緩和消息刺激，國際油價一度崩跌10%。</li>
+                    <li><strong>美股表現：</strong>標普、那指開盤漲逾1%，市場一度評估戰火緩和，但隨後因伊朗否認談判而波動。</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>台灣市場 (Taiwan)</h2>
+                <ul>
+                    <li><strong>台股走勢：</strong>昨收32722點（-821點），外資賣超839億，台積電守住1800元。</li>
+                    <li><strong>央行監控：</strong>經濟部啟動氦氣、石化原料監控機制以因應中東變局。</li>
+                    <li><strong>個股動態：</strong>長興2月稅前虧損；鴻海新加坡子公司加碼投資墨西哥AI產線。</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="card">
+            <h2>PTT 鄉民情緒 (PTT Market Sentiment)</h2>
+            <div class="ptt-sentiment">
+                市場情緒指標：<span class="panic">極度混亂 / 懷疑川普造市</span>
+            </div>
+            <ul>
+                <li><strong>焦點話題：</strong>鄉民熱議川普「自言自語」與伊朗議長的否認，嘲諷川普為「2026最佳搞笑演員」。</li>
+                <li><strong>操作心態：</strong>多空雙殺，夜盤暴力反彈1200點導致部分空單斷頭，但隨即而來的利空澄清讓市場陷入觀望。</li>
+                <li><strong>市場共識：</strong>多數鄉民認為川普在「放假消息拉給自己人出貨」，信用破產，建議空手觀望或保留現金。</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>跨市場分析與風險提示</h2>
+            <ul>
+                <li><strong>消息面極端混亂：</strong>目前處於美伊「互打嘴砲」階段，官方說法完全對立，短期市場將極度敏感。</li>
+                <li><strong>通膨隱憂：</strong>若荷姆茲海峽持續受阻，油價長期壓力仍大，且供應鏈斷供風險（如氦氣）正上升。</li>
+                <li><strong>台股技術面：</strong>昨日長黑 K 跌破重要支撐，雖然夜盤隨美股反彈，但需注意澄清消息後的二次回測風險。</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>參考來源 (Source Links)</h2>
+            <ul>
+                <li><a href="https://finance.yahoo.com/">Yahoo Finance (Global)</a></li>
+                <li><a href="https://tw.stock.yahoo.com/">Yahoo 股市 (TW)</a></li>
+                <li><a href="https://www.cna.com.tw/list/asc.aspx">中央社 CNA 證券</a></li>
+                <li><a href="https://www.ptt.cc/bbs/Stock/index.html">PTT Stock 板</a></li>
+            </ul>
+        </section>
+
+        <div class="footer">
+            Generated by Gemini 3.0 Flash Preview on Mini1's Mac mini<br>
+            &copy; 2026 Finance Digest Services
+        </div>
+    </div>
+</body>
+</html>

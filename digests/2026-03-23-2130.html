@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>財經晚報 | 2026-03-23 21:30</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a237e;
+            --secondary: #0d47a1;
+            --accent: #2962ff;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #212121;
+            --text-muted: #616161;
+            --up: #d32f2f;
+            --down: #388e3c;
+        }
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 1000px;
+            margin: -30px auto 40px;
+            padding: 0 20px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--accent);
+        }
+        .summary-card { border-left-color: #ff9800; }
+        .global-card { border-left-color: #4caf50; }
+        .taiwan-card { border-left-color: #f44336; }
+        .ptt-card { border-left-color: #9c27b0; }
+        
+        h1 { margin: 0; font-size: 2.2em; font-weight: 700; }
+        h2 { font-size: 1.5em; color: var(--primary); margin-top: 0; display: flex; align-items: center; }
+        h2::before { content: '•'; margin-right: 10px; color: var(--accent); font-size: 1.5em; }
+        
+        .timestamp { font-size: 0.9em; opacity: 0.8; margin-top: 10px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+        
+        .news-item { margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+        .news-item:last-child { border-bottom: none; }
+        .news-title { font-weight: 500; display: block; margin-bottom: 5px; color: var(--text); text-decoration: none; }
+        .news-title:hover { color: var(--accent); }
+        .news-meta { font-size: 0.85em; color: var(--text-muted); }
+        
+        .sentiment-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+        .sent-positive { background: #e8f5e9; color: #2e7d32; }
+        .sent-negative { background: #ffebee; color: #c62828; }
+        .sent-neutral { background: #f5f5f5; color: #616161; }
+
+        .footer { text-align: center; padding: 20px; color: var(--text-muted); font-size: 0.85em; }
+        .source-links { margin-top: 20px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .source-links a { color: var(--accent); text-decoration: none; font-weight: 500; }
+        
+        .highlight { font-weight: 700; color: var(--up); }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>財經晚報 Finance Digest</h1>
+    <div class="timestamp">2026年3月23日 (一) 21:30 CST | 台北時間</div>
+</header>
+
+<div class="container">
+    <!-- Executive Summary -->
+    <div class="card summary-card">
+        <h2>摘要總結 (Executive Summary)</h2>
+        <p>今日市場受中東局勢劇烈波動主導。川普在夜盤突然發文稱與伊朗有「良好對話」並暫緩攻擊5天，引發油價回落與歐美股短線反彈；然而伊朗官媒隨即「火速打臉」否認對話，市場陷入極度資訊混亂。台股今日早盤受壓重挫 821 點，外資狂賣 839 億，台積電勉力守住 1800 元。PTT 散戶情緒從恐慌殺出轉為對川普「口水護盤」的嘲諷與觀望。</p>
+    </div>
+
+    <div class="grid">
+        <!-- Global Markets -->
+        <div class="card global-card">
+            <h2>國際市場 (Global Markets)</h2>
+            <div class="news-item">
+                <a href="#" class="news-title">川普稱美伊對話「富有成效」，下令美軍暫緩攻擊伊朗電廠5天。</a>
+                <div class="news-meta">Yahoo Finance / CNA - 市場情緒一度緩解，油價應聲下跌。</div>
+            </div>
+            <div class="news-item">
+                <a href="#" class="news-title">伊朗外交部正式否認與華府談判，指川普只是在「拖延時間」。</a>
+                <div class="news-meta">Fars News / CNA - 局勢再度撲朔迷離，歐股震盪加劇。</div>
+            </div>
+            <div class="news-item">
+                <a href="#" class="news-title">美財長貝森特：油價上漲50天換取伊朗無核武是「值得的」。</a>
+                <div class="news-meta">NBC / Bloomberg - 顯示美方已有長期抗戰準備。</div>
+            </div>
+        </div>
+
+        <!-- Taiwan Markets -->
+        <div class="card taiwan-card">
+            <h2>台灣市場 (Taiwan Markets)</h2>
+            <div class="news-item">
+                <a href="#" class="news-title">台股大跌 821 點，收 32722 點；外資單日賣超 839 億創史上第11大。</a>
+                <div class="news-meta">CNA - 台積電下跌 50 元，力守 1800 元關卡。</div>
+            </div>
+            <div class="news-item">
+                <a href="#" class="news-title">經濟部強調整體天然氣供應至5月底無虞，駁斥外媒斷氣說。</a>
+                <div class="news-meta">經濟日報 - 應對荷姆茲海峽封鎖風險。</div>
+            </div>
+            <div class="news-item">
+                <a href="#" class="news-title">Grab 以 6 億美元收購台灣 Foodpanda，外送市場面臨大洗牌。</a>
+                <div class="news-meta">CNA / Line Today - 東南亞霸主進軍台灣。</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PTT Market Sentiment -->
+    <div class="card ptt-card">
+        <h2>PTT 鄉民情緒 (PTT Market Sentiment)</h2>
+        <p><strong>情緒指標：混亂中帶嘲諷 (FOMO / Panic Mixed)</strong></p>
+        <div class="news-item">
+            <span class="news-title">川普「口水護盤」引發熱議</span>
+            <p class="news-meta">鄉民對川普單方面宣布「良好對話」感到質疑，多數認為是為了壓低油價的假消息 (TACO)。「川普今天做多的心很強烈」、「誰在說謊？」、「年底前沒真話」。</p>
+        </div>
+        <div class="news-item">
+            <span class="news-title">台指期夜盤劇烈洗盤</span>
+            <p class="news-meta">台指期夜盤一度因川普發文暴拉超過 1000 點，引發空單大規模爆倉，隨後又因伊朗否認而回落。鄉民感嘆：「玩期貨根本被川普當玩具」、「感謝燃料」。</p>
+        </div>
+        <div class="news-item">
+            <span class="news-title">台股重挫後的底部討論</span>
+            <p class="news-meta">外資大賣 800 億，散戶信心受創，但也有部分聲音計畫趁低接台積電或金融股。黃立成以太幣爆倉新聞亦引發加密市場恐慌討論。</p>
+        </div>
+    </div>
+
+    <!-- Cross-market Takeaways -->
+    <div class="card summary-card">
+        <h2>跨市場觀點與風險 (Takeaways & Risks)</h2>
+        <ul>
+            <li><strong>地緣政治風險：</strong> 中東局勢已演變為「資訊戰」，美伊雙方說法分歧。需關注 24 小時內美、以是否真的落實「暫緩攻擊」。</li>
+            <li><strong>通膨與能源：</strong> 雖然川普試圖透過言論壓低油價，但實體供需受荷姆茲海峽封鎖威脅，油價長期壓力仍大。</li>
+            <li><strong>籌碼面：</strong> 外資在台股的大規模撤出顯示避險情緒濃厚，短期內大盤仍需觀察融資斷頭與外資回補力道。</li>
+        </ul>
+    </div>
+
+    <div class="source-links">
+        <a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance (US)</a>
+        <a href="https://tw.stock.yahoo.com/" target="_blank">Yahoo Stock (TW)</a>
+        <a href="https://www.cna.com.tw/list/asc.aspx" target="_blank">CNA Finance</a>
+        <a href="https://wwwmjibchatgpt01-byte.github.io/yahoo-finance-pages/" target="_blank">Digest Index</a>
+    </div>
+
+    <div class="footer">
+        Generated by <strong>詩詩 (Gemini 2.0 Flash)</strong> @ 2026-03-23 21:55 CST
+    </div>
+</div>
+
+</body>
+</html>
