@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>財經午間快報 | 2026-03-26 13:50</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #f1f3f4;
+            --text-color: #202124;
+            --accent-color: #d93025;
+            --success-color: #1e8e3e;
+            --bg-color: #ffffff;
+            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-color);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+        }
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        header h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2rem;
+        }
+        header .timestamp {
+            color: #5f6368;
+            font-size: 0.9rem;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        h2 {
+            border-left: 5px solid var(--primary-color);
+            padding-left: 15px;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: #174ea6;
+        }
+        .summary-card {
+            background-color: #e8f0fe;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary-color);
+            margin-bottom: 30px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+            .container { padding: 20px; }
+        }
+        .market-item {
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .market-item:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--card-shadow);
+        }
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .tag-us { background: #fce8e6; color: #c5221f; }
+        .tag-tw { background: #e6f4ea; color: #137333; }
+        .ptt-item {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #dadce0;
+        }
+        .ptt-item .push { color: var(--accent-color); font-weight: bold; }
+        .ptt-item a { color: var(--primary-color); text-decoration: none; }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #70757a;
+        }
+        .links {
+            margin-top: 10px;
+        }
+        .links a {
+            margin: 0 10px;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Finance Digest 午間快報</h1>
+            <div class="timestamp">2026-03-26 13:50 CST</div>
+        </header>
+
+        <div class="section">
+            <div class="summary-card">
+                <strong>Executive Summary:</strong><br>
+                今日市場核心聚焦於中東戰事（美伊衝突）的降溫預期，帶動全球股市回穩，美股收高。台股今日早盤一度大漲逾300點，但盤中權值股熄火，最終下挫101點收33337點。科技界方面，馬斯克的「月球TeraFab」狂想引發熱議，而PC硬體漲勢由記憶體延伸至CPU，英特爾與AMD傳出將調漲價格。
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🌍 全球市場動態 (Global Markets)</h2>
+            <div class="grid">
+                <div class="market-item">
+                    <span class="tag tag-us">US Markets</span>
+                    <p>美股受中東衝突有望降溫消息帶動收高，那指漲逾1%。市場高度關注川普政府針對伊朗的最新提案。</p>
+                </div>
+                <div class="market-item">
+                    <span class="tag tag-us">Tech Trends</span>
+                    <p>PC 硬體漲勢從記憶體延伸至處理器，英特爾與超微（AMD）全系列處理器傳下月起漲 10%-15%。OpenAI 宣布關閉 Sora 影片服務，轉向 Spud 模型與企業市場。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🇹🇼 台灣市場與產業 (Taiwan Markets)</h2>
+            <div class="grid">
+                <div class="market-item">
+                    <span class="tag tag-tw">台股大盤</span>
+                    <p>台股收盤下挫 101.49 點，收 33337 點。早盤一度因美股利多大漲站上月線，但權值股隨後熄火。台積電跌 5 元。</p>
+                </div>
+                <div class="market-item">
+                    <span class="tag tag-tw">半導體與記憶體</span>
+                    <p>南亞科私募案震撼市場，吸引 SanDisk、鎧俠、Cisco 等巨頭入股，凸顯 DDR4 晶片需求回升。馬斯克 TeraFab 計畫（月球晶片廠）成討論熱點。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💬 PTT 鄉民情緒 (Market Sentiment)</h2>
+            <div class="ptt-list">
+                <div class="ptt-item">
+                    <span class="push">爆</span> <a href="https://www.ptt.cc/bbs/Stock/M.1774488844.A.FDD.html" target="_blank">[新聞] CPU短缺日益嚴重，英特爾、超微恐漲10%-15%</a>
+                    <p>零售端情緒：鄉民感嘆「一直漲一直爽」，AI帶動生活成本飆升，關注5269祥碩等概念股。</p>
+                </div>
+                <div class="ptt-item">
+                    <span class="push">爆</span> <a href="https://www.ptt.cc/bbs/Stock/M.1774491145.A.114.html" target="_blank">[新聞] 伊朗外長嗆：川普想談判等於承認失敗</a>
+                    <p>零售端情緒：普遍認為美伊雙方是在「演戲」或「小學生吵架」，台股已部分脫鉤，但油價仍是風險。</p>
+                </div>
+                <div class="ptt-item">
+                    <span class="push">爆</span> <a href="https://www.ptt.cc/bbs/Stock/M.1774478240.A.6E1.html" target="_blank">[新聞] 馬斯克月球 TeraFab 計畫：電磁投射衛星</a>
+                    <p>零售端情緒：戲稱馬斯克「又抽了大麻」，質疑可行性但也有人認為這是「恆星級文明」的開端。</p>
+                </div>
+            </div>
+            <p><strong>情緒指標：</strong> 謹慎樂觀。鄉民對於戰事利空趨於麻痺，轉向關注硬體漲價與個別題材（如南亞科私募、馬斯克狂想）。</p>
+        </div>
+
+        <div class="section">
+            <h2>⚖️ 跨市場總結與風險 (Takeaways)</h2>
+            <ul>
+                <li><strong>地緣政治風險：</strong> 美伊談判進展反覆，伊朗揚言攻擊紅海航運，地緣風險仍未完全消除，原油價格波動是下周關鍵。</li>
+                <li><strong>硬體通膨：</strong> CPU 接棒記憶體漲價，PC 供應鏈成本壓力增加，下游廠商利潤可能受壓。</li>
+                <li><strong>技術變革：</strong> AI 算力需求極致化（如 TeraFab 計畫），長期關注太空 AI 基礎設施之相關供應鏈。</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🔗 參考來源 (Source Links)</h2>
+            <div class="links">
+                <a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance (US)</a>
+                <a href="https://tw.stock.yahoo.com/" target="_blank">Yahoo Stock (TW)</a>
+                <a href="https://www.cna.com.tw/list/asc.aspx" target="_blank">CNA Finance</a>
+                <a href="https://www.ptt.cc/bbs/Stock/index.html" target="_blank">PTT Stock</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            Generated by <strong>gemini-3-flash-preview</strong><br>
+            &copy; 2026 mjibchatgpt01 Finance Team
+        </div>
+    </div>
+</body>
+</html>
