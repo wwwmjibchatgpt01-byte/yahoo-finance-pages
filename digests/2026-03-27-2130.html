@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>財經晚報 | 2026-03-27 21:30</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #e74c3c;
+            --success: #27ae60;
+            --warning: #f39c12;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #333333;
+            --muted: #7f8c8d;
+        }
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+        }
+        h1 {
+            color: var(--primary);
+            font-weight: 700;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .timestamp {
+            color: var(--muted);
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        .section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary);
+        }
+        .section-title {
+            color: var(--primary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 24px;
+            background: var(--primary);
+            margin-right: 15px;
+            border-radius: 2px;
+        }
+        .summary-box {
+            background: #ebf5fb;
+            border-radius: 8px;
+            padding: 20px;
+            border-left: 5px solid #3498db;
+            margin-bottom: 25px;
+        }
+        .summary-box p {
+            margin: 0;
+            font-weight: 500;
+            color: #2980b9;
+        }
+        .highlight-red { color: var(--accent); font-weight: 600; }
+        .highlight-green { color: var(--success); font-weight: 600; }
+        
+        ul { padding-left: 20px; }
+        li { margin-bottom: 12px; }
+        
+        .ptt-post {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .ptt-post:last-child { border-bottom: none; }
+        .ptt-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            margin-right: 8px;
+            font-weight: 700;
+        }
+        .tag-hot { background: #ff7675; color: white; }
+        .tag-news { background: #74b9ff; color: white; }
+        
+        .takeaway {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .takeaway-card {
+            background: #fdfefe;
+            border: 1px solid #e1e8ed;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            color: var(--muted);
+            font-size: 0.9em;
+        }
+        .btn-link {
+            display: inline-block;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .btn-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>財經晚報 Digest</h1>
+            <div class="timestamp">2026年3月27日 21:30 (CST)</div>
+        </header>
+
+        <div class="section">
+            <div class="summary-box">
+                <p><strong>核心導讀：</strong> 中東局勢劇烈惡化，伊朗宣佈關閉荷莫茲海峽並要求撤離美軍區，引發市場對「通膨回升、Fed 緊急升息」的極度恐慌。台股今日重挫 225 點，美股期指亦呈現震盪，避險情緒高漲。</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">全球市場焦點 (Yahoo Finance)</h2>
+            <ul>
+                <li><strong>中東危機引爆：</strong> 伊朗革命衛隊宣佈荷莫茲海峽關閉，並警告將對美軍發動攻擊。此舉重創全球能源供應鏈預期，布蘭特原油價格面臨飆升壓力。</li>
+                <li><strong>Fed 升息恐懼：</strong> 市場開始出現對聯準會可能在兩週內「緊急升息」的押注，降息預期大幅推遲至 9 月甚至更晚。</li>
+                <li><strong>美股期指震盪：</strong> 儘管川普政府宣稱伊朗想談判，但市場對週末可能爆發的軍事衝突深感不安。</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">台灣市場動態 (Yahoo Stock & CNA)</h2>
+            <ul>
+                <li><strong>台股重挫：</strong> 今日收盤下跌 <span class="highlight-red">225.03 點 (-0.68%)</span>，報 33,112.59 點。三大法人同步賣超 <span class="highlight-red">401.86 億元</span>，外資單日大砍 264 億。</li>
+                <li><strong>電價不調整：</strong> 經濟部拍板 4 月電價凍漲，主要考量中東戰火情勢未明，若戰事能於三個月內結束，後續調漲壓力較小。</li>
+                <li><strong>金融整併：</strong> 永豐銀通過合併京城銀，總資產規模將躍居民營銀行第五大。</li>
+                <li><strong>記憶體反彈：</strong> 雖然受 Google 技術優化消息衝擊，但記憶體族群今日留長下影線，市場爭論是否為「錯殺」後的低接買點。</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">PTT 鄉民情緒 (PTT Stock)</h2>
+            <div class="ptt-post">
+                <span class="ptt-tag tag-hot">爆</span> <strong>中鋼紀念品之亂：</strong> 中鋼公佈紀念品為「統一超商 50 元商品卡」，引發鄉民熱議與崩潰，被譏為「廢到笑」、「連小確幸都沒了」，空頭情緒強烈。
+            </div>
+            <div class="ptt-post">
+                <span class="ptt-tag tag-hot">爆</span> <strong>伊朗最後通牒：</strong> 鄉民高度關注伊朗要求撤離美軍區的消息，普遍擔心週末「鬼故事」成真，週一開盤將「千點招待」。
+            </div>
+            <div class="ptt-post">
+                <span class="ptt-tag tag-news">情報</span> <strong>三大法人大賣超：</strong> 鄉民驚嘆「台灣大媽世界強」，即便外資大賣 264 億，散戶與內資仍頑強支撐尾盤，多空激戰。
+            </div>
+            <p><strong>情緒分析：</strong> 目前市場瀰漫 <span class="highlight-red">極度不安 (Panic)</span> 與 <span class="highlight-red">避險防禦</span> 氣息。鄉民對中東局勢感到焦慮，且對傳統避險股（如中鋼）的失望進一步打擊信心。主流意見傾向「減碼觀望、刪除 App、等待週末變數」。</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">跨市場總結與風險提示</h2>
+            <div class="takeaway">
+                <div class="takeaway-card">
+                    <strong>1. 能源通膨風險</strong>
+                    <p>海峽關閉直接導致油價失控風險，對日本、台灣等依賴進口能源的國家構成強大匯率與通膨壓力。</p>
+                </div>
+                <div class="takeaway-card">
+                    <strong>2. 利率政策轉向</strong>
+                    <p>「降息」已非討論重點，市場開始定價「升息」以抗通膨，美債持有者風險極高。</p>
+                </div>
+                <div class="takeaway-card">
+                    <strong>3. 科技與傳產分化</strong>
+                    <p>AI 需求受優化技術挑戰，傳統存股（中鋼）失望賣壓，短期內市場缺乏強大主流支撐。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">參考來源</h2>
+            <ul>
+                <li><a href="https://finance.yahoo.com/" class="btn-link" target="_blank">Yahoo Finance (US)</a></li>
+                <li><a href="https://tw.stock.yahoo.com/" class="btn-link" target="_blank">Yahoo 股市 (TW)</a></li>
+                <li><a href="https://www.cna.com.tw/list/asc.aspx" class="btn-link" target="_blank">中央社證券新聞</a></li>
+                <li><a href="https://www.ptt.cc/bbs/Stock/index.html" class="btn-link" target="_blank">PTT Stock 板</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            本報告由 OpenClaw ✨ 詩詩 透過 <strong>google-gemini-cli/gemini-3-flash-preview</strong> 模型生成<br>
+            資料獲取時間：2026-03-27 21:52
+        </footer>
+    </div>
+</body>
+</html>
