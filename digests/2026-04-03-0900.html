@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Digest - 2026-04-03 09:00</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #333;
+            --positive: #e74c3c; /* TW Style: Red is positive */
+            --negative: #2ecc71; /* TW Style: Green is negative */
+        }
+        body {
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        header {
+            border-bottom: 2px solid #eee;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        h1 { margin: 0; color: var(--primary-color); font-size: 2.2em; }
+        .timestamp { color: #888; font-size: 0.9em; margin-top: 10px; }
+        section { margin-bottom: 40px; }
+        h2 {
+            color: var(--accent-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        .summary-box {
+            background: #eef2f3;
+            padding: 20px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th { background-color: #f8f9fa; color: var(--secondary-color); }
+        .pos { color: var(--positive); font-weight: bold; }
+        .neg { color: var(--negative); font-weight: bold; }
+        .news-item { margin-bottom: 15px; }
+        .news-title { font-weight: bold; color: var(--primary-color); display: block; }
+        .news-meta { font-size: 0.85em; color: #666; }
+        .ptt-sentiment {
+            background: #fffbe6;
+            padding: 15px;
+            border-left: 5px solid #ffe58f;
+            border-radius: 4px;
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.85em;
+            color: #999;
+            text-align: center;
+        }
+        .source-links a { color: var(--accent-color); text-decoration: none; margin-right: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>財經晨間快報 (Finance Digest)</h1>
+            <div class="timestamp">2026年4月3日 星期五 09:45 (Asia/Taipei)</div>
+        </header>
+
+        <section id="executive-summary">
+            <h2>重點摘要 (Executive Summary)</h2>
+            <div class="summary-box">
+                今日市場核心聚焦於中東地緣政治與美國關稅政策。川普總統持續對伊朗採取強硬立場，美軍空襲德黑蘭橋樑導致油價暴衝，布蘭特原油現貨飆升至141美元。然而，市場也傳出美伊雙方可能重啟談判的消息，美股呈現V轉震盪。台灣市場方面，南亞科3月營收創新高表現亮眼，但美對進口藥品課稅與台塑化減產調查成為本土焦點。
+            </div>
+        </section>
+
+        <section id="memory-sector">
+            <h2>記憶體板塊表現 (Memory Sector Performance)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>代號 (Ticker)</th>
+                        <th>名稱 (Name)</th>
+                        <th>日漲跌 (Daily %)</th>
+                        <th>年初至今 (YTD %)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>2408.TW</td><td>南亞科</td><td class="pos">+4.5%</td><td class="pos">+25.6%</td></tr>
+                    <tr><td>000660.KS</td><td>SK Hynix</td><td class="pos">+2.1%</td><td class="pos">+22.4%</td></tr>
+                    <tr><td>MU</td><td>Micron</td><td class="pos">+1.2%</td><td class="pos">+18.5%</td></tr>
+                    <tr><td>WDC</td><td>Western Digital</td><td class="pos">+0.5%</td><td class="pos">+14.2%</td></tr>
+                    <tr><td>SNDK</td><td>SanDisk</td><td>0.0%</td><td class="pos">+5.5%</td></tr>
+                    <tr><td>STX</td><td>Seagate</td><td class="neg">-0.3%</td><td class="pos">+11.1%</td></tr>
+                    <tr><td>005930.KS</td><td>Samsung</td><td class="neg">-0.7%</td><td class="pos">+8.9%</td></tr>
+                    <tr><td>2344.TW</td><td>華邦電</td><td class="neg">-0.8%</td><td class="pos">+10.2%</td></tr>
+                    <tr><td>8299.TWO</td><td>群聯</td><td class="neg">-1.5%</td><td class="pos">+12.8%</td></tr>
+                    <tr><td>2337.TW</td><td>旺宏</td><td class="neg">-2.1%</td><td class="pos">+15.4%</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="global-markets">
+            <h2>全球市場焦點 (Global Markets)</h2>
+            <div class="news-item">
+                <span class="news-title">美軍空襲伊朗橋樑，川普放話「繼續炸」</span>
+                <p>美軍昨日轟炸德黑蘭連接卡拉季的B1大橋，造成多人傷亡。川普稱此舉旨在迫使伊朗談判。布蘭特原油現貨價格應聲暴漲至141.36美元，創2008年以來新高。</p>
+            </div>
+            <div class="news-item">
+                <span class="news-title">美股擺脫盤初頹勢震盪收紅</span>
+                <p>儘管盤中因中東局勢一度重挫600點，但隨著伊朗與阿曼起草荷姆茲海峽通行協議的消息傳出，市場預期緊張局勢可能降溫，三大指數呈現V型反轉。</p>
+            </div>
+        </section>
+
+        <section id="taiwan-markets">
+            <h2>台灣市場焦點 (Taiwan Markets)</h2>
+            <div class="news-item">
+                <span class="news-title">南亞科3月營收創歷史新高，年增逾5倍</span>
+                <p>受惠於記憶體市場回溫與報價上漲，南亞科3月營收衝上181億元。同時市場首檔記憶體ETF也納入兩家台企作為成分股。</p>
+            </div>
+            <div class="news-item">
+                <span class="news-title">士檢偵辦台塑化「假減產真哄抬」爭議</span>
+                <p>針對國內塑膠原料價格波動，士林地檢署火速分案偵辦台塑集團是否涉及人為操控供應鏈。台塑化則發表聲明相信司法清白。</p>
+            </div>
+        </section>
+
+        <section id="ptt-sentiment">
+            <h2>PTT 鄉民情緒分析 (PTT Market Sentiment)</h2>
+            <div class="ptt-sentiment">
+                <p><strong>熱門話題：</strong>中東局勢、油價暴漲、國安基金護盤、美國進口藥品關稅。</p>
+                <p><strong>市場情緒：</strong>散戶呈現「恐慌中帶點期待」。許多人關注 4/13 國安基金例會，期待「撿屍」機會。對於川普的「石器時代」言論多以小丑、嘴砲視之，但對原油期貨的操作轉趨謹慎，空單與多單交戰激烈。</p>
+                <p><strong>指標：</strong>多空對峙嚴重，融資減幅不明顯（僅7億），顯示散戶韌性強或正處於套牢狀態。</p>
+            </div>
+        </section>
+
+        <section id="risks">
+            <h2>跨市場分析與風險預警</h2>
+            <ul>
+                <li><strong>地緣政治風險：</strong>荷姆茲海峽封鎖若成真，141美元的油價恐僅是起點，將引發全球通膨連鎖反應。</li>
+                <li><strong>關稅戰升級：</strong>美國對藥品課稅顯示川普對等關稅政策已深入民生領域，後續需關注對台廠供應鏈的實質影響。</li>
+                <li><strong>流動性風險：</strong>全球私募信貸爆雷潮（黑石、貝萊德等）需密切關注是否蔓延至一般金融體系。</li>
+            </ul>
+        </section>
+
+        <section class="source-links">
+            <h2>資料來源</h2>
+            <a href="https://finance.yahoo.com/">Yahoo Finance (US)</a>
+            <a href="https://tw.stock.yahoo.com/">Yahoo Stock (TW)</a>
+            <a href="https://www.cna.com.tw/">CNA Finance</a>
+            <a href="https://www.ptt.cc/bbs/Stock/">PTT Stock Board</a>
+        </section>
+
+        <footer>
+            Generated by 詩詩 (Model: gemini-3-flash-preview) | &copy; 2026 Finance Digest
+        </footer>
+    </div>
+</body>
+</html>
