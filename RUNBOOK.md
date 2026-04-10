@@ -5,7 +5,7 @@ Repository path: `/Users/mini1/.openclaw/workspace/yahoo-finance-pages`
 ## Data Sources (Must fetch all)
 1. **Yahoo Finance** (US): `https://finance.yahoo.com/` (Note: Use browser tool for stable dynamic content)
 2. **Yahoo Stock** (TW): `https://tw.stock.yahoo.com/`
-3. **CNA Finance** (TW): `https://www.cna.com.tw/list/asc.aspx`
+3. **CNA Finance** (TW): `https://feeds.feedburner.com/rsscna/finance` (RSS Feed)
 4. **PTT Stock Hot Posts & Sentiment (Method A)**: 
    Run the local Python script `python3 /Users/mini1/.openclaw/workspace/fetch_ptt_a.py` to get the latest hot posts and sentiment from the PTT Stock board.
 5. **Memory Stock Sector Performance**: 
