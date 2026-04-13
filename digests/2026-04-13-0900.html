@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>財經晨報：美伊談判破局與海峽封鎖 - 2026/04/13</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --accent-color: #38bdf8;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --up-color: #ef4444; /* Taiwan style: Red for up */
+            --down-color: #22c55e; /* Taiwan style: Green for down */
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .timestamp {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-top: 0;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background: var(--accent-color);
+            margin-right: 12px;
+            border-radius: 2px;
+        }
+        .summary-box {
+            background: rgba(56, 189, 248, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 16px;
+            border-radius: 4px 12px 12px 4px;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        th {
+            color: var(--text-dim);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+        .up { color: var(--up-color); font-weight: 600; }
+        .down { color: var(--down-color); font-weight: 600; }
+        .neutral { color: var(--text-dim); }
+        
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 10px;
+        }
+        .market-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .market-name {
+            display: block;
+            color: var(--text-dim);
+            font-size: 0.85rem;
+            margin-bottom: 4px;
+        }
+        .market-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: block;
+        }
+        .ptt-list {
+            list-style: none;
+            padding: 0;
+        }
+        .ptt-item {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .ptt-item:last-child { border-bottom: none; }
+        .ptt-push {
+            display: inline-block;
+            width: 40px;
+            text-align: center;
+            background: #ef4444;
+            color: white;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+        .ptt-title {
+            color: #f8fafc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .ptt-title:hover { color: var(--accent-color); }
+        .footer {
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            margin-top: 40px;
+            padding-bottom: 40px;
+        }
+        .source-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 0.85rem;
+        }
+        .risk-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            background: rgba(239, 68, 68, 0.2);
+            color: #f87171;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>財經投資晨報</h1>
+            <div class="timestamp">2026年4月13日 星期一 | 09:40 CST | 第 09:00 時段摘要</div>
+        </header>
+
+        <section class="card">
+            <h2>重點摘要 Executive Summary</h2>
+            <div class="summary-box">
+                美伊和平談判在巴基斯坦宣告破局，局勢急轉直下。川普政府隨即宣布對荷莫茲海峽實施全面封鎖，主要針對向伊朗繳費的船隻。此舉引發全球供應鏈與能源市場高度緊張。台股今日開盤表現穩健，投資人聚焦於利空鈍化與台積電週四法說會。
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>記憶體族群表現 Memory Sector Performance</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>標的名稱</th>
+                        <th>代號</th>
+                        <th>單日漲跌</th>
+                        <th>YTD 報酬率</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>旺宏 (TW)</td>
+                        <td>2337.TW</td>
+                        <td class="up">+3.42%</td>
+                        <td class="up">+248.33%</td>
+                    </tr>
+                    <tr>
+                        <td>群聯 (TW)</td>
+                        <td>8299.TWO</td>
+                        <td class="up">+7.53%</td>
+                        <td class="up">+23.53%</td>
+                    </tr>
+                    <tr>
+                        <td>南亞科 (TW)</td>
+                        <td>2408.TW</td>
+                        <td class="up">+5.35%</td>
+                        <td class="up">+9.42%</td>
+                    </tr>
+                    <tr>
+                        <td>華邦電 (TW)</td>
+                        <td>2344.TW</td>
+                        <td class="up">+1.60%</td>
+                        <td class="up">+5.17%</td>
+                    </tr>
+                    <tr>
+                        <td>美光 (US)</td>
+                        <td>MU</td>
+                        <td class="neutral">0.00%*</td>
+                        <td class="up">+33.40%</td>
+                    </tr>
+                    <tr>
+                        <td>威騰 (US)</td>
+                        <td>WDC</td>
+                        <td class="neutral">0.00%*</td>
+                        <td class="up">+83.06%</td>
+                    </tr>
+                    <tr>
+                        <td>希捷 (US)</td>
+                        <td>STX</td>
+                        <td class="neutral">0.00%*</td>
+                        <td class="up">+75.28%</td>
+                    </tr>
+                    <tr>
+                        <td>三星 (KR)</td>
+                        <td>005930.KS</td>
+                        <td class="down">-2.18%</td>
+                        <td class="up">+56.81%</td>
+                    </tr>
+                    <tr>
+                        <td>SK 海力士 (KR)</td>
+                        <td>000660.KS</td>
+                        <td class="up">+0.19%</td>
+                        <td class="up">+52.27%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size: 0.75rem; color: var(--text-dim); margin-top: 10px;">*美股單日漲跌以週五收盤價為準；韓股與台股為今日最新行情。</p>
+        </section>
+
+        <section class="card">
+            <h2>全球市場觀測 Global Markets</h2>
+            <div class="market-grid">
+                <div class="market-item">
+                    <span class="market-name">S&P 500</span>
+                    <span class="market-value">6,816.89 <small class="down">-0.11%</small></span>
+                </div>
+                <div class="market-item">
+                    <span class="market-name">Nasdaq 100</span>
+                    <span class="market-value">25,116.34 <small class="up">+0.14%</small></span>
+                </div>
+                <div class="market-item">
+                    <span class="market-name">Dow Jones</span>
+                    <span class="market-value">47,916.57 <small class="down">-0.56%</small></span>
+                </div>
+                <div class="market-item">
+                    <span class="market-name">布蘭特原油</span>
+                    <span class="market-value">$104.22 <small class="up">↑</small></span>
+                </div>
+            </div>
+            <p style="margin-top: 20px;">
+                <strong>局勢動態：</strong> 川普與伊朗在核武問題上的分歧導致談判破裂。美軍中央司令部（CENTCOM）宣布將於今晚 22:00（台灣時間）開始封鎖伊朗港口。川普警告若北京持續援助伊朗，將徵收 50% 驚人關稅。美股期指在談判破局消息傳出後走勢疲軟，反映市場對中東戰火升級的憂慮。
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>台灣市場動態 Taiwan Markets</h2>
+            <div class="market-grid">
+                <div class="market-item">
+                    <span class="market-name">加權指數 (TAIEX)</span>
+                    <span class="market-value">35,423.77 <small class="up">+0.02%</small></span>
+                </div>
+                <div class="market-item">
+                    <span class="market-name">台積電 (2330)</span>
+                    <span class="market-value">1,995 <small class="down">-0.25%</small></span>
+                </div>
+                <div class="market-item">
+                    <span class="market-name">台幣兌美元</span>
+                    <span class="market-value">31.76 <small class="down">↓ 3.4分</small></span>
+                </div>
+                <div class="market-item">
+                    <span class="market-name">成交金額</span>
+                    <span class="market-value">3,071.45 億</span>
+                </div>
+            </div>
+            <p style="margin-top: 20px;">
+                <strong>在地脈動：</strong> 台股早盤於平盤附近震盪，台積電（2330）開盤走低但隨後回穩。市場聚焦於本週四（16日）的台積電法說會，期待其對 2 奈米進度與 AI 需求提供更多展望。受中東局勢影響，台塑罕見暫停 PVC 報價，塑化族群行情引發市場關注。
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>PTT 鄉民情緒 (PTT Stock Sentiment)</h2>
+            <ul class="ptt-list">
+                <li class="ptt-item">
+                    <span class="ptt-push">爆</span>
+                    <a href="https://www.ptt.cc/bbs/Stock/M.1776040224.A.E81.html" class="ptt-title">[閒聊] 2026/04/13 盤中閒聊</a>
+                </li>
+                <li class="ptt-item">
+                    <span class="ptt-push">爆</span>
+                    <a href="https://www.ptt.cc/bbs/Stock/M.1775999855.A.1F7.html" class="ptt-title">[新聞] 川普：美國即日起封鎖進出荷莫茲海峽船隻</a>
+                </li>
+                <li class="ptt-item">
+                    <span class="ptt-push">爆</span>
+                    <a href="https://www.ptt.cc/bbs/Stock/M.1776012626.A.44B.html" class="ptt-title">[情報] 伊朗：荷姆茲海峽允許非軍船通過</a>
+                </li>
+            </ul>
+            <p style="margin-top: 15px;">
+                <strong>情緒分析：</strong> 鄉民情緒分歧。部分投資人對川普的「雙重封鎖」感到魔幻，認為美伊兩國都在收過路費或攔截船舶，嘲諷「海峽裝了 ETC」。空方積極加碼 50 反一，期待「大場面」；多方則認為戰爭題材已鈍化，正積極尋找利空低接機會，特別是台積電補跌後的買點。
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>跨市場分析與風險評估 Cross-market Takeaways</h2>
+            <ul>
+                <li><span class="risk-tag">極高</span> <strong>能源價格：</strong> 荷莫茲海峽的實際封鎖將導致油價居高不下，加劇通膨與央行降息難度。</li>
+                <li><span class="risk-tag">高</span> <strong>半導體法說：</strong> 本週台積電與 ASML 法說將定調 AI 成長動能，為近期市場最強支撐。</li>
+                <li><span class="risk-tag">中</span> <strong>地緣政治風險：</strong> 美伊談判破裂後，需警惕伊朗的武力反制與美國的進一步經濟制裁。</li>
+            </ul>
+        </section>
+
+        <section class="source-links">
+            <a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance (US)</a>
+            <a href="https://tw.stock.yahoo.com/" target="_blank">Yahoo股市 (TW)</a>
+            <a href="https://www.cna.com.tw/list/afe.aspx" target="_blank">中央社財經</a>
+            <a href="https://www.ptt.cc/bbs/Stock/index.html" target="_blank">PTT Stock</a>
+        </header>
+
+        <div class="footer">
+            Generated by <strong>诗诗 ✨</strong> (google-gemini-cli/gemini-3-flash-preview)<br>
+            Powered by OpenClaw Finance Engine
+        </div>
+    </div>
+</body>
+</html>
