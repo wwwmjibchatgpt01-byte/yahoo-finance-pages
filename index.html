@@ -4,717 +4,534 @@
     <meta charset="UTF-8">
     <title>Finance Digest Index</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; background: #f9f9f9; color: #333; }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        .card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 15px; transition: transform 0.2s; }
-        .card:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
-        .card h2 { margin-top: 0; color: #2980b9; font-size: 1.2em; }
-        .card a { text-decoration: none; color: inherit; display: block; }
-        .card .date { font-size: 0.9em; color: #7f8c8d; margin-bottom: 0; }
-        .highlight { border-left: 5px solid #e74c3c; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 40px 20px; background: #f8fafc; color: #1e293b; }
+        h1 { font-weight: 800; color: #0f172a; border-bottom: 4px solid #2563eb; padding-bottom: 12px; margin-bottom: 30px; display: flex; align-items: center; gap: 10px; }
+        h1::after { content: '✨'; font-size: 0.8em; }
+        .digest-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .card { background: white; padding: 24px; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; transition: all 0.3s ease; text-decoration: none; color: inherit; position: relative; overflow: hidden; }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); border-color: #2563eb; }
+        .card h2 { margin: 0 0 8px 0; color: #1e293b; font-size: 1.25rem; font-weight: 700; }
+        .card .date { font-size: 0.875rem; color: #64748b; margin: 0; display: flex; align-items: center; gap: 6px; }
+        .card .date::before { content: '📅'; }
+        .highlight { border-left: 6px solid #2563eb; background: #eff6ff; }
+        .highlight h2 { color: #1d4ed8; }
+        .card.highlight::after { content: 'NEW'; position: absolute; top: 12px; right: 12px; background: #2563eb; color: white; padding: 2px 8px; border-radius: 9999px; font-size: 0.75rem; font-weight: 700; }
+        .history-title { margin-top: 50px; font-size: 1.5rem; font-weight: 700; color: #475569; display: flex; align-items: center; gap: 10px; }
+        .history-title::before { content: '🕒'; }
     </style>
 </head>
 <body>
-    <div class="card highlight">
-        <a href="digests/2026-04-13-0900.html">
-            <h2>Latest Digest: 2026-04-13 09:00</h2>
+    <h1>Finance Digest Index</h1>
+
+    <div class="digest-grid">
+        <!-- Newest Digest -->
+        <a href="digests/2026-04-13-1350.html" class="card highlight">
+            <h2>Latest Digest: 2026-04-13 13:50</h2>
             <p class="date">Published on Apr 13, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-13-0930.html">
+        <a href="digests/2026-04-13-0900.html" class="card">
+            <h2>Digest: 2026-04-13 09:00</h2>
+            <p class="date">Published on Apr 13, 2026</p>
+        </a>
+
+        <div class="history-title">History</div>
+
+        <a href="digests/2026-04-13-0930.html" class="card">
             <h2>Digest: 2026-04-13 09:30</h2>
             <p class="date">Published on Apr 13, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-13-0510.html">
+        <a href="digests/2026-04-13-0510.html" class="card">
             <h2>Digest: 2026-04-13 05:10</h2>
             <p class="date">Published on Apr 13, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-10-2130.html">
+        <a href="digests/2026-04-10-2130.html" class="card">
             <h2>Digest: 2026-04-10 21:30</h2>
             <p class="date">Published on Apr 10, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-10-1350.html">
+        <a href="digests/2026-04-10-1350.html" class="card">
             <h2>Digest: 2026-04-10 13:50</h2>
             <p class="date">Published on Apr 10, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-09-1350.html">
+        <a href="digests/2026-04-09-1350.html" class="card">
             <h2>Digest: 2026-04-09 13:50</h2>
             <p class="date">Published on Apr 09, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-09-0930.html">
+        <a href="digests/2026-04-09-0930.html" class="card">
             <h2>Digest: 2026-04-09 09:30</h2>
             <p class="date">Published on Apr 09, 2026</p>
         </a>
-    </div>
 
-
-    <div class="card">
-        <a href="digests/2026-04-09-0510.html">
+        <a href="digests/2026-04-09-0510.html" class="card">
             <h2>Digest: 2026-04-09 05:10</h2>
             <p class="date">Published on Apr 09, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-08-2130.html">
+        <a href="digests/2026-04-08-2130.html" class="card">
             <h2>Digest: 2026-04-08 21:30</h2>
             <p class="date">Published on Apr 08, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-08-1350.html">
+        <a href="digests/2026-04-08-1350.html" class="card">
             <h2>Digest: 2026-04-08 13:50</h2>
             <p class="date">Published on Apr 08, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-08-0930.html">
+        <a href="digests/2026-04-08-0930.html" class="card">
             <h2>Digest: 2026-04-08 09:30</h2>
             <p class="date">Published on Apr 08, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-08-0510.html">
+        <a href="digests/2026-04-08-0510.html" class="card">
             <h2>Digest: 2026-04-08 05:10</h2>
             <p class="date">Published on Apr 08, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-07-2130.html">
+        <a href="digests/2026-04-07-2130.html" class="card">
             <h2>Digest: 2026-04-07 21:30</h2>
             <p class="date">Published on Apr 07, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-07-1605.html">
+        <a href="digests/2026-04-07-1605.html" class="card">
             <h2>Digest: 2026-04-07 16:05</h2>
             <p class="date">Published on Apr 07, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-07-1350.html">
+        <a href="digests/2026-04-07-1350.html" class="card">
             <h2>Digest: 2026-04-07 13:50</h2>
             <p class="date">Published on Apr 07, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-07-0930.html">
+        <a href="digests/2026-04-07-0930.html" class="card">
             <h2>Digest: 2026-04-07 09:30</h2>
             <p class="date">Published on Apr 07, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-07-0900.html">
+        <a href="digests/2026-04-07-0900.html" class="card">
             <h2>Digest: 2026-04-07 09:00</h2>
             <p class="date">Published on Apr 07, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-07-0510.html">
+        <a href="digests/2026-04-07-0510.html" class="card">
             <h2>Digest: 2026-04-07 05:10</h2>
             <p class="date">Published on Apr 07, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-06-2130.html">
+        <a href="digests/2026-04-06-2130.html" class="card">
             <h2>Digest: 2026-04-06 21:30</h2>
             <p class="date">Published on Apr 06, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-06-1350.html">
+        <a href="digests/2026-04-06-1350.html" class="card">
             <h2>Digest: 2026-04-06 13:50</h2>
             <p class="date">Published on Apr 06, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-06-0930.html">
+        <a href="digests/2026-04-06-0930.html" class="card">
             <h2>Digest: 2026-04-06 09:30</h2>
             <p class="date">Published on Apr 06, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-06-0900.html">
+        <a href="digests/2026-04-06-0900.html" class="card">
             <h2>Digest: 2026-04-06 09:00</h2>
             <p class="date">Published on Apr 06, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-06-0510.html">
+        <a href="digests/2026-04-06-0510.html" class="card">
             <h2>Digest: 2026-04-06 05:10</h2>
             <p class="date">Published on Apr 06, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-03-2130.html">
+        <a href="digests/2026-04-03-2130.html" class="card">
             <h2>Digest: 2026-04-03 21:30</h2>
             <p class="date">Published on Apr 03, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-03-1350.html">
+        <a href="digests/2026-04-03-1350.html" class="card">
             <h2>Digest: 2026-04-03 13:50</h2>
             <p class="date">Published on Apr 03, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-03-0900.html">
+        <a href="digests/2026-04-03-0900.html" class="card">
             <h2>Digest: 2026-04-03 09:00</h2>
             <p class="date">Published on Apr 03, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-03-0510.html">
+        <a href="digests/2026-04-03-0510.html" class="card">
             <h2>Digest: 2026-04-03 05:10</h2>
             <p class="date">Published on Apr 03, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-02-2130.html">
+        <a href="digests/2026-04-02-2130.html" class="card">
             <h2>Digest: 2026-04-02 21:30</h2>
             <p class="date">Published on Apr 02, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-02-1350.html">
+        <a href="digests/2026-04-02-1350.html" class="card">
             <h2>Digest: 2026-04-02 13:50</h2>
             <p class="date">Published on Apr 02, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-02-0930.html">
+        <a href="digests/2026-04-02-0930.html" class="card">
             <h2>Digest: 2026-04-02 09:30</h2>
             <p class="date">Published on Apr 02, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-02-0900.html">
+        <a href="digests/2026-04-02-0900.html" class="card">
             <h2>Digest: 2026-04-02 09:00</h2>
             <p class="date">Published on Apr 02, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-02-0510.html">
+        <a href="digests/2026-04-02-0510.html" class="card">
             <h2>Digest: 2026-04-02 05:10</h2>
             <p class="date">Published on Apr 02, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-01-1350.html">
+        <a href="digests/2026-04-01-1350.html" class="card">
             <h2>Digest: 2026-04-01 13:50</h2>
             <p class="date">Published on Apr 01, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-01-0900.html">
+        <a href="digests/2026-04-01-0900.html" class="card">
             <h2>Digest: 2026-04-01 09:00</h2>
             <p class="date">Published on Apr 01, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-04-01-0510.html">
+        <a href="digests/2026-04-01-0510.html" class="card">
             <h2>Digest: 2026-04-01 05:10</h2>
             <p class="date">Published on Apr 01, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-31-2130.html">
+        <a href="digests/2026-03-31-2130.html" class="card">
             <h2>Digest: 2026-03-31 21:30</h2>
             <p class="date">Published on Mar 31, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-31-1350.html">
+        <a href="digests/2026-03-31-1350.html" class="card">
             <h2>Digest: 2026-03-31 13:50</h2>
             <p class="date">Published on Mar 31, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-31-0900.html">
+        <a href="digests/2026-03-31-0900.html" class="card">
             <h2>Digest: 2026-03-31 09:00</h2>
             <p class="date">Published on Mar 31, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-31-0510.html">
+        <a href="digests/2026-03-31-0510.html" class="card">
             <h2>Digest: 2026-03-31 05:10</h2>
             <p class="date">Published on Mar 31, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-30-1350.html">
+        <a href="digests/2026-03-30-1350.html" class="card">
             <h2>Digest: 2026-03-30 13:50</h2>
             <p class="date">Published on Mar 30, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-30-0930.html">
+        <a href="digests/2026-03-30-0930.html" class="card">
             <h2>Digest: 2026-03-30 09:30</h2>
             <p class="date">Published on Mar 30, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-30-0900.html">
+        <a href="digests/2026-03-30-0900.html" class="card">
             <h2>Digest: 2026-03-30 09:00</h2>
             <p class="date">Published on Mar 30, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-30-0510.html">
+        <a href="digests/2026-03-30-0510.html" class="card">
             <h2>Digest: 2026-03-30 05:10</h2>
             <p class="date">Published on Mar 30, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-29-2130.html">
+        <a href="digests/2026-03-29-2130.html" class="card">
             <h2>Digest: 2026-03-29 21:30</h2>
             <p class="date">Published on Mar 29, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-28-0510.html">
+        <a href="digests/2026-03-28-0510.html" class="card">
             <h2>Digest: 2026-03-28 05:10</h2>
             <p class="date">Published on Mar 28, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-27-2130.html">
+        <a href="digests/2026-03-27-2130.html" class="card">
             <h2>Digest: 2026-03-27 21:30</h2>
             <p class="date">Published on Mar 27, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-27-0900.html">
+        <a href="digests/2026-03-27-0900.html" class="card">
             <h2>Digest: 2026-03-27 09:00</h2>
             <p class="date">Published on Mar 27, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-27-0510.html">
+        <a href="digests/2026-03-27-0510.html" class="card">
             <h2>Digest: 2026-03-27 05:10</h2>
             <p class="date">Published on Mar 27, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-26-2130.html">
+        <a href="digests/2026-03-26-2130.html" class="card">
             <h2>Digest: 2026-03-26 21:30</h2>
             <p class="date">Published on Mar 26, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-26-1350.html">
+        <a href="digests/2026-03-26-1350.html" class="card">
             <h2>Digest: 2026-03-26 13:50</h2>
             <p class="date">Published on Mar 26, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-26-0900.html">
+        <a href="digests/2026-03-26-0900.html" class="card">
             <h2>Digest: 2026-03-26 09:00</h2>
             <p class="date">Published on Mar 26, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-26-0510.html">
+        <a href="digests/2026-03-26-0510.html" class="card">
             <h2>Digest: 2026-03-26 05:10</h2>
             <p class="date">Published on Mar 26, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-25-2130.html">
+        <a href="digests/2026-03-25-2130.html" class="card">
             <h2>Digest: 2026-03-25 21:30</h2>
             <p class="date">Published on Mar 25, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-25-1350.html">
+        <a href="digests/2026-03-25-1350.html" class="card">
             <h2>Digest: 2026-03-25 13:50</h2>
             <p class="date">Published on Mar 25, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-25-0900.html">
+        <a href="digests/2026-03-25-0900.html" class="card">
             <h2>Digest: 2026-03-25 09:00</h2>
             <p class="date">Published on Mar 25, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-25-0510.html">
+        <a href="digests/2026-03-25-0510.html" class="card">
             <h2>Digest: 2026-03-25 05:10</h2>
             <p class="date">Published on Mar 25, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-24-1350.html">
+        <a href="digests/2026-03-24-1350.html" class="card">
             <h2>Digest: 2026-03-24 13:50</h2>
             <p class="date">Published on Mar 24, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-24-0900.html">
+        <a href="digests/2026-03-24-0900.html" class="card">
             <h2>Digest: 2026-03-24 09:00</h2>
             <p class="date">Published on Mar 24, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-24-0510.html">
+        <a href="digests/2026-03-24-0510.html" class="card">
             <h2>Digest: 2026-03-24 05:10</h2>
             <p class="date">Published on Mar 24, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-23-2130.html">
+        <a href="digests/2026-03-23-2130.html" class="card">
             <h2>Digest: 2026-03-23 21:30</h2>
             <p class="date">Published on Mar 23, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-23-1350.html">
+        <a href="digests/2026-03-23-1350.html" class="card">
             <h2>Digest: 2026-03-23 13:50</h2>
             <p class="date">Published on Mar 23, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-23-0900.html">
+        <a href="digests/2026-03-23-0900.html" class="card">
             <h2>Digest: 2026-03-23 09:00</h2>
             <p class="date">Published on Mar 23, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-23-0510.html">
+        <a href="digests/2026-03-23-0510.html" class="card">
             <h2>Digest: 2026-03-23 05:10</h2>
             <p class="date">Published on Mar 23, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-21-0510.html">
+        <a href="digests/2026-03-21-0510.html" class="card">
             <h2>Digest: 2026-03-21 05:10</h2>
             <p class="date">Published on Mar 21, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-20-2130.html">
+        <a href="digests/2026-03-20-2130.html" class="card">
             <h2>Digest: 2026-03-20 21:30</h2>
             <p class="date">Published on Mar 20, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-20-1350.html">
+        <a href="digests/2026-03-20-1350.html" class="card">
             <h2>Digest: 2026-03-20 13:50</h2>
             <p class="date">Published on Mar 20, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-20-0900.html">
+        <a href="digests/2026-03-20-0900.html" class="card">
             <h2>Digest: 2026-03-20 09:00</h2>
             <p class="date">Published on Mar 20, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-20-0510.html">
+        <a href="digests/2026-03-20-0510.html" class="card">
             <h2>Digest: 2026-03-20 05:10</h2>
             <p class="date">Published on Mar 20, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-19-2130.html">
+        <a href="digests/2026-03-19-2130.html" class="card">
             <h2>Digest: 2026-03-19 21:30</h2>
             <p class="date">Published on Mar 19, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-19-1350.html">
+        <a href="digests/2026-03-19-1350.html" class="card">
             <h2>Digest: 2026-03-19 13:50</h2>
             <p class="date">Published on Mar 19, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-19-0900.html">
+        <a href="digests/2026-03-19-0900.html" class="card">
             <h2>Digest: 2026-03-19 09:00</h2>
             <p class="date">Published on Mar 19, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-19-0510.html">
+        <a href="digests/2026-03-19-0510.html" class="card">
             <h2>Digest: 2026-03-19 05:10</h2>
             <p class="date">Published on Mar 19, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-18-2130.html">
+        <a href="digests/2026-03-18-2130.html" class="card">
             <h2>Digest: 2026-03-18 21:30</h2>
             <p class="date">Published on Mar 18, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-18-1350.html">
+        <a href="digests/2026-03-18-1350.html" class="card">
             <h2>Digest: 2026-03-18 13:50</h2>
             <p class="date">Published on Mar 18, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-18-1237.html">
+        <a href="digests/2026-03-18-1237.html" class="card">
             <h2>Digest: 2026-03-18 12:37</h2>
             <p class="date">Published on Mar 18, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-18-1215.html">
+        <a href="digests/2026-03-18-1215.html" class="card">
             <h2>Digest: 2026-03-18 12:15</h2>
             <p class="date">Published on Mar 18, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-18-1205.html">
+        <a href="digests/2026-03-18-1205.html" class="card">
             <h2>Digest: 2026-03-18 12:05</h2>
             <p class="date">Published on Mar 18, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-18-1145.html">
+        <a href="digests/2026-03-18-1145.html" class="card">
             <h2>Digest: 2026-03-18 11:45</h2>
             <p class="date">Published on Mar 18, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-18-1130.html">
+        <a href="digests/2026-03-18-1130.html" class="card">
             <h2>Digest: 2026-03-18 11:30</h2>
             <p class="date">Published on Mar 18, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-18-0900.html">
+        <a href="digests/2026-03-18-0900.html" class="card">
             <h2>Digest: 2026-03-18 09:00</h2>
             <p class="date">Published on Mar 18, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-18-0510.html">
+        <a href="digests/2026-03-18-0510.html" class="card">
             <h2>Digest: 2026-03-18 05:10</h2>
             <p class="date">Published on Mar 18, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-18-0235.html">
+        <a href="digests/2026-03-18-0235.html" class="card">
             <h2>Digest: 2026-03-18 02:35</h2>
             <p class="date">Published on Mar 18, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-17-2130.html">
+        <a href="digests/2026-03-17-2130.html" class="card">
             <h2>Digest: 2026-03-17 21:30</h2>
             <p class="date">Published on Mar 17, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-17-1350.html">
+        <a href="digests/2026-03-17-1350.html" class="card">
             <h2>Digest: 2026-03-17 13:50</h2>
             <p class="date">Published on Mar 17, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-17-0900.html">
+        <a href="digests/2026-03-17-0900.html" class="card">
             <h2>Digest: 2026-03-17 09:00</h2>
             <p class="date">Published on Mar 17, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-17-0510.html">
+        <a href="digests/2026-03-17-0510.html" class="card">
             <h2>Digest: 2026-03-17 05:10</h2>
             <p class="date">Published on Mar 17, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-16-2130.html">
+        <a href="digests/2026-03-16-2130.html" class="card">
             <h2>Digest: 2026-03-16 21:30</h2>
             <p class="date">Published on Mar 16, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-16-1350.html">
+        <a href="digests/2026-03-16-1350.html" class="card">
             <h2>Digest: 2026-03-16 13:50</h2>
             <p class="date">Published on Mar 16, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-16-0900.html">
+        <a href="digests/2026-03-16-0900.html" class="card">
             <h2>Digest: 2026-03-16 09:00</h2>
-            <p class="date">Published on Mar 16, 2026</p>
+            <p class="date dynamic">Published on Mar 16, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-16-0510.html">
+        <a href="digests/2026-03-16-0510.html" class="card">
             <h2>Digest: 2026-03-16 05:10</h2>
             <p class="date">Published on Mar 16, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-13-2130.html">
+        <a href="digests/2026-03-13-2130.html" class="card">
             <h2>Digest: 2026-03-13 21:30</h2>
             <p class="date">Published on Mar 13, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-13-1350.html">
+        <a href="digests/2026-03-13-1350.html" class="card">
             <h2>Digest: 2026-03-13 13:50</h2>
             <p class="date">Published on Mar 13, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-13-0900.html">
+        <a href="digests/2026-03-13-0900.html" class="card">
             <h2>Digest: 2026-03-13 09:00</h2>
             <p class="date">Published on Mar 13, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-13-0510.html">
+        <a href="digests/2026-03-13-0510.html" class="card">
             <h2>Digest: 2026-03-13 05:10</h2>
             <p class="date">Published on Mar 13, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-12-2130.html">
+        <a href="digests/2026-03-12-2130.html" class="card">
             <h2>Digest: 2026-03-12 21:30</h2>
             <p class="date">Published on Mar 12, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-12-1412.html">
+        <a href="digests/2026-03-12-1412.html" class="card">
             <h2>Digest: 2026-03-12 14:12</h2>
             <p class="date">Published on Mar 12, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-12-0900.html">
+        <a href="digests/2026-03-12-0900.html" class="card">
             <h2>Digest: 2026-03-12 09:00</h2>
             <p class="date">Published on Mar 12, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-11-2130.html">
+        <a href="digests/2026-03-11-2130.html" class="card">
             <h2>Digest: 2026-03-11 21:30</h2>
             <p class="date">Published on Mar 11, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-11-1459.html">
+        <a href="digests/2026-03-11-1459.html" class="card">
             <h2>Digest: 2026-03-11 14:59</h2>
             <p class="date">Published on Mar 11, 2026</p>
         </a>
-    </div>
 
-    <div class="card">
-        <a href="digests/2026-03-11-1447.html">
+        <a href="digests/2026-03-11-1447.html" class="card">
             <h2>Digest: 2026-03-11 14:47</h2>
             <p class="date">Published on Mar 11, 2026</p>
         </a>
-    </div>
 
+    </div>
 </body>
 </html>
