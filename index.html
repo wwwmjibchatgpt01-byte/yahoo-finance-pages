@@ -3,35 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance Digests</title>
+    <title>財經早報摘要索引 | Finance Digests</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { border-bottom: 2px solid #2c3e50; padding-bottom: 10px; }
-        .card { background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 20px; margin-bottom: 20px; transition: transform 0.2s; }
-        .card:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
-        .card h2 { margin-top: 0; color: #2c3e50; }
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --bg: #f5f7f9;
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft JhengHei", sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+            background-color: var(--bg);
+        }
+        h1 { 
+            color: var(--primary); 
+            text-align: center; 
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+        .card { 
+            background: #fff; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+            padding: 30px; 
+            margin-bottom: 30px; 
+            border-top: 5px solid var(--accent);
+            transition: all 0.3s ease;
+        }
+        .card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1); 
+        }
+        .card h2 { margin-top: 0; color: var(--primary); font-size: 1.6em; }
         .card a { text-decoration: none; color: inherit; display: block; }
-        .history { margin-top: 40px; }
+        .card p { color: #666; font-size: 1.1em; }
+        
+        .history { 
+            margin-top: 60px; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+        .history h2 { 
+            border-bottom: 2px solid #eee; 
+            padding-bottom: 15px; 
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
         .history ul { list-style: none; padding: 0; }
-        .history li { margin-bottom: 10px; }
-        .history a { color: #007bff; text-decoration: none; }
+        .history li { 
+            margin-bottom: 12px; 
+            padding: 10px;
+            border-bottom: 1px solid #f9f9f9;
+            display: flex;
+            justify-content: space-between;
+        }
+        .history a { 
+            color: var(--accent); 
+            text-decoration: none; 
+            font-weight: 500;
+        }
         .history a:hover { text-decoration: underline; }
+        .date-label { color: #999; font-size: 0.9em; }
     </style>
 </head>
 <body>
-    <h1>Finance Digests Index</h1>
+    <h1>財經摘要索引 (Finance Digests)</h1>
     
     <div class="card">
-        <a href="digests/2026-04-16-0930.html">
-            <h2>Latest Digest: 2026-04-16 09:30</h2>
-            <p>Executive Summary: 今日市場焦點為台積電法說會及美伊戰事發展。台股早盤開高，AI與半導體族群表現亮眼。記憶體板塊中美光表現強勁...</p>
+        <a href="digests/2026-04-16-0900.html">
+            <h2>最新摘要：2026-04-16 09:00 (Asia/Taipei)</h2>
+            <p><strong>執行摘要：</strong>今日市場聚焦台積電下午法說會，台股早盤呈現觀望後的拉升態勢。美股標普與那指再創新高，反映出市場對美伊和談的樂觀期待。記憶體板塊方面，SK Hynix 鉅額分紅與 AI 需求持續強勁...</p>
         </a>
     </div>
 
     <div class="history">
-        <h2>History</h2>
+        <h2>歷史存檔</h2>
         <ul>
-            <li><a href="digests/2026-04-16-0930.html">2026-04-16 09:30</a></li>
+            <li>
+                <a href="digests/2026-04-16-0900.html">2026-04-16 09:00</a>
+                <span class="date-label">2026-04-16</span>
+            </li>
+            <li>
+                <a href="digests/2026-04-16-0930.html">2026-04-16 09:30</a>
+                <span class="date-label">2026-04-16</span>
+            </li>
         </ul>
     </div>
 </body>
