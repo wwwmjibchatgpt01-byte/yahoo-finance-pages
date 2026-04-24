@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Digest 2026-04-24 09:00</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #3498db;
+            --success: #27ae60;
+            --danger: #e74c3c;
+            --bg: #f4f7f6;
+            --card-bg: #ffffff;
+            --text: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        .timestamp { opacity: 0.8; font-size: 1.1em; }
+        
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+            margin-top: 0;
+            font-size: 1.6em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+        th { background-color: #f8f9fa; color: var(--secondary); }
+        .positive { color: var(--success); font-weight: bold; }
+        .negative { color: var(--danger); font-weight: bold; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 15px; }
+        .news-link { color: var(--accent); text-decoration: none; font-weight: 500; }
+        .news-link:hover { text-decoration: underline; }
+        .summary { font-size: 0.95em; color: #666; margin-top: 5px; }
+
+        .sentiment-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .sentiment-item {
+            background: #fcfcfc;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.8em;
+            color: #999;
+            margin-top: 50px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>財經早報 Digest</h1>
+        <div class="timestamp">2026年4月24日 09:00 (Asia/Taipei)</div>
+    </header>
+
+    <section class="card">
+        <h2>Executive Summary</h2>
+        <p>今日市場聚焦於中東地緣政治緊張局勢的最新動向。美伊談判停滯，引發國際油價飆升及全球股市震盪。同時，美國總統川普對半導體產業鏈的政策言論（點名台韓）與 Intel 財報後的市場反應，成為科技股關注的焦點。台灣股市受此地緣政治與美股波動影響，盤中出現劇烈震盪。</p>
+    </section>
+
+    <section class="card">
+        <h2>Memory Sector Performance</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th>
+                    <th>Name/Market</th>
+                    <th>Daily Change (%)</th>
+                    <th>YTD Return (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>2337.TW</td><td>旺宏 (Taiwan)</td><td class="positive">+196.42%</td><td class="positive">+196.42%</td></tr>
+                <tr><td>8299.TWO</td><td>群聯 (Taiwan)</td><td class="positive">+17.30%</td><td class="positive">+17.30%</td></tr>
+                <tr><td>2408.TW</td><td>南亞科 (Taiwan)</td><td class="neutral">0.00%</td><td class="neutral">0.00%</td></tr>
+                <tr><td>2344.TW</td><td>華邦電 (Taiwan)</td><td class="negative">-3.24%</td><td class="negative">-3.24%</td></tr>
+                <tr><td>MU</td><td>Micron (US)</td><td class="positive">+52.79%</td><td class="positive">+52.79%</td></tr>
+                <tr><td>WDC</td><td>Western Digital (US)</td><td class="positive">+114.87%</td><td class="positive">+114.87%</td></tr>
+                <tr><td>STX</td><td>Seagate (US)</td><td class="positive">+104.72%</td><td class="positive">+104.72%</td></tr>
+                <tr><td>SNDK</td><td>SanDisk (US)</td><td class="positive">+238.77%</td><td class="positive">+238.77%</td></tr>
+                <tr><td>005930.KS</td><td>Samsung (KR)</td><td class="positive">+71.21%</td><td class="positive">+71.21%</td></tr>
+                <tr><td>000660.KS</td><td>SK Hynix (KR)</td><td class="positive">+80.69%</td><td class="positive">+80.69%</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="card">
+        <h2>Global Markets</h2>
+        <ul>
+            <li><strong>美股震盪</strong>: 美伊談判停滯不前，投資人對中東局勢觀望情緒濃厚，美股四大指數終場多半收黑。</li>
+            <li><strong>能源市場</strong>: 傳出伊朗德黑蘭遭攻擊及內部權力鬥爭風險，推升國際原油價格飆升。</li>
+            <li><strong>科技併購</strong>: 華納兄弟探索（WBD）獲得股東支持，將以1100億美元規模併入派拉蒙（Paramount）。</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Taiwan Markets</h2>
+        <ul>
+            <li><strong>台股巨震</strong>: 台股盤中上演驚心動魄行情，一度狂飆千點直逼3.9萬點，隨即急轉直下，爆出1.4兆歷史天量。</li>
+            <li><strong>半導體政策風險</strong>: 川普再次點名台灣與南韓為晶片供應大來源，並威脅若不赴美設廠將面臨高關稅，引發市場對產業鏈移轉的擔憂。</li>
+            <li><strong>金融業動態</strong>: 台中銀主管涉勾結詐騙集團洗錢案，金管會正介入調查。</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>PTT Market Sentiment (Method A)</h2>
+        <div class="sentiment-box">
+            <div class="sentiment-item">
+                <strong>🔥 Hot Topics</strong>
+                <ul>
+                    <li>川普點名台灣晶片供應鏈</li>
+                    <li>Intel Q1 財報優於預期</li>
+                    <li>美伊停火延長與中東局勢</li>
+                </ul>
+            </div>
+            <div class="sentiment-item">
+                <strong>📉 Sentiment</strong>
+                <ul>
+                    <li><strong>Fear/Panic:</strong> 高，因地緣政治不確定性與台股天量震盪。</li>
+                    <li><strong>FOMO:</strong> 低，市場觀望情緒濃厚。</li>
+                    <li><strong>Key Indicator:</strong> 融資餘額減少顯示槓桿客正在撤退。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Cross-market Takeaways & Risks</h2>
+        <ul>
+            <li><strong>地緣政治是核心風險</strong>: 中東局勢（美伊、伊朗內部動盪）直接影響能源價格與全球避險情緒。</li>
+            <li><strong>政策性不確定性</strong>: 川普的關稅威脅與供應鏈重組壓力，將持續施壓台韓半導體產業。</li>
+            <li><strong>資金流向觀察</strong>: 觀察美股科技股（如 Intel 財報後）表現如何引導台股 AI 族群後續走勢。</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Source Links</h2>
+        <ul>
+            <li><a href="https://finance.yahoo.com/" class="news-link" target="_blank">Yahoo Finance</a></li>
+            <li><a href="https://tw.stock.yahoo.com/" class="news-link" target="_blank">Yahoo 股市</a></li>
+            <li><a href="https://feeds.feedburner.com/rsscna/finance" class="news-link" target="_blank">CNA Finance RSS</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        Generated by Gemma 4 | 2026-04-24 09:00 CST
+    </footer>
+</div>
+</body>
+</html>
