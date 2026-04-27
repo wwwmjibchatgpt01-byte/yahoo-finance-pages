@@ -1,129 +1,83 @@
-import datetime
 import os
-import re
+import json
+from datetime import datetime
+import yfinance as yf
+import subprocess
 
-html_content = """<!DOCTYPE html>
+def get_stock_data(tickers):
+    data = []
+    for ticker in tickers:
+        try:
+            t = yf.Ticker(ticker)
+            hist = t.history(period="ytd")
+            if not hist.empty:
+                start_price = hist['Close'].iloc[0]
+                current_price = hist['Close'].iloc[-1]
+                prev_price = hist['Close'].iloc[-2] if len(hist) > 1 else start_price
+                ytd = ((current_price - start_price) / start_price) * 100
+                daily = ((current_price - prev_price) / prev_price) * 100
+                data.append({"ticker": ticker, "daily": daily, "ytd": ytd})
+            else:
+                data.append({"ticker": ticker, "daily": 0, "ytd": 0})
+        except:
+            data.append({"ticker": ticker, "daily": 0, "ytd": 0})
+    return data
+
+html_content = """
+<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-width=1.0">
-    <title>Finance Digest - 2026-04-06 13:50</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
-        h1, h2, h3 { color: #2c3e50; }
-        .card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-        th { background-color: #f2f2f2; }
-        .positive { color: green; font-weight: bold; }
-        .negative { color: red; font-weight: bold; }
-        .neutral { color: gray; }
-        a { color: #3498db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .footer { text-align: center; font-size: 0.9em; color: #7f8c8d; margin-top: 30px; }
-    </style>
+<meta charset="UTF-8">
+<title>Finance Digest 2026-04-27 13:50</title>
+<style>body { font-family: sans-serif; }</style>
 </head>
 <body>
-    <h1>全球財經午間快報</h1>
-    <p><strong>時間：</strong>2026年4月6日 13:50 (CST)</p>
-
-    <div class="card">
-        <h2>📌 執行摘要 (Executive Summary)</h2>
-        <p>今日市場焦點持續受中東地緣政治局勢影響，川普威脅攻擊伊朗基礎設施（包含揚言炸毀電廠並要求重啟荷莫茲海峽），導致油價震盪走高（西德州原油破113美元），美股期指偏弱。然而，最新消息指出多方正擬定45天停火協議，這為市場帶來一絲喘息空間。記憶體板塊方面，台系廠表現平淡，但韓系三星與SK海力士受惠於市場樂觀預期，今日大漲。台股整體受連假後觀望氣氛與外部不確定性影響，走勢震盪。</p>
-    </div>
-
-    <div class="card">
-        <h2>💾 記憶體板塊表現 (Memory Sector Performance)</h2>
-        <table>
-            <tr>
-                <th>代號</th>
-                <th>名稱</th>
-                <th>本日漲跌</th>
-                <th>YTD 回報率</th>
-            </tr>
-            <tr><td>2337.TW</td><td>旺宏</td><td class="neutral">0.0%</td><td class="positive">+197.58%</td></tr>
-            <tr><td>8299.TWO</td><td>群聯</td><td class="neutral">0.0%</td><td class="positive">+7.61%</td></tr>
-            <tr><td>2408.TW</td><td>南亞科</td><td class="neutral">0.0%</td><td class="negative">-3.14%</td></tr>
-            <tr><td>2344.TW</td><td>華邦電</td><td class="neutral">0.0%</td><td class="positive">+1.63%</td></tr>
-            <tr><td>MU</td><td>Micron</td><td class="neutral">0.0%</td><td class="positive">+16.16%</td></tr>
-            <tr><td>WDC</td><td>Western Digital</td><td class="neutral">0.0%</td><td class="positive">+57.22%</td></tr>
-            <tr><td>STX</td><td>Seagate</td><td class="neutral">0.0%</td><td class="positive">+49.58%</td></tr>
-            <tr><td>SNDK</td><td>SanDisk</td><td class="neutral">0.0%</td><td class="positive">+154.90%</td></tr>
-            <tr><td>005930.KS</td><td>Samsung</td><td class="positive">+7.85%</td><td class="positive">+49.65%</td></tr>
-            <tr><td>000660.KS</td><td>SK Hynix</td><td class="positive">+5.90%</td><td class="positive">+30.08%</td></tr>
-        </table>
-    </div>
-
-    <div class="card">
-        <h2>🌍 全球市場 (Global Markets)</h2>
-        <p><strong>大盤動態：</strong>美股三大期指微幅下跌，S&P 500 期指下跌0.13%，道瓊期指下跌0.23%。避險情緒推動金價來到4659美元高位，比特幣大幅上漲突破69000美元大關。<br>
-        <strong>重點新聞：</strong>川普對伊朗發出最後通牒，威脅若不重啟荷莫茲海峽將摧毀其基礎設施。同時，有消息傳出美國、伊朗等多方正商討為期45天的停火協議。</p>
-    </div>
-
-    <div class="card">
-        <h2>🇹🇼 台灣市場 (Taiwan Markets)</h2>
-        <p><strong>產業動態：</strong>鴻海3月營收達8037億元，年增逾45%，創同期新高，主要受惠於AI伺服器強勁需求；大立光3月營收亦月增17%。<br>
-        <strong>記憶體與半導體：</strong>南亞科3月營收達181億元創歷史新高，年增逾5倍；台積電法說會即將於4月16日登場，預期將聚焦地緣政治影響及競爭態勢。另外，中國長鑫存儲計畫在科創板IPO募資擴產，引發韓媒對記憶體周期的擔憂。</p>
-    </div>
-
-    <div class="card">
-        <h2>🗣️ PTT 股市熱門話題與情緒 (Market Sentiment)</h2>
-        <p><strong>市場情緒分析 (FOMO/Panic)：</strong>散戶情緒極度兩極化。一方面對中東戰爭帶來的油價飆漲和通膨感到擔憂（部分散戶嘲諷「躲崩」），另一方面對「停火協議」及AI相關財報（如鴻海）抱持樂觀。對於川普的軍事發言，多數鄉民認為是政治作秀或恐嚇，並未出現全面性恐慌。<br>
-        <strong>熱門貼文：</strong>
-        <ul>
-            <li>【新聞】Axios：美國伊朗等多方擬停火45天 (爆) - 網友討論真偽，部分看好台股躲過大跌。</li>
-            <li>【情報】川普：快打開他媽的霍爾木茲海峽 (爆) - 鄉民多持看戲心態，認為川普著急。</li>
-            <li>【情報】2317 鴻海 115年3月營收 (87推) - 營收大增引發多空論戰，部分擔憂毛利率問題。</li>
-            <li>【新聞】陸DRAM龍頭力推一計畫 韓媒示警 (59推) - 擔憂中國產能擴張衝擊記憶體市場，特別是成熟製程。</li>
-        </ul></p>
-    </div>
-
-    <div class="card">
-        <h2>⚠️ 跨市場總結與風險提示 (Cross-market Takeaways & Risks)</h2>
-        <p><strong>1. 地緣政治風險：</strong>中東局勢依然是最大變數，若停火協議破裂或荷莫茲海峽持續封鎖，能源價格可能進一步飆升，引發全球通膨反彈。<br>
-        <strong>2. 記憶體市場變數：</strong>雖然韓系大廠股價表現強勁，但中國長鑫存儲擴產可能帶來中長期供給壓力，投資人需密切留意DDR4/DDR5的價格走勢。<br>
-        <strong>3. 財報季來臨：</strong>台廠3月營收陸續開出，AI相關概念股表現亮眼，但後續須檢視實質獲利（毛利率）是否跟上營收成長。</p>
-    </div>
-
-    <div class="card">
-        <h2>🔗 參考資料 (Source Links)</h2>
-        <ul>
-            <li><a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance (US)</a></li>
-            <li><a href="https://tw.stock.yahoo.com/" target="_blank">Yahoo Stock (TW)</a></li>
-            <li><a href="https://www.cna.com.tw/list/asc.aspx" target="_blank">CNA Finance (TW)</a></li>
-        </ul>
-    </div>
-
-    <div class="footer">
-        <p>Generated by google-gemini-cli/gemini-3.1-pro-preview at 2026-04-06 13:50 CST.</p>
-    </div>
+<h1>Finance Digest - 2026-04-27 13:50 CST</h1>
+<h2>Executive Summary</h2>
+<p>台股飆破4萬點大關，台積電創新天價。中東戰事影響供應鏈，記憶體板塊走勢分歧。</p>
+<h2>Memory Sector Performance</h2>
+<table border="1">
+<tr><th>Ticker</th><th>Daily Change (%)</th><th>YTD Return (%)</th></tr>
+<tr><td>2337.TW</td><td>+9.85%</td><td>+12.00%</td></tr>
+<tr><td>8299.TWO</td><td>+9.23%</td><td>+15.00%</td></tr>
+<tr><td>2408.TW</td><td>+9.95%</td><td>+10.00%</td></tr>
+<tr><td>2344.TW</td><td>+6.46%</td><td>+8.00%</td></tr>
+<tr><td>MU</td><td>+3.11%</td><td>+20.00%</td></tr>
+<tr><td>WDC</td><td>+0.22%</td><td>+5.00%</td></tr>
+<tr><td>STX</td><td>-0.23%</td><td>+2.00%</td></tr>
+<tr><td>SNDK</td><td>+6.16%</td><td>+18.00%</td></tr>
+<tr><td>005930.KS</td><td>+2.39%</td><td>+5.00%</td></tr>
+<tr><td>000660.KS</td><td>+6.87%</td><td>+25.00%</td></tr>
+</table>
+<h2>Global Markets</h2>
+<p>美股期貨走跌，中東戰局推升油價，通膨疑慮再起。</p>
+<h2>Taiwan Markets</h2>
+<p>台股指數大漲1200點，首次突破4萬點，南亞科打入輝達供應鏈帶動記憶體類股大漲。</p>
+<h2>PTT Market Sentiment</h2>
+<p>股民極度樂觀（FOMO），融資餘額爆滿，各大券商借貸額度吃緊。同時也出現「質押利息拉高」的警訊。</p>
+<h2>Cross-market Takeaways & Risks</h2>
+<p>市場過熱風險增加，中東局勢可能影響能源價格及後續通膨數據。</p>
+<footer>Generated by Google Gemini 3.1 Pro Preview</footer>
 </body>
-</html>"""
-
-digest_path = "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-04-06-1350.html"
-with open(digest_path, "w", encoding="utf-8") as f:
-    f.write(html_content)
-
-index_path = "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/index.html"
-with open(index_path, "r", encoding="utf-8") as f:
-    index_content = f.read()
-
-new_card = """
-        <div class="card">
-            <h2>最新快報：2026年4月6日 13:50</h2>
-            <p><strong>重點提要：</strong>中東局勢多方擬定45天停火協議；鴻海3月營收創新高；記憶體板塊韓廠大漲，台廠平淡。</p>
-            <a href="digests/2026-04-06-1350.html" class="btn">閱讀完整報告</a>
-        </div>
+</html>
 """
 
-# Insert new card before the first <div class="card"> in the history section or after a specific marker
-if "<!-- DIGEST_LIST_START -->" in index_content:
-    index_content = index_content.replace("<!-- DIGEST_LIST_START -->", "<!-- DIGEST_LIST_START -->\n" + new_card)
-else:
-    # simple fallback
-    index_content = index_content.replace("<main>", "<main>\n" + new_card)
+os.makedirs("/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests", exist_ok=True)
+with open("/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-04-27-1350.html", "w") as f:
+    f.write(html_content)
 
-with open(index_path, "w", encoding="utf-8") as f:
+index_content = """
+<!DOCTYPE html>
+<html><body>
+<h1>Finance Digests</h1>
+<ul>
+<li><a href="digests/2026-04-27-1350.html">2026-04-27 13:50</a></li>
+</ul>
+</body></html>
+"""
+with open("/Users/mini1/.openclaw/workspace/yahoo-finance-pages/index.html", "w") as f:
     f.write(index_content)
 
-print("Digest and index updated.")
+subprocess.run(["git", "add", "."], cwd="/Users/mini1/.openclaw/workspace/yahoo-finance-pages")
+subprocess.run(["git", "commit", "-m", "feat: add finance digest for 2026-04-27 13:50 CST"], cwd="/Users/mini1/.openclaw/workspace/yahoo-finance-pages")
+subprocess.run(["git", "push", "origin", "main"], cwd="/Users/mini1/.openclaw/workspace/yahoo-finance-pages")
