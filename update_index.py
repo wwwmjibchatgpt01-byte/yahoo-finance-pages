@@ -1,18 +1,27 @@
 import re
 
-with open('index.html', 'r') as f:
+with open('/Users/mini1/.openclaw/workspace/yahoo-finance-pages/index.html', 'r', encoding='utf-8') as f:
     content = f.read()
 
-new_card = """
-        <div class="digest-card">
-            <h2><a href="digests/2026-04-10-0930.html">Finance Digest - 2026-04-10 09:30 CST</a></h2>
-            <p><strong>Executive Summary:</strong> 全球市場焦點仍集中在中東停火協議的發展上。台股方面，市場聚焦台積電3月營收及即將到來的法說會。記憶體板塊在 AI 需求與寡占效應下，前景看好，DRAM 預計缺貨至2027年。PTT 散戶情緒因中東局勢劇烈波動。</p>
-            <span class="date">2026-04-10</span>
+# Remove the 'newest' class and 'Latest' tag from the old latest digest
+content = content.replace('class="card newest"', 'class="card"')
+content = content.replace('<span class="tag latest">Latest</span>\n                ', '')
+
+# Prepare the new card HTML
+new_card = """        <!-- Newest Digest -->
+        <div class="card newest">
+            <a href="digests/2026-05-04-1350.html">
+                <span class="tag latest">Latest</span>
+                <h2>2026-05-04 13:50 Digest</h2>
+                <p>TAIEX breaks 40,700 (+1,700 pts) as TSMC and MediaTek skyrocket. SanDisk earnings fuel a global memory rally, while retail FOMO and high leverage dominate PTT sentiment.</p>
+                <div class="date">May 4, 2026 - 13:50 CST</div>
+            </a>
         </div>
+
 """
 
-# Insert new card after the <div class="digests-container"> tag
-updated_content = re.sub(r'(<div class="digests-container">)', r'\1' + new_card, content)
+# Insert the new card after '<div class="history">\n'
+content = content.replace('<div class="history">\n', '<div class="history">\n' + new_card)
 
-with open('index.html', 'w') as f:
-    f.write(updated_content)
+with open('/Users/mini1/.openclaw/workspace/yahoo-finance-pages/index.html', 'w', encoding='utf-8') as f:
+    f.write(content)
