@@ -1,83 +1,256 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance Digest - 2026-05-06 13:50</title>
+    <title>財經午間快報 - 2026年5月6日 13:50</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f8f9fa; color: #333; margin: 0; padding: 40px; line-height: 1.6; }
-        .container { max-width: 900px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        h1 { color: #2c3e50; font-size: 2.2em; text-align: center; border-bottom: 2px solid #ecf0f1; padding-bottom: 15px; margin-bottom: 30px; }
-        h2 { color: #34495e; font-size: 1.5em; margin-top: 30px; border-left: 5px solid #3498db; padding-left: 10px; }
-        p { font-size: 1.1em; color: #555; }
-        ul { font-size: 1.1em; color: #555; }
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; margin-bottom: 30px; }
-        th, td { padding: 12px 15px; border: 1px solid #ecf0f1; text-align: left; }
-        th { background-color: #f4f6f7; color: #2c3e50; font-weight: bold; }
-        tr:nth-child(even) { background-color: #fafbfc; }
-        .positive { color: #27ae60; font-weight: bold; }
-        .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ecf0f1; font-size: 0.9em; color: #95a5a6; }
-        a { color: #3498db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #3498db;
+            --success: #27ae60;
+            --danger: #e74c3c;
+            --light: #f8f9fa;
+            --text: #333;
+        }
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f0f2f5;
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        header {
+            border-bottom: 2px solid var(--accent);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        h1 { margin: 0; color: var(--primary); font-size: 2.2em; }
+        .timestamp { color: #666; font-size: 0.9em; margin-top: 5px; }
+        
+        section { margin-bottom: 40px; }
+        h2 { 
+            color: var(--primary); 
+            border-left: 5px solid var(--accent); 
+            padding-left: 15px; 
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        .summary-box {
+            background: var(--light);
+            border-radius: 8px;
+            padding: 20px;
+            border-left: 5px solid var(--secondary);
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th { background: var(--secondary); color: white; font-weight: 700; }
+        tr:hover { background: #f1f1f1; }
+        .up { color: var(--danger); font-weight: bold; } /* Taiwan Style: Red is Up */
+        .down { color: var(--success); font-weight: bold; } /* Taiwan Style: Green is Down */
+        
+        .ptt-post {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .ptt-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            background: #e74c3c;
+            color: white;
+            margin-right: 10px;
+        }
+        .ptt-title { font-weight: bold; color: var(--accent); text-decoration: none; }
+        .ptt-sentiment { margin-top: 10px; font-style: italic; color: #555; }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.85em;
+        }
+        .source-links a { color: var(--accent); margin: 0 10px; text-decoration: none; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>市場動態摘要 (2026-05-06 13:50 CST)</h1>
-        
-        <h2>執行摘要 (Executive Summary)</h2>
-        <p>今日全球股市延續多頭氣勢，美股那斯達克與標普 500 指數雙雙創下歷史新高，帶動亞洲股市狂飆。台股早盤突破 41,500 點大關再創歷史新高，最高達 41,575 點，但盤中震盪劇烈近千點。記憶體族群成為全球焦點，華邦電法說會報喜帶動漲停，韓國三星市值突破一兆美元大關。然而，PTT 散戶情緒達到極度狂熱的 FOMO 狀態，部分券商質押額度已滿，顯示短期槓桿風險正在快速累積。</p>
+        <header>
+            <h1>財經午間快報</h1>
+            <div class="timestamp">2026年5月6日 (星期三) 13:50 CST</div>
+        </header>
 
-        <h2>記憶體板塊表現 (Memory Sector Performance)</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>代號 (Ticker)</th>
-                    <th>名稱 (Name)</th>
-                    <th>單日漲跌 (Daily Change)</th>
-                    <th>年初至今 (YTD Return)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>2337.TW</td><td>旺宏</td><td class="positive">+7.17%</td><td class="positive">+296.77%</td></tr>
-                <tr><td>8299.TWO</td><td>群聯</td><td class="positive">+9.93%</td><td class="positive">+60.90%</td></tr>
-                <tr><td>2408.TW</td><td>南亞科</td><td class="positive">+9.94%</td><td class="positive">+36.23%</td></tr>
-                <tr><td>2344.TW</td><td>華邦電</td><td class="positive">+9.82%</td><td class="positive">+20.12%</td></tr>
-                <tr><td>MU</td><td>Micron (美光)</td><td class="positive">+11.06%</td><td class="positive">+103.05%</td></tr>
-                <tr><td>WDC</td><td>Western Digital</td><td class="positive">+5.18%</td><td class="positive">+147.99%</td></tr>
-                <tr><td>STX</td><td>Seagate</td><td class="positive">+4.40%</td><td class="positive">+168.61%</td></tr>
-                <tr><td>005930.KS</td><td>Samsung (三星)</td><td class="positive">+14.84%</td><td class="positive">+108.21%</td></tr>
-                <tr><td>000660.KS</td><td>SK Hynix</td><td class="positive">+10.78%</td><td class="positive">+137.22%</td></tr>
-                <tr><td>SNDK</td><td>SanDisk</td><td class="positive">+11.98%</td><td class="positive">+410.94%</td></tr>
-            </tbody>
-        </table>
+        <section id="summary">
+            <div class="summary-box">
+                <strong>今日要點：</strong> 台股早盤衝破 41,500 點續創新高，高低震盪近千點。韓國 KOSPI 同步突破 7,300 點。記憶體族群火力全開，華邦電法說釋出看漲訊號，三星市值衝破 1 兆美元。
+            </div>
+        </section>
 
-        <h2>全球市場 (Global Markets)</h2>
-        <p>受惠於企業財報強勁以及中東停火協議維持帶動國際油價回落，美股四大指數收紅，標普 500 與那斯達克雙雙創下歷史新高。在 AI 晶片熱潮推動下，韓國股市 (KOSPI) 突破 7,300 點大關，年內第八次觸發買方熔斷機制。其中，三星電子受惠外資湧入，市值正式衝破一兆美元，與台積電並列亞洲雙雄。英特爾傳出與蘋果洽談代工晶片，股價大漲 14%。</p>
+        <section id="memory-performance">
+            <h2>記憶體板塊表現 (Memory Sector)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>代號</th>
+                        <th>名稱</th>
+                        <th>現價/收盤</th>
+                        <th>漲跌幅</th>
+                        <th>YTD (年初至今)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2337.TW</td>
+                        <td>旺宏</td>
+                        <td>170.5 TWD</td>
+                        <td class="up">+6.23%</td>
+                        <td class="up">~+10% (近期噴發)</td>
+                    </tr>
+                    <tr>
+                        <td>8299.TWO</td>
+                        <td>群聯</td>
+                        <td>2115 TWD</td>
+                        <td class="up">+5.2%</td>
+                        <td class="up">~+26% (自4月低點)</td>
+                    </tr>
+                    <tr>
+                        <td>2408.TW</td>
+                        <td>南亞科</td>
+                        <td>120.0 TWD</td>
+                        <td class="up">+9.59%</td>
+                        <td class="up">+177% (60日)</td>
+                    </tr>
+                    <tr>
+                        <td>2344.TW</td>
+                        <td>華邦電</td>
+                        <td>98.8 TWD</td>
+                        <td class="up">+3.88%</td>
+                        <td class="up">+166% (60日)</td>
+                    </tr>
+                    <tr>
+                        <td>MU</td>
+                        <td>Micron (美光)</td>
+                        <td>675.76 USD</td>
+                        <td class="up">+11.04%</td>
+                        <td class="up">+125.16%</td>
+                    </tr>
+                    <tr>
+                        <td>WDC</td>
+                        <td>Western Digital</td>
+                        <td>478.42 USD</td>
+                        <td class="up">+8.15%</td>
+                        <td class="up">+170.08%</td>
+                    </tr>
+                    <tr>
+                        <td>STX</td>
+                        <td>Seagate</td>
+                        <td>771.40 USD</td>
+                        <td class="up">+4.45%</td>
+                        <td class="up">+117%</td>
+                    </tr>
+                    <tr>
+                        <td>005930.KS</td>
+                        <td>Samsung (三星)</td>
+                        <td>166,600 KRW</td>
+                        <td class="up">+2.6%</td>
+                        <td class="up">+1兆美元市值達成</td>
+                    </tr>
+                    <tr>
+                        <td>000660.KS</td>
+                        <td>SK Hynix</td>
+                        <td>1,447,000 KRW</td>
+                        <td class="up">+12.52%</td>
+                        <td class="up">+122.27%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <h2>台灣市場 (Taiwan Markets)</h2>
-        <p>台股今日早盤在台積電上漲 30 元的帶動下，指數大漲超過 800 點，最高觸及 41,575 點續創歷史新高，但隨後遭遇獲利了結賣壓，盤中高低震盪達 959 點。記憶體族群表現最為亮眼，華邦電法說會指出 SLC NAND 與 DRAM 供給缺口將延續至 2028 年以後，價格看漲，激勵股價攻上漲停，南亞科與群聯亦逼近漲停。股王信驊第一季獲利創歷史新高，推升股價達 19,195 元新天價。台積電高層也在美國表示，已為任何新業務機會成長做好準備。</p>
+        <section id="global-markets">
+            <h2>全球市場動向</h2>
+            <p><strong>美股亮點：</strong> 標普與那指再創新高。英特爾因傳聞與蘋果洽談生產晶片大漲 14%。川普稱對伊談判有重大進展，荷莫茲海峽危機暫緩，國際油價回落。</p>
+            <p><strong>韓股狂飆：</strong> 韓股 KOSPI 突破 7,300 點，今年第 8 次觸發買方熔斷 (Sidecar)。三星電子市值正式突破 1 兆美元，與台積電並列亞洲雙雄。</p>
+        </section>
 
-        <h2>PTT 市場情緒 (PTT Market Sentiment)</h2>
-        <ul>
-            <li><strong>熱門話題：</strong> 年輕人開戶數激增（19歲以下族群首度破5%），被鄉民戲稱為「少年股神」遍地開花；元大等大型券商傳出「質押額度已滿」，引發鄉民熱議是否為官方降溫訊號。空軍發出召集令但多數遭到軋空停損。</li>
-            <li><strong>散戶情緒：</strong> 極度狂熱 (FOMO)。許多投資人感嘆「無錢可借」，甚至討論信貸與房貸的可能。對於韓國股市的飆漲，許多鄉民表示羨慕並尋求複委託開戶管道。</li>
-            <li><strong>指標觀察：</strong> 擦鞋童指標顯現（學生與年輕族群大舉進場），槓桿使用率極高，市場情緒達到沸點，顯示短期內風險意識極度薄弱。</li>
-        </ul>
+        <section id="taiwan-markets">
+            <h2>台灣市場動向</h2>
+            <p><strong>台股劇震：</strong> 加權指數早盤創下 41,575 點新高後漲幅收斂，高低震盪達 959 點。股王信驊再創 19,195 元天價紀錄。</p>
+            <p><strong>記憶體法說：</strong> 華邦電總經理陳沛銘預估 DRAM 供給缺口將延續至 2028 年後，第二季價格漲幅將擴大，NOR/SLC NAND 價格同步看漲。</p>
+        </section>
 
-        <h2>跨市場觀察與風險 (Cross-market Takeaways & Risks)</h2>
-        <p>全球科技與記憶體產業正在經歷罕見的 AI 驅動超級週期，台灣與韓國的半導體供應鏈完全連動美股的強勢表現。然而，台灣散戶的槓桿操作已達到緊繃狀態，券商暫停或限縮股票質押額度，暗示流動性與政策監管風險正在上升。在 41,500 點的歷史高位，任何突發的地緣政治惡化（如中東局勢生變）或通膨數據反撲，都可能引發劇烈的多殺多與融資斷頭賣壓。建議投資人審慎評估持股水位，不宜盲目追高或過度擴張信用。</p>
+        <section id="ptt-sentiment">
+            <h2>PTT 鄉民情緒 (PTT Stock)</h2>
+            <div class="ptt-post">
+                <span class="ptt-tag">爆</span>
+                <a href="https://www.ptt.cc/bbs/Stock/M.1778045788.A.A84.html" class="ptt-title">[新聞] 校園炒股熱爆！高中生大學生當「螞蟻雄兵」</a>
+                <div class="ptt-sentiment">情緒：極度樂觀與狂熱。年輕人湧入開戶，網友熱議「擦鞋童」指標，認為是全民理財教育提升或是高點將至的警訊。</div>
+            </div>
+            <div class="ptt-post">
+                <span class="ptt-tag">爆</span>
+                <a href="https://www.ptt.cc/bbs/Stock/M.1778032053.A.CD0.html" class="ptt-title">[標的] 空軍召集令</a>
+                <div class="ptt-sentiment">情緒：空方絕望。發文者被嘎 500 點後號召空軍，結果盤中遭遇墜崖式回檔，推文直呼「贏了」、「空軍上將」。</div>
+            </div>
+            <div class="ptt-post">
+                <span class="ptt-tag">爆</span>
+                <a href="https://www.ptt.cc/bbs/Stock/M.1778030846.A.7AC.html" class="ptt-title">[情報] 元大證券質押額度沒了</a>
+                <div class="ptt-sentiment">指標：資金槓桿見頂。元大證金大收傘，限貸金額與禁止借新還舊引發熱議，市場憂心「抽銀根」恐導致盤勢過熱修正。</div>
+            </div>
+            <p><strong>市場氛圍：</strong> FOMO 情緒極高，但隨著「抽銀根」消息與指數劇烈震盪，部分獲利了結壓力湧現，「抓最後一隻替死鬼」的憂慮與「拉回就是買點」的信仰正在激戰。</p>
+        </section>
 
-        <h2>資料來源 (Source Links)</h2>
-        <ul>
-            <li><a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance (US)</a></li>
-            <li><a href="https://tw.stock.yahoo.com/" target="_blank">Yahoo Stock (TW)</a></li>
-            <li><a href="https://www.cna.com.tw/" target="_blank">CNA Finance</a></li>
-            <li>PTT Stock Board</li>
-        </ul>
+        <section id="risks">
+            <h2>跨市場分析與風險</h2>
+            <ul>
+                <li><strong>槓桿風險：</strong> 券商質押額度全滿，顯示散戶槓桿已達極限，需防範融資多殺多的流動性風險。</li>
+                <li><strong>高位震盪：</strong> 台股單日震盪近千點，顯示高檔獲利回吐賣壓沉重，追高宜謹慎。</li>
+                <li><strong>地緣政治：</strong> 川普對伊言論反覆，雖暫時降溫但仍是市場潛在黑天鵝。</li>
+            </ul>
+        </section>
+
+        <section class="source-links">
+            <strong>數據來源：</strong>
+            <a href="https://finance.yahoo.com/">Yahoo US</a> |
+            <a href="https://tw.stock.yahoo.com/">Yahoo TW</a> |
+            <a href="https://feeds.feedburner.com/rsscna/finance">CNA Finance</a> |
+            <a href="https://www.ptt.cc/bbs/Stock/index.html">PTT Stock</a>
+        </section>
 
         <div class="footer">
-            Generated by 詩詩 (Model: google-gemini-cli/gemini-3.1-pro-preview) on 2026-05-06 13:50 CST.
+            <p>此簡報由 OpenClaw (model: gemini-3-flash-preview) 自動生成</p>
+            <p>&copy; 2026 Finance Digest Service</p>
         </div>
     </div>
 </body>
