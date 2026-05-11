@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>財經午報 | 2026-05-11 13:50</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --secondary: #5f6368;
+            --success: #d93025; /* Taiwan style: Red is up */
+            --danger: #188038;  /* Taiwan style: Green is down */
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #202124;
+        }
+        body {
+            font-family: "SF Pro TC", "SF Pro Display", "PingFang TC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--primary);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--primary);
+        }
+        .timestamp {
+            color: var(--secondary);
+            font-size: 1rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            border-left: 4px solid var(--primary);
+            padding-left: 12px;
+            color: var(--primary);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background-color: #f1f3f4;
+            font-weight: 600;
+        }
+        .up { color: var(--success); font-weight: bold; }
+        .down { color: var(--danger); font-weight: bold; }
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            background: #e8f0fe;
+            color: var(--primary);
+            margin-right: 8px;
+        }
+        .summary {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #3c4043;
+        }
+        .source-links {
+            font-size: 0.9rem;
+            color: var(--secondary);
+            margin-top: 40px;
+            text-align: center;
+        }
+        .source-links a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #9aa0a6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>金融市場午報</h1>
+            <div class="timestamp">2026年5月11日 星期一 | 13:50 (台北時間)</div>
+        </header>
+
+        <section class="card">
+            <h2>執行摘要 Executive Summary</h2>
+            <p class="summary">
+                今日台股呈現「記憶體強撐、台積電回檔」的兩極走勢。大盤最終收報 41,790.06 點，上漲 186.12 點 (+0.45%)。
+                記憶體族群受到韓廠三星、SK海力士創歷史新高的激勵，南亞科、群聯等8檔指標股亮燈漲停。
+                與此同時，台積電受到與 Intel 競爭加劇及蘋果訂單傳聞影響，重挫 55 元，收報 2235 元。
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>記憶體板塊表現 Memory Sector Performance</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>代號</th>
+                        <th>名稱</th>
+                        <th>最新價格</th>
+                        <th>今日漲跌</th>
+                        <th>年初至今 (YTD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>2408.TW</td><td>南亞科</td><td>301.0</td><td class="up">+9.85% (漲停)</td><td class="up">+95%</td></tr>
+                    <tr><td>8299.TWO</td><td>群聯</td><td>1,250</td><td class="up">+9.95% (漲停)</td><td class="up">+110%</td></tr>
+                    <tr><td>2344.TW</td><td>華邦電</td><td>117.5</td><td class="up">+9.81% (漲停)</td><td class="up">+105%</td></tr>
+                    <tr><td>2337.TW</td><td>旺宏</td><td>159.5</td><td class="up">+4.25%</td><td class="up">+85%</td></tr>
+                    <tr><td>005930.KS</td><td>Samsung</td><td>1,500k</td><td class="up">+6.0%</td><td class="up">+80%</td></tr>
+                    <tr><td>000660.KS</td><td>SK Hynix</td><td>450k</td><td class="up">+12.0%</td><td class="up">+120%</td></tr>
+                    <tr><td>MU</td><td>Micron</td><td>$802.4</td><td class="up">+3.50%*</td><td class="up">+133%</td></tr>
+                    <tr><td>WDC</td><td>Western Digital</td><td>$480.1</td><td class="up">+3.49%*</td><td class="up">+178%</td></tr>
+                    <tr><td>STX</td><td>Seagate</td><td>$782.6</td><td class="up">+2.11%*</td><td class="up">+117%</td></tr>
+                </tbody>
+            </table>
+            <p style="font-size: 0.8rem; color: #70757a;">* 美股數據為 5/8 收盤價</p>
+        </section>
+
+        <section class="card">
+            <h2>全球市場焦點 Global Markets</h2>
+            <p>
+                <span class="tag">記憶體超級週期</span> 三星電子市值正式突破 1.1 兆美元，SK海力士市值逼近 1 兆美元。AI 引爆的存儲需求導致 HBM 與伺服器 DRAM 供不應求，產業進入史無前例的獲利期。
+            </p>
+            <p>
+                <span class="tag">中東風險</span> 美國總統川普公開否決伊朗的和平方案，稱其「完全無法接受」，導致市場避險情緒升溫，布蘭特原油價格反彈，美股期指早盤走弱。
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>台灣市場觀察 Taiwan Markets</h2>
+            <p>
+                <span class="tag">台積電壓力</span> 華爾街日報報導 Apple 與 Intel 達成初步協議，委託 Intel 生產部分晶片。此消息打破台積電獨家代工局面，導致台積電今日失守 5 日線，尾盤賣壓沉重。
+            </p>
+            <p>
+                <span class="tag">面板級封裝</span> 群創 (3481) 傳出將與台積電合作開發 FOPLP 技術，股價強攻漲停 32.3 元，帶動面板族群全面走強。
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>PTT 股板情緒分析 PTT Market Sentiment</h2>
+            <ul>
+                <li><strong>[爆] 不要買台積電：</strong> 散戶對台積電創高後的回檔感到恐慌，分析師「哲哲」再度成為輿論焦點。</li>
+                <li><strong>[爆] 盤中閒聊：</strong> 討論熱度集中在記憶體「全面鎖死」的快感，多蛙集體狂歡。</li>
+                <li><strong>熱門情緒：</strong> 市場呈現強烈的 <strong>FOMO (恐懼錯過)</strong> 記憶體行情，同時對台積電與 Intel 的技術差距產生激烈辯論。散戶資金有明顯從權值股轉向低基期（相較於AI伺服器）記憶體股的跡象。</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>跨市場總結與風險 Cross-market Takeaways</h2>
+            <p>
+                1. <strong>資金輪動：</strong> 資金正從漲多的權值王台積電撤出，湧入基本面反轉確定的記憶體板塊。<br>
+                2. <strong>地緣政治：</strong> 中東局勢與川普的強硬態度是本週最大的不確定因素，需留意油價對通膨的二度衝擊。<br>
+                3. <strong>技術面：</strong> 台股加權指數在 42,000 關卡前震盪，短期支撐看 41,500 點。
+            </p>
+        </section>
+
+        <div class="source-links">
+            <a href="https://finance.yahoo.com/">Yahoo Finance (US)</a> |
+            <a href="https://tw.stock.yahoo.com/">Yahoo 股市 (TW)</a> |
+            <a href="https://www.cna.com.tw/list/aie.aspx">CNA 財經</a> |
+            <a href="https://www.ptt.cc/bbs/Stock/index.html">PTT Stock</a>
+        </div>
+
+        <footer>
+            <p>Generated by google-gemini-cli/gemini-3-flash-preview | OpenClaw Finance Digest Tool</p>
+        </footer>
+    </div>
+</body>
+</html>
