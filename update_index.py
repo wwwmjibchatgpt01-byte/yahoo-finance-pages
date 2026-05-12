@@ -1,27 +1,25 @@
 import re
 
-with open('/Users/mini1/.openclaw/workspace/yahoo-finance-pages/index.html', 'r', encoding='utf-8') as f:
+file_path = '/Users/mini1/.openclaw/workspace/yahoo-finance-pages/index.html'
+with open(file_path, 'r') as f:
     content = f.read()
 
-# Remove the 'newest' class and 'Latest' tag from the old latest digest
-content = content.replace('class="card newest"', 'class="card"')
+content = content.replace('<div class="card newest">', '<div class="card">')
 content = content.replace('<span class="tag latest">Latest</span>\n                ', '')
 
-# Prepare the new card HTML
-new_card = """        <!-- Newest Digest -->
+new_digest = """
+        <!-- Newest Digest -->
         <div class="card newest">
-            <a href="digests/2026-05-04-1350.html">
+            <a href="digests/2026-05-12-0930.html">
                 <span class="tag latest">Latest</span>
-                <h2>2026-05-04 13:50 Digest</h2>
-                <p>TAIEX breaks 40,700 (+1,700 pts) as TSMC and MediaTek skyrocket. SanDisk earnings fuel a global memory rally, while retail FOMO and high leverage dominate PTT sentiment.</p>
-                <div class="date">May 4, 2026 - 13:50 CST</div>
+                <h2>2026-05-12 09:30 Digest</h2>
+                <p>US stock futures edge up awaiting CPI while Middle East tensions persist. TAIEX opens up 90 pts to 41,880. Memory sector remains strong with MU and WDC soaring over 6%. PTT sentiment reveals intense TSMC debate amid Apple/Intel rumors and extreme retail FOMO driven by surging margin balances.</p>
+                <div class="date">May 12, 2026 - 09:30 CST</div>
             </a>
         </div>
-
 """
 
-# Insert the new card after '<div class="history">\n'
-content = content.replace('<div class="history">\n', '<div class="history">\n' + new_card)
+content = content.replace('<div class="history">', '<div class="history">\n' + new_digest)
 
-with open('/Users/mini1/.openclaw/workspace/yahoo-finance-pages/index.html', 'w', encoding='utf-8') as f:
+with open(file_path, 'w') as f:
     f.write(content)
