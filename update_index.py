@@ -1,25 +1,26 @@
 import re
 
-file_path = '/Users/mini1/.openclaw/workspace/yahoo-finance-pages/index.html'
-with open(file_path, 'r') as f:
+with open('/Users/mini1/.openclaw/workspace/yahoo-finance-pages/index.html', 'r', encoding='utf-8') as f:
     content = f.read()
 
-content = content.replace('<div class="card newest">', '<div class="card">')
-content = content.replace('<span class="tag latest">Latest</span>\n                ', '')
-
-new_digest = """
+new_card = """
         <!-- Newest Digest -->
         <div class="card newest">
-            <a href="digests/2026-05-12-0930.html">
+            <a href="digests/2026-05-13-0930.html">
                 <span class="tag latest">Latest</span>
-                <h2>2026-05-12 09:30 Digest</h2>
-                <p>US stock futures edge up awaiting CPI while Middle East tensions persist. TAIEX opens up 90 pts to 41,880. Memory sector remains strong with MU and WDC soaring over 6%. PTT sentiment reveals intense TSMC debate amid Apple/Intel rumors and extreme retail FOMO driven by surging margin balances.</p>
-                <div class="date">May 12, 2026 - 09:30 CST</div>
+                <h2>2026-05-13 09:30 Digest</h2>
+                <p>US April CPI jumps to 3.8% amid Iran tensions, putting pressure on tech and pushing 30-year yields over 5%. Taiwan's market faces downward pressure with memory sector stocks like Phison and Nanya pulling back. PTT sentiment is marked by extreme FOMO over the record-breaking 00403A ETF volume (4.19M) and fears of an impending sell-off.</p>
+                <div class="date">May 13, 2026 - 09:30 CST</div>
             </a>
         </div>
 """
 
-content = content.replace('<div class="history">', '<div class="history">\n' + new_digest)
+# Remove "newest" class and "latest" tag from old cards
+content = content.replace('class="card newest"', 'class="card"')
+content = re.sub(r'\s*<span class="tag latest">Latest</span>', '', content)
 
-with open(file_path, 'w') as f:
+# Insert new card
+content = content.replace('<div class="history">', f'<div class="history">\n{new_card}')
+
+with open('/Users/mini1/.openclaw/workspace/yahoo-finance-pages/index.html', 'w', encoding='utf-8') as f:
     f.write(content)
