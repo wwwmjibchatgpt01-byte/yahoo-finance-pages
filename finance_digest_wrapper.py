@@ -21,6 +21,7 @@ from bs4 import BeautifulSoup
 
 ROOT = Path("/Users/mini1/.openclaw/workspace/yahoo-finance-pages")
 WORKSPACE = Path("/Users/mini1/.openclaw/workspace")
+OPENCLAW_CONFIG = Path("/Users/mini1/.openclaw/openclaw.json")
 DIGESTS_DIR = ROOT / "digests"
 INDEX_REBUILD = ROOT / "rebuild_index.py"
 PTT_A = WORKSPACE / "fetch_ptt_a.py"
@@ -183,6 +184,43 @@ def collect_news_data() -> dict[str, list[str]]:
         "yahoo_tw": tw_headlines,
         "cna": cna_headlines,
     }
+
+
+def load_telegram_bot_token() -> str | None:
+    env_token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+    if env_token:
+        return env_token
+    try:
+        data = json.loads(OPENCLAW_CONFIG.read_text())
+    except Exception:  # noqa: BLE001
+        return None
+    token = (((data.get("channels") or {}).get("telegram") or {}).get("botToken") or "").strip()
+    return token or None
+
+
+def load_telegram_chat_id() -> str | None:
+    env_chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
+    if env_chat_id:
+        return env_chat_id
+    return None
+
+
+def send_telegram_message(text: str) -> None:
+    bot_token = load_telegram_bot_token()
+    chat_id = load_telegram_chat_id()
+    if not bot_token or not chat_id:
+        log("telegram notification skipped: missing bot token or chat id")
+        return
+    response = requests.post(
+        f"https://api.telegram.org/bot{bot_token}/sendMessage",
+        json={
+            "chat_id": chat_id,
+            "text": text,
+            "disable_web_page_preview": True,
+        },
+        timeout=20,
+    )
+    response.raise_for_status()
 
 
 def build_model_prompt(*, date_str: str, slot: str, local_data: dict[str, str], news_data: dict[str, list[str]]) -> str:
@@ -549,59 +587,86 @@ def main(argv: list[str]) -> int:
     digest_path = DIGESTS_DIR / digest_name
     slot_label = f"{target_date} {slot[:2]}:{slot[2:]}"
 
-    if digest_path.exists():
-        print(f"[skip] digest already exists: {digest_path}")
-        return 0
+    try:
+        if digest_path.exists():
+            print(f"[skip] digest already exists: {digest_path}")
+            return 0
 
-    log(f"starting digest build for {digest_name}")
-    local_data = collect_local_data()
-    news_data = collect_news_data()
-    prompt = build_model_prompt(
-        date_str=target_date,
-        slot=slot,
-        local_data=local_data,
-        news_data=news_data,
-    )
-    sections = call_gemini_flash(prompt)
-    memory_rows = parse_memory_rows(local_data["memory_report"])
-    html = build_digest_html(
-        date_str=target_date,
-        slot=slot,
-        sections=sections,
-        memory_rows=memory_rows,
-    )
-
-    if args.dry_run:
-        log("dry-run completed")
-        print(json.dumps({
-            "digest": digest_name,
-            "headline": sections.headline,
-            "executive_summary": sections.executive_summary,
-            "memory_rows": len(memory_rows),
-        }, ensure_ascii=False, indent=2))
-        return 0
-
-    write_digest(html, digest_path)
-    log(f"wrote digest to {digest_path}")
-    rebuild_index()
-
-    git_result = "skipped"
-    if not args.skip_git:
-        git_result = git_publish(slot_label, digest_name)
-
-    print(
-        json.dumps(
-            {
-                "digest": digest_name,
-                "path": str(digest_path),
-                "git": git_result,
-                "headline": sections.headline,
-            },
-            ensure_ascii=False,
-            indent=2,
+        log(f"starting digest build for {digest_name}")
+        local_data = collect_local_data()
+        news_data = collect_news_data()
+        prompt = build_model_prompt(
+            date_str=target_date,
+            slot=slot,
+            local_data=local_data,
+            news_data=news_data,
         )
-    )
-    return 0
+        sections = call_gemini_flash(prompt)
+        memory_rows = parse_memory_rows(local_data["memory_report"])
+        html = build_digest_html(
+            date_str=target_date,
+            slot=slot,
+            sections=sections,
+            memory_rows=memory_rows,
+        )
+
+        if args.dry_run:
+            log("dry-run completed")
+            print(json.dumps({
+                "digest": digest_name,
+                "headline": sections.headline,
+                "executive_summary": sections.executive_summary,
+                "memory_rows": len(memory_rows),
+            }, ensure_ascii=False, indent=2))
+            return 0
+
+        write_digest(html, digest_path)
+        log(f"wrote digest to {digest_path}")
+        rebuild_index()
+
+        git_result = "skipped"
+        if not args.skip_git:
+            git_result = git_publish(slot_label, digest_name)
+
+        send_telegram_message(
+            "\n".join(
+                [
+                    f"財經摘要已更新：{slot_label}",
+                    digest_name,
+                    sections.headline,
+                    f"git: {git_result}",
+                ]
+            )
+        )
+
+        print(
+            json.dumps(
+                {
+                    "digest": digest_name,
+                    "path": str(digest_path),
+                    "git": git_result,
+                    "headline": sections.headline,
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return 0
+    except Exception as exc:  # noqa: BLE001
+        if not args.dry_run:
+            try:
+                send_telegram_message(
+                    "\n".join(
+                        [
+                            f"財經摘要失敗：{slot_label}",
+                            digest_name,
+                            str(exc),
+                        ]
+                    )
+                )
+            except Exception as notify_exc:  # noqa: BLE001
+                log(f"telegram failure notification failed: {notify_exc}")
+        raise
 
 
 if __name__ == "__main__":

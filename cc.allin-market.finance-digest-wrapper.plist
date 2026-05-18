@@ -18,6 +18,8 @@
     <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
     <key>PYTHONUNBUFFERED</key>
     <string>1</string>
+    <key>TELEGRAM_CHAT_ID</key>
+    <string>6478850971</string>
     <key>TZ</key>
     <string>Asia/Taipei</string>
   </dict>
