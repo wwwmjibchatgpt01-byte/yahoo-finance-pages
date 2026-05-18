@@ -2,505 +2,1462 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finance Digest Index</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f0f2f5; color: #333; margin: 0; padding: 40px; }
-        .header { text-align: center; margin-bottom: 40px; }
-        .header h1 { color: #2c3e50; font-size: 2.5em; }
-        .card { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 25px; transition: all 0.3s ease; border-left: 6px solid #3498db; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 12px 20px rgba(0,0,0,0.1); }
-        .card.newest { border-left-color: #e74c3c; background: #fff9f9; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; background: #f9f9f9; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 15px; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        .card h2 { margin-top: 0; color: #2980b9; font-size: 1.2em; }
         .card a { text-decoration: none; color: inherit; display: block; }
-        .card h2 { margin: 0 0 10px 0; color: #2c3e50; font-size: 1.4em; }
-        .card p { margin: 0; color: #636e72; font-size: 1em; }
-        .card .date { font-size: 0.85em; color: #b2bec3; margin-top: 10px; }
-        .history { max-width: 800px; margin: 0 auto; }
-        .tag { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 0.75em; font-weight: bold; text-transform: uppercase; margin-bottom: 10px; }
-        .tag.latest { background: #ffeaa7; color: #d35400; }
+        .card .date { font-size: 0.9em; color: #7f8c8d; margin-bottom: 0; }
+        .highlight { border-left: 5px solid #e74c3c; }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Finance Digests Index</h1>
-        <p>Daily summaries of global and local markets curated by 詩詩</p>
+    <h1>Finance Digests</h1>
+
+    <div class="card highlight">
+        <a href="digests/2026-05-18-2130.html">
+            <h2>Latest Digest: 2026-05-18 21:30</h2>
+            <p class="date">Published on May 18, 2026</p>
+        </a>
     </div>
-    <div class="history">
 
-        <!-- Newest Digest -->
-        <div class="card newest">
-            <a href="digests/2026-05-18-0900.html">
-                <span class="tag latest">Latest</span>
-                <h2>2026-05-18 09:00 Digest</h2>
-                <p>TAIEX plunges over 1,000 pts to test the 40,000 mark. Middle East tensions (US-Iran) drive oil prices up, fueling inflation fears globally. TSMC ADR hit by tech sell-off. PTT sentiment is heavily bearish/fearful due to massive market drop.</p>
-                <div class="date">May 18, 2026 - 09:00 CST</div>
-            </a>
-        </div>
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-15-1350.html">
-                <span class="tag latest">Latest</span>
-                <h2>2026-05-15 13:50 Digest</h2>
-                <p>TAIEX hits record 42,408 pts early before giving up gains. Memory sector faces severe profit taking globally with major Asian memory stocks dropping over 8%. US markets hit record highs, and PTT retail sentiment shows extreme FOMO, blindly following Trump's "Stock Advisor" moves into Nvidia.</p>
-                <div class="date">May 15, 2026 - 13:50 CST</div>
-            </a>
-        </div>
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-15-0930.html">
-                
-                <h2>2026-05-15 09:30 Digest</h2>
-                <p>US tech stocks hit new highs led by AI optimism, with Cerebras surging 68% in its IPO. TAIEX futures jump over 700 pts anticipating a massive rally. Global memory sector sees a pullback despite massive YTD gains. PTT retail sentiment hits extreme FOMO, dubbing Trump as a "Stock Advisor" for buying NVDA and AAPL.</p>
-                <div class="date">May 15, 2026 - 09:30 CST</div>
-            </a>
-        </div>
-
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-15-0510.html">
-                
-                <h2>2026-05-15 05:10 Digest</h2>
-                <p>Global markets hit record highs with S&P 500 and Nasdaq surging on AI optimism and US-China tariff cut rumors. TAIEX stays strong above 41,600 pts, led by TSMC's rebound and memory/passive component rotation. PTT margin balances near an extreme 500B TWD, indicating peak retail FOMO.</p>
-                <div class="date">May 15, 2026 - 05:10 CST</div>
-            </a>
-        </div>
-
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-14-2130.html">
-                <h2>2026-05-14 21:30 Digest</h2>
-                <p>Trump in China (May 13-15) for a state visit while TAIEX hits a record 41,751 (+377 pts). US PPI surges to 6% YoY, putting pressure on Fed as Kevin Warsh is confirmed as Chair. Memory sector stays robust in TW as Samsung strike looms. PTT sentiment hits boiling point with extreme FOMO over 'US-China Peace' Red-Haired party potential.</p>
-                <div class="date">May 14, 2026 - 21:30 CST</div>
-            </a>
-        </div>
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-14-1350.html">
-                <h2>2026-05-14 13:50 Digest</h2>
-                <p>TAIEX touches 42,000 as TSMC rallies and projects $1.5T semiconductor market by 2030. Memory stocks soar with Phison and Winbond nearing limit up. PTT sentiment remains calm with 0 trending posts. Markets await Trump-Xi summit and new Fed Chair Warsh's inflation response.</p>
-                <div class="date">May 14, 2026 - 13:50 CST</div>
-            </a>
-        </div>
-
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-14-0900.html">
-                <h2>2026-05-14 09:00 Digest</h2>
-                <p>Trump and tech CEOs (Nvidia, Tesla) arrive in Beijing for a historic summit, triggering a massive TAIEX rebound of over 800 pts. Market anticipates a tariff truce. Memory sector remains in focus with Macronix (2337) seeing a major shareholder shift, and Shinfox Energy (6806) facing a limit-down sell-off after net worth turned negative.</p>
-                <div class="date">May 14, 2026 - 09:00 CST</div>
-            </a>
-        </div>
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-14-0510.html">
-
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-13-2130.html">
-                
-                <h2>2026-05-13 21:30 Digest</h2>
-                <p>US April PPI surprises at 6.0%, heightening inflation fears and pushing Dow futures lower. Memory stocks remain robust globally (SK Hynix +7.68%), fueled by Samsung strike threats and extreme PTT retail FOMO after Phison's shocking April EPS of 34.56. Meanwhile, Shinfox Energy (6806) faces delisting as net worth turns negative.</p>
-                <div class="date">May 13, 2026 - 21:30 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-13-1350.html">
-                <h2>2026-05-13 13:50 Digest</h2>
-                <p>US CPI hits 3.8% driving tech lower while global memory stocks surge on AI demand and supply crunch. Samsung labor talks collapse. Taiwan markets plunge intraday but TSMC gains from MSCI weight bump. Retail sentiment mixes panic with extreme FOMO over the record-breaking 00403A ETF volume (4.19M).</p>
-                <div class="date">May 13, 2026 - 13:50 CST</div>
-            </a>
-        </div>
-
-        <!-- Previous Digest -->
-        <div class="card">
-            <a href="digests/2026-05-13-0930.html">
-                <h2>2026-05-13 09:30 Digest</h2>
-                <p>US April CPI jumps to 3.8% amid Iran tensions, putting pressure on tech and pushing 30-year yields over 5%. Taiwan's market faces downward pressure with memory sector stocks like Phison and Nanya pulling back. PTT sentiment is marked by extreme FOMO over the record-breaking 00403A ETF volume (4.19M) and fears of an impending sell-off.</p>
-                <div class="date">May 13, 2026 - 09:30 CST</div>
-            </a>
-        </div>
-
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-13-0510.html">
-                <h2>2026-05-13 05:10 Digest</h2>
-                <p>US April CPI comes in hot at 3.8% due to energy prices amid Iran conflict, stirring inflation fears. TAIEX hovers near 42,000 but futures turn backwardation. 00403A ETF debuts with huge 4.18M volume and 5.46% premium, driving extreme retail FOMO on PTT. Memory sector takes a breather in the US while TSMC announces record Q1 EPS and dividends.</p>
-                <div class="date">May 13, 2026 - 05:10 CST</div>
-            </a>
-        </div>
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-12-2130.html">
-                <h2>2026-05-12 21:30 Digest</h2>
-                <p>US CPI comes in hotter than expected, putting pressure on tech stocks. TAIEX nears 42,000 as TSMC announces record 7 NTD Q1 dividend. 00403A ETF debuts with a historic 4.18M volume amidst extreme retail FOMO. Memory sector sees mixed performance following recent surges.</p>
-                <div class="date">May 12, 2026 - 21:30 CST</div>
-            </a>
-        </div>
-
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-12-1350.html">
-                <h2>2026-05-12 13:50 Digest</h2>
-                <p>US stock futures edge up awaiting CPI while Middle East tensions persist. TAIEX closes up 108 pts to 41,898 as TSMC gains 20 pts. 00403A ETF debuts with over 4M volume. PTT reveals strong retail FOMO ignoring bubble warnings, while memory sector remains robust.</p>
-                <div class="date">May 12, 2026 - 13:50 CST</div>
-            </a>
-        </div>
-
-        <!-- Previous Digest -->
-        <div class="card">
-            <a href="digests/2026-05-12-0930.html">
-                <h2>2026-05-12 09:30 Digest</h2>
-                <p>US stock futures edge up awaiting CPI while Middle East tensions persist. TAIEX opens up 90 pts to 41,880. Memory sector remains strong with MU and WDC soaring over 6%. PTT sentiment reveals intense TSMC debate amid Apple/Intel rumors and extreme retail FOMO driven by surging margin balances.</p>
-                <div class="date">May 12, 2026 - 09:30 CST</div>
-            </a>
-        </div>
-
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-12-0510.html">
-                <h2>2026-05-12 05:10 Digest</h2>
-                <p>US markets hit records on chip stock gains despite Iran tensions. Memory sector supercycle continues with massive YTD returns (SK Hynix +178%). TAIEX volatile as foreign capital withdraws billions from tech heavyweights amid TSMC encirclement rumors on PTT.</p>
-                <div class="date">May 12, 2026 - 05:10 CST</div>
-            </a>
-        </div>
-
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-11-2130.html">
-                <h2>2026-05-11 21:30 Digest</h2>
-                <p>Global markets steady amid geopolitical tension. Memory sector (Phison, SK Hynix) shows explosive gains, while TSMC faces "encirclement" rumors from Intel/Samsung. TAIEX closes at 41,790 as retail sentiment turns to extreme panic on TSMC利空.</p>
-                <div class="date">May 11, 2026 - 21:30 CST</div>
-            </a>
-        </div>
-
-        <!-- Previous Digest -->
-        <div class="card">
-            <a href="digests/2026-05-11-1350.html">
-                <h2>2026-05-11 13:50 Digest</h2>
-                <p>TAIEX closes at 41,790 pts (+186) as memory stocks (Phison, Nanya Tech) lock at price limit following record highs from Samsung and SK Hynix. TSMC falls 2.4% on Apple-Intel rumors. PTT retail sentiment hits extreme FOMO on memory super cycle.</p>
-                <div class="date">May 11, 2026 - 13:50 CST</div>
-            </a>
-        </div>
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-11-0930.html">
-                <h2>2026-05-11 09:30 Digest</h2>
-                <p>US non-farm payrolls boost global markets; TAIEX eyes 42,000 pts. Memory sector explodes with MU surging 15.5%. PTT retail sentiment hits extreme FOMO fueled by heavy margin lending. Intel challenges TSMC amid Apple order rumors.</p>
-                <div class="date">May 11, 2026 - 09:30 CST</div>
-            </a>
-        </div>
-
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-11-0510.html">
-                <h2>2026-05-11 05:10 Digest</h2>
-                <p>US-Iran tensions rise in Hormuz but global memory sector explodes, with SNDK and MU surging over 15%. Extreme retail FOMO on PTT features heavy margin lending. Taiwan financial sector hits record Q1 profit while Intel challenges TSMC monopoly.</p>
-                <div class="date">May 11, 2026 - 05:10 CST</div>
-            </a>
-        </div>
-
-
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-08-2130.html">
-                <h2>2026-05-08 21:30 Digest</h2>
-                <p>US non-farm payrolls beat expectations. Taiwan 4L export scale hits historical 2nd high with strong AI momentum. Phison (群聯) and Innodisk (宜鼎) report record Q1 earnings. Iran's missile inventory claims raise geopolitical concerns.</p>
-                <div class="date">May 8, 2026 - 21:30 CST</div>
-            </a>
-        </div>
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-08-1350.html">
-                <h2>2026-05-08 13:50 Digest</h2>
-                <p>TAIEX experiences violent intraday swings, dropping 800 pts before recovering. US-Iran clashes elevate global risk, but PTT retail sentiment remains at extreme FOMO levels with margin lending hitting limits.</p>
-                <div class="date">May 8, 2026 - 13:50 CST</div>
-            </a>
-        </div>
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-08-0900.html">
-                <h2>2026-05-08 09:00 Digest</h2>
-                <p>US stock futures slip as Iran-US tensions in the Hormuz Strait escalate following naval clashes. US Trade Court strikes down Trump's 10% global tariffs as illegal. TAIEX hits record 42,000 as extreme retail leverage and margin lending alarm regulators.</p>
-                <div class="date">May 8, 2026 - 09:00 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-08-0510.html">
-                <h2>2026-05-08 05:10 Digest</h2>
-                <p>US markets watch jobs reports and Middle East peace progress, keeping oil below $100. Extreme retail FOMO in Taiwan drives heavy margin lending into leveraged ETFs and AI dream stocks, while the memory sector shows mixed performance with massive YTD gains.</p>
-                <div class="date">May 8, 2026 - 05:10 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-07-2130.html">
-                <h2>2026-05-07 21:30 Digest</h2>
-                <p>TAIEX flirts with 42,000 as global markets rally on Middle East peace hopes. Memory sector sees mixed rotation while retail FOMO intensifies.</p>
-                <div class="date">May 7, 2026 - 21:30 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-07-1350.html">
-                <h2>2026-05-07 13:50 Digest</h2>
-                <p>TAIEX makes history by breaking 42,000 points. TSMC hits a new record high of 2,345 TWD. Global markets rally on US-Iran peace hopes while memory stocks continue to be repriced as AI utilities.</p>
-                <div class="date">May 7, 2026 - 13:50 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-07-0900.html">
-                <h2>2026-05-07 09:00 Digest</h2>
-                <p>US-Iran peace hopes fuel a global market rally. TSMC ADR hits record 419.5 USD and TAIEX station above 41k. Memory sector consolidates gains while Samsung exits China's consumer TV market.</p>
-                <div class="date">May 7, 2026 - 09:00 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-07-0510.html">
-                <h2>2026-05-07 05:10 Digest</h2>
-                <p>US markets hit records on AI chip demand and easing Middle East tensions. MediaTek becomes Taiwan's largest-ever restricted stock. Memory stocks surge as PTT retail FOMO and margin lending hit extreme levels.</p>
-                <div class="date">May 7, 2026 - 05:10 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-06-2130.html">
-                <h2>2026-05-06 21:30 Digest</h2>
-                <p>Global markets rally on US-Iran peace hopes while Taiwan's TAIEX breaks 41,000. Memory sector remains hot (SNDK +414% YTD) and PTT retail sentiment hits extreme FOMO levels with margin loans peaking.</p>
-                <div class="date">May 6, 2026 - 21:30 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-06-1350.html">
-                <h2>2026-05-06 13:50 Digest</h2>
-                <p>TAIEX touches new high of 41,575 points but fluctuates wildly. Memory stocks roar globally as Winbond locks limit-up and Samsung breaks $1 Trillion market cap. PTT sentiment reveals extreme FOMO with margin pledge limits hit.</p>
-                <div class="date">May 6, 2026 - 13:50 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-06-0900.html">
-                <h2>2026-05-06 09:00 Digest</h2>
-                <p>TAIEX breaks 41,000 points in a massive rally. Global markets surge as oil prices drop following US-Iran talk progress. MediaTek (2454) and Winbond (2344) lock at price limit as the memory sector explodes globally. PTT sentiment hits boiling point with margin loan exhaustion.</p>
-                <div class="date">May 6, 2026 - 09:00 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-06-0930.html">
-                <h2>2026-05-06 09:30 Digest</h2>
-                <p>TAIEX breaks 41,000 reaching a historic milestone. US markets hit new highs as oil drops. Memory stocks globally explode following massive AI demand, while PTT margin lending maxes out amidst extreme FOMO.</p>
-                <div class="date">May 6, 2026 - 09:30 CST</div>
-            </a>
-        </div>
-
-
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-06-0510.html">
-                <h2>2026-05-06 05:10 Digest</h2>
-                <p>Intel surges 14% on Apple talks, while memory stocks continue their massive rally globally (SK Hynix +12.5%, Micron +11%). PTT sentiment hits boiling point with maxed-out margin loans and extreme FOMO, completely ignoring escalating US-Iran tensions in the Middle East.</p>
-                <div class="date">May 6, 2026 - 05:10 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-05-2130.html">
-                <h2>2026-05-05 21:30 Digest</h2>
-                <p>TAIEX hits record 40,769 points. Samsung faces a massive strike, boosting global memory stocks with SK Hynix (+12.5%) and Micron (+6.3%) surging. PTT retail sentiment reaches extreme FOMO with maxed-out margin loans, ignoring Middle East tensions.</p>
-                <div class="date">May 5, 2026 - 21:30 CST</div>
-            </a>
-        </div>
-
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-05-1350.html">
-                <h2>2026-05-05 13:50 Digest</h2>
-                <p>TAIEX hits record 40,885 points, dominated by MediaTek's surge. Memory sector strongly outperforming, led by SK Hynix (+12.5%) and Nanya Tech (+8.2%). Market ignores US-Iran tensions amid extreme retail FOMO and skyrocketing margin balances.</p>
-                <div class="date">May 5, 2026 - 13:50 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-05-0900.html">
-                <h2>2026-05-05 09:00 Digest</h2>
-                <p>TAIEX hits record 40,885 points while MediaTek (2454) locks at price limit. Memory sector surges with Nanya Tech (+6.7%) and SK Hynix (+12.5%) leading. Middle East tensions spike oil prices as US-Iran hostilities flare.</p>
-                <div class="date">May 5, 2026 - 09:00 CST</div>
-            </a>
-        </div>
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-05-0930.html">
-                <h2>2026-05-05 09:30 Digest</h2>
-                <p>Global markets weighed down by Middle East tensions and oil price spikes, while Taiwan's market continues its historic bull run, closing above 40,000 points. Memory sector posts strong gains.</p>
-                <div class="date">May 5, 2026 - 09:30 CST</div>
-            </a>
-        </div>
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-05-0510.html">
-                <h2>2026-05-05 05:10 Digest</h2>
-                <p>TAIEX skyrockets past 40,700 (+1,778 pts). Memory sector roars as Nanya's April revenue jumps 717% YoY and SK Hynix surges 12%. US markets digest Hormuz tensions while tech stays resilient. PTT sentiment hits extreme euphoria.</p>
-                <div class="date">May 5, 2026 - 05:10 CST</div>
-            </a>
-        </div>
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-04-2130.html">
-                <h2>2026-05-04 21:30 Digest</h2>
-                <p>TAIEX breaks 40,700 (+1,700 pts) reaching a historic 40k milestone. Memory sector posts strong April revenues, while US futures shrug off Hormuz tension news amid a historic PTT FOMO rally.</p>
-                <div class="date">May 4, 2026 - 21:30 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-04-1350.html">
-                <h2>2026-05-04 13:50 Digest</h2>
-                <p>TAIEX breaks 40,700 (+1,700 pts) as TSMC and MediaTek skyrocket. SanDisk earnings fuel a global memory rally, while retail FOMO and high leverage dominate PTT sentiment.</p>
-                <div class="date">May 4, 2026 - 13:50 CST</div>
-            </a>
-        </div>
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-04-0900.html">
-                <h2>2026-05-04 09:00 Digest</h2>
-                <p>TAIEX eyes 40k as tech & memory stocks rally on AI super cycle. SanDisk (SNDK) earnings amaze (+3542% YTD) as market enters a FOMO phase amidst Buffett's "casino" warnings.</p>
-                <div class="date">May 4, 2026 - 09:00 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-04-0930.html">
-                <h2>2026-05-04 09:30 Digest</h2>
-                <p>TAIEX eyes 40k as tech & memory stocks rally on AI super cycle. PTT warns of overheating pledge rates and FOMO behaviors amidst Buffett's "casino" remarks.</p>
-                <div class="date">May 4, 2026 - 09:30 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-04-0510.html">
-                <h2>2026-05-04 05:10 Digest</h2>
-                <p>US tech/memory stocks surge on AI demand while Taiwan memory sees profit-taking. PTT remains aggressively bullish on PCB/AI sectors despite rising pledge rates.</p>
-                <div class="date">May 4, 2026 - 05:10 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-01-2130.html">
-                <h2>2026-05-01 21:30 Digest</h2>
-                <p>Apple earnings beat boosts tech. TAIEX slumps as memory stocks take a massive hit post-SanDisk earnings. PTT eyes potential pullback.</p>
-                <div class="date">May 1, 2026 - 21:30 CST</div>
-            </a>
-        </div>
-
-        <!-- Newest Digest -->
-        <div class="card">
-            <a href="digests/2026-05-01-1350.html">
-                <h2>2026-05-01 13:50 Digest</h2>
-                <p>Tech giants surge on AI. SNDK earnings explode (+298% YTD). TW Memory pullbacks.</p>
-                <div class="date">May 1, 2026 - 13:50 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-01-0930.html">
-                <h2>2026-05-01 09:30 Digest</h2>
-                <p>Apple beats earnings. Taiwan Q1 GDP hits 13.69%. MediaTek AI ASIC outlook raised.</p>
-                <div class="date">May 1, 2026 - 09:30 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-05-01-0510.html">
-                <h2>2026-05-01 05:10 Digest</h2>
-                <p>Apple beats earnings. Western Digital and SanDisk shine on AI storage. PTT eyes Q1 GDP surprise.</p>
-                <div class="date">May 1, 2026 - 05:10 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-04-30-2130.html">
-                <h2>2026-04-30 21:30 Digest</h2>
-                <p>TAIEX falls despite record 13.69% Q1 GDP growth. Meta vs Alphabet divergence. Memory sector hit in TW.</p>
-                <div class="date">April 30, 2026 - 21:30 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-04-30-1350.html">
-                <h2>2026-04-30 13:50 Digest</h2>
-                <p>Latest market updates, memory sector performance, and PTT sentiment.</p>
-                <div class="date">April 30, 2026 - 13:50 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-04-30-0930.html">
-                <h2>2026-04-30 09:30 Digest</h2>
-                <p>Latest market updates, memory sector performance, and PTT sentiment.</p>
-                <div class="date">April 30, 2026 - 09:30 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-04-30-0510.html">
-                <h2>2026-04-30 05:10 Digest</h2>
-                <p>Latest market updates, memory sector performance, and PTT sentiment.</p>
-                <div class="date">April 30, 2026 - 05:10 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-04-29-1350.html">
-                <h2>2026-04-29 13:50 Digest</h2>
-                <p>Daily summary of global and local markets.</p>
-                <div class="date">April 29, 2026 - 13:50 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-04-29-0930.html">
-                <h2>2026-04-29 09:30 Digest</h2>
-                <p>Daily summary of global and local markets.</p>
-                <div class="date">April 29, 2026 - 09:30 CST</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="digests/2026-04-29-0510.html">
-                <h2>2026-04-29 05:10 Digest</h2>
-                <p>Daily summary of global and local markets.</p>
-                <div class="date">April 29, 2026 - 05:10 CST</div>
-            </a>
-        </div>
+    <div class="card">
+        <a href="digests/2026-05-15-1350.html">
+            <h2>Digest: 2026-05-15 13:50</h2>
+            <p class="date">Published on May 15, 2026</p>
+        </a>
     </div>
+
+    <div class="card">
+        <a href="digests/2026-05-15-0930.html">
+            <h2>Digest: 2026-05-15 09:30</h2>
+            <p class="date">Published on May 15, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-15-0510.html">
+            <h2>Digest: 2026-05-15 05:10</h2>
+            <p class="date">Published on May 15, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-14-2130.html">
+            <h2>Digest: 2026-05-14 21:30</h2>
+            <p class="date">Published on May 14, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-14-1350.html">
+            <h2>Digest: 2026-05-14 13:50</h2>
+            <p class="date">Published on May 14, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-14-0900.html">
+            <h2>Digest: 2026-05-14 09:00</h2>
+            <p class="date">Published on May 14, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-14-0510.html">
+            <h2>Digest: 2026-05-14 05:10</h2>
+            <p class="date">Published on May 14, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-13-2130.html">
+            <h2>Digest: 2026-05-13 21:30</h2>
+            <p class="date">Published on May 13, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-13-1641.html">
+            <h2>Digest: 2026-05-13 16:41</h2>
+            <p class="date">Published on May 13, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-13-1350.html">
+            <h2>Digest: 2026-05-13 13:50</h2>
+            <p class="date">Published on May 13, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-13-0930.html">
+            <h2>Digest: 2026-05-13 09:30</h2>
+            <p class="date">Published on May 13, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-13-0510.html">
+            <h2>Digest: 2026-05-13 05:10</h2>
+            <p class="date">Published on May 13, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-12-2130.html">
+            <h2>Digest: 2026-05-12 21:30</h2>
+            <p class="date">Published on May 12, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-12-1350.html">
+            <h2>Digest: 2026-05-12 13:50</h2>
+            <p class="date">Published on May 12, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-12-0930.html">
+            <h2>Digest: 2026-05-12 09:30</h2>
+            <p class="date">Published on May 12, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-12-0510.html">
+            <h2>Digest: 2026-05-12 05:10</h2>
+            <p class="date">Published on May 12, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-11-2130.html">
+            <h2>Digest: 2026-05-11 21:30</h2>
+            <p class="date">Published on May 11, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-11-1350.html">
+            <h2>Digest: 2026-05-11 13:50</h2>
+            <p class="date">Published on May 11, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-11-0930.html">
+            <h2>Digest: 2026-05-11 09:30</h2>
+            <p class="date">Published on May 11, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-11-0510.html">
+            <h2>Digest: 2026-05-11 05:10</h2>
+            <p class="date">Published on May 11, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-08-2130.html">
+            <h2>Digest: 2026-05-08 21:30</h2>
+            <p class="date">Published on May 08, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-08-1350.html">
+            <h2>Digest: 2026-05-08 13:50</h2>
+            <p class="date">Published on May 08, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-08-0900.html">
+            <h2>Digest: 2026-05-08 09:00</h2>
+            <p class="date">Published on May 08, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-08-0510.html">
+            <h2>Digest: 2026-05-08 05:10</h2>
+            <p class="date">Published on May 08, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-07-2130.html">
+            <h2>Digest: 2026-05-07 21:30</h2>
+            <p class="date">Published on May 07, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-07-1350.html">
+            <h2>Digest: 2026-05-07 13:50</h2>
+            <p class="date">Published on May 07, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-07-0900.html">
+            <h2>Digest: 2026-05-07 09:00</h2>
+            <p class="date">Published on May 07, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-07-0510.html">
+            <h2>Digest: 2026-05-07 05:10</h2>
+            <p class="date">Published on May 07, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-06-2130.html">
+            <h2>Digest: 2026-05-06 21:30</h2>
+            <p class="date">Published on May 06, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-06-1350.html">
+            <h2>Digest: 2026-05-06 13:50</h2>
+            <p class="date">Published on May 06, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-06-0930.html">
+            <h2>Digest: 2026-05-06 09:30</h2>
+            <p class="date">Published on May 06, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-06-0900.html">
+            <h2>Digest: 2026-05-06 09:00</h2>
+            <p class="date">Published on May 06, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-06-0510.html">
+            <h2>Digest: 2026-05-06 05:10</h2>
+            <p class="date">Published on May 06, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-05-2130.html">
+            <h2>Digest: 2026-05-05 21:30</h2>
+            <p class="date">Published on May 05, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-05-1350.html">
+            <h2>Digest: 2026-05-05 13:50</h2>
+            <p class="date">Published on May 05, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-05-0930.html">
+            <h2>Digest: 2026-05-05 09:30</h2>
+            <p class="date">Published on May 05, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-05-0900.html">
+            <h2>Digest: 2026-05-05 09:00</h2>
+            <p class="date">Published on May 05, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-05-0510.html">
+            <h2>Digest: 2026-05-05 05:10</h2>
+            <p class="date">Published on May 05, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-04-2130.html">
+            <h2>Digest: 2026-05-04 21:30</h2>
+            <p class="date">Published on May 04, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-04-1350.html">
+            <h2>Digest: 2026-05-04 13:50</h2>
+            <p class="date">Published on May 04, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-04-0930.html">
+            <h2>Digest: 2026-05-04 09:30</h2>
+            <p class="date">Published on May 04, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-04-0900.html">
+            <h2>Digest: 2026-05-04 09:00</h2>
+            <p class="date">Published on May 04, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-04-0510.html">
+            <h2>Digest: 2026-05-04 05:10</h2>
+            <p class="date">Published on May 04, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-01-2130.html">
+            <h2>Digest: 2026-05-01 21:30</h2>
+            <p class="date">Published on May 01, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-01-1350.html">
+            <h2>Digest: 2026-05-01 13:50</h2>
+            <p class="date">Published on May 01, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-01-0930.html">
+            <h2>Digest: 2026-05-01 09:30</h2>
+            <p class="date">Published on May 01, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-05-01-0510.html">
+            <h2>Digest: 2026-05-01 05:10</h2>
+            <p class="date">Published on May 01, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-30-2130.html">
+            <h2>Digest: 2026-04-30 21:30</h2>
+            <p class="date">Published on Apr 30, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-30-1350.html">
+            <h2>Digest: 2026-04-30 13:50</h2>
+            <p class="date">Published on Apr 30, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-30-0930.html">
+            <h2>Digest: 2026-04-30 09:30</h2>
+            <p class="date">Published on Apr 30, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-30-0510.html">
+            <h2>Digest: 2026-04-30 05:10</h2>
+            <p class="date">Published on Apr 30, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-29-1350.html">
+            <h2>Digest: 2026-04-29 13:50</h2>
+            <p class="date">Published on Apr 29, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-29-0930.html">
+            <h2>Digest: 2026-04-29 09:30</h2>
+            <p class="date">Published on Apr 29, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-29-0900.html">
+            <h2>Digest: 2026-04-29 09:00</h2>
+            <p class="date">Published on Apr 29, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-29-0510.html">
+            <h2>Digest: 2026-04-29 05:10</h2>
+            <p class="date">Published on Apr 29, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-28-2130.html">
+            <h2>Digest: 2026-04-28 21:30</h2>
+            <p class="date">Published on Apr 28, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-28-1350.html">
+            <h2>Digest: 2026-04-28 13:50</h2>
+            <p class="date">Published on Apr 28, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-28-0930.html">
+            <h2>Digest: 2026-04-28 09:30</h2>
+            <p class="date">Published on Apr 28, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-28-0900.html">
+            <h2>Digest: 2026-04-28 09:00</h2>
+            <p class="date">Published on Apr 28, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-27-2130.html">
+            <h2>Digest: 2026-04-27 21:30</h2>
+            <p class="date">Published on Apr 27, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-27-1350.html">
+            <h2>Digest: 2026-04-27 13:50</h2>
+            <p class="date">Published on Apr 27, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-27-0930.html">
+            <h2>Digest: 2026-04-27 09:30</h2>
+            <p class="date">Published on Apr 27, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-27-0510.html">
+            <h2>Digest: 2026-04-27 05:10</h2>
+            <p class="date">Published on Apr 27, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-24-2130.html">
+            <h2>Digest: 2026-04-24 21:30</h2>
+            <p class="date">Published on Apr 24, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-24-1350.html">
+            <h2>Digest: 2026-04-24 13:50</h2>
+            <p class="date">Published on Apr 24, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-24-0930.html">
+            <h2>Digest: 2026-04-24 09:30</h2>
+            <p class="date">Published on Apr 24, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-24-0900.html">
+            <h2>Digest: 2026-04-24 09:00</h2>
+            <p class="date">Published on Apr 24, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-24-0510.html">
+            <h2>Digest: 2026-04-24 05:10</h2>
+            <p class="date">Published on Apr 24, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-23-2130.html">
+            <h2>Digest: 2026-04-23 21:30</h2>
+            <p class="date">Published on Apr 23, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-23-1350.html">
+            <h2>Digest: 2026-04-23 13:50</h2>
+            <p class="date">Published on Apr 23, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-23-0930.html">
+            <h2>Digest: 2026-04-23 09:30</h2>
+            <p class="date">Published on Apr 23, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-23-0900.html">
+            <h2>Digest: 2026-04-23 09:00</h2>
+            <p class="date">Published on Apr 23, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-23-0510.html">
+            <h2>Digest: 2026-04-23 05:10</h2>
+            <p class="date">Published on Apr 23, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-22-2130.html">
+            <h2>Digest: 2026-04-22 21:30</h2>
+            <p class="date">Published on Apr 22, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-22-1350.html">
+            <h2>Digest: 2026-04-22 13:50</h2>
+            <p class="date">Published on Apr 22, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-22-0510.html">
+            <h2>Digest: 2026-04-22 05:10</h2>
+            <p class="date">Published on Apr 22, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-21-1350.html">
+            <h2>Digest: 2026-04-21 13:50</h2>
+            <p class="date">Published on Apr 21, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-21-0930.html">
+            <h2>Digest: 2026-04-21 09:30</h2>
+            <p class="date">Published on Apr 21, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-21-0510.html">
+            <h2>Digest: 2026-04-21 05:10</h2>
+            <p class="date">Published on Apr 21, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-20-2130.html">
+            <h2>Digest: 2026-04-20 21:30</h2>
+            <p class="date">Published on Apr 20, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-20-1350.html">
+            <h2>Digest: 2026-04-20 13:50</h2>
+            <p class="date">Published on Apr 20, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-20-0930.html">
+            <h2>Digest: 2026-04-20 09:30</h2>
+            <p class="date">Published on Apr 20, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-20-0900.html">
+            <h2>Digest: 2026-04-20 09:00</h2>
+            <p class="date">Published on Apr 20, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-20-0510.html">
+            <h2>Digest: 2026-04-20 05:10</h2>
+            <p class="date">Published on Apr 20, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-17-2130.html">
+            <h2>Digest: 2026-04-17 21:30</h2>
+            <p class="date">Published on Apr 17, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-17-1350.html">
+            <h2>Digest: 2026-04-17 13:50</h2>
+            <p class="date">Published on Apr 17, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-17-0930.html">
+            <h2>Digest: 2026-04-17 09:30</h2>
+            <p class="date">Published on Apr 17, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-17-0510.html">
+            <h2>Digest: 2026-04-17 05:10</h2>
+            <p class="date">Published on Apr 17, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-16-2130.html">
+            <h2>Digest: 2026-04-16 21:30</h2>
+            <p class="date">Published on Apr 16, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-16-1350.html">
+            <h2>Digest: 2026-04-16 13:50</h2>
+            <p class="date">Published on Apr 16, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-16-0930.html">
+            <h2>Digest: 2026-04-16 09:30</h2>
+            <p class="date">Published on Apr 16, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-16-0900.html">
+            <h2>Digest: 2026-04-16 09:00</h2>
+            <p class="date">Published on Apr 16, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-16-0510.html">
+            <h2>Digest: 2026-04-16 05:10</h2>
+            <p class="date">Published on Apr 16, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-15-2130.html">
+            <h2>Digest: 2026-04-15 21:30</h2>
+            <p class="date">Published on Apr 15, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-15-1350.html">
+            <h2>Digest: 2026-04-15 13:50</h2>
+            <p class="date">Published on Apr 15, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-15-0930.html">
+            <h2>Digest: 2026-04-15 09:30</h2>
+            <p class="date">Published on Apr 15, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-15-0510.html">
+            <h2>Digest: 2026-04-15 05:10</h2>
+            <p class="date">Published on Apr 15, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-14-2130.html">
+            <h2>Digest: 2026-04-14 21:30</h2>
+            <p class="date">Published on Apr 14, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-14-1350.html">
+            <h2>Digest: 2026-04-14 13:50</h2>
+            <p class="date">Published on Apr 14, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-14-0930.html">
+            <h2>Digest: 2026-04-14 09:30</h2>
+            <p class="date">Published on Apr 14, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-14-0510.html">
+            <h2>Digest: 2026-04-14 05:10</h2>
+            <p class="date">Published on Apr 14, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-13-2130.html">
+            <h2>Digest: 2026-04-13 21:30</h2>
+            <p class="date">Published on Apr 13, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-13-1350.html">
+            <h2>Digest: 2026-04-13 13:50</h2>
+            <p class="date">Published on Apr 13, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-13-0930.html">
+            <h2>Digest: 2026-04-13 09:30</h2>
+            <p class="date">Published on Apr 13, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-13-0900.html">
+            <h2>Digest: 2026-04-13 09:00</h2>
+            <p class="date">Published on Apr 13, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-13-0510.html">
+            <h2>Digest: 2026-04-13 05:10</h2>
+            <p class="date">Published on Apr 13, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-10-2130.html">
+            <h2>Digest: 2026-04-10 21:30</h2>
+            <p class="date">Published on Apr 10, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-10-1350.html">
+            <h2>Digest: 2026-04-10 13:50</h2>
+            <p class="date">Published on Apr 10, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-10-0930.html">
+            <h2>Digest: 2026-04-10 09:30</h2>
+            <p class="date">Published on Apr 10, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-10-0510.html">
+            <h2>Digest: 2026-04-10 05:10</h2>
+            <p class="date">Published on Apr 10, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-09-1350.html">
+            <h2>Digest: 2026-04-09 13:50</h2>
+            <p class="date">Published on Apr 09, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-09-0930.html">
+            <h2>Digest: 2026-04-09 09:30</h2>
+            <p class="date">Published on Apr 09, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-09-0510.html">
+            <h2>Digest: 2026-04-09 05:10</h2>
+            <p class="date">Published on Apr 09, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-08-2130.html">
+            <h2>Digest: 2026-04-08 21:30</h2>
+            <p class="date">Published on Apr 08, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-08-1350.html">
+            <h2>Digest: 2026-04-08 13:50</h2>
+            <p class="date">Published on Apr 08, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-08-0930.html">
+            <h2>Digest: 2026-04-08 09:30</h2>
+            <p class="date">Published on Apr 08, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-08-0510.html">
+            <h2>Digest: 2026-04-08 05:10</h2>
+            <p class="date">Published on Apr 08, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-07-2130.html">
+            <h2>Digest: 2026-04-07 21:30</h2>
+            <p class="date">Published on Apr 07, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-07-1605.html">
+            <h2>Digest: 2026-04-07 16:05</h2>
+            <p class="date">Published on Apr 07, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-07-1350.html">
+            <h2>Digest: 2026-04-07 13:50</h2>
+            <p class="date">Published on Apr 07, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-07-0930.html">
+            <h2>Digest: 2026-04-07 09:30</h2>
+            <p class="date">Published on Apr 07, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-07-0900.html">
+            <h2>Digest: 2026-04-07 09:00</h2>
+            <p class="date">Published on Apr 07, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-07-0510.html">
+            <h2>Digest: 2026-04-07 05:10</h2>
+            <p class="date">Published on Apr 07, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-06-2130.html">
+            <h2>Digest: 2026-04-06 21:30</h2>
+            <p class="date">Published on Apr 06, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-06-1350.html">
+            <h2>Digest: 2026-04-06 13:50</h2>
+            <p class="date">Published on Apr 06, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-06-0930.html">
+            <h2>Digest: 2026-04-06 09:30</h2>
+            <p class="date">Published on Apr 06, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-06-0900.html">
+            <h2>Digest: 2026-04-06 09:00</h2>
+            <p class="date">Published on Apr 06, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-06-0510.html">
+            <h2>Digest: 2026-04-06 05:10</h2>
+            <p class="date">Published on Apr 06, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-03-2130.html">
+            <h2>Digest: 2026-04-03 21:30</h2>
+            <p class="date">Published on Apr 03, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-03-1350.html">
+            <h2>Digest: 2026-04-03 13:50</h2>
+            <p class="date">Published on Apr 03, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-03-0900.html">
+            <h2>Digest: 2026-04-03 09:00</h2>
+            <p class="date">Published on Apr 03, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-03-0510.html">
+            <h2>Digest: 2026-04-03 05:10</h2>
+            <p class="date">Published on Apr 03, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-02-2130.html">
+            <h2>Digest: 2026-04-02 21:30</h2>
+            <p class="date">Published on Apr 02, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-02-1350.html">
+            <h2>Digest: 2026-04-02 13:50</h2>
+            <p class="date">Published on Apr 02, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-02-0930.html">
+            <h2>Digest: 2026-04-02 09:30</h2>
+            <p class="date">Published on Apr 02, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-02-0900.html">
+            <h2>Digest: 2026-04-02 09:00</h2>
+            <p class="date">Published on Apr 02, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-02-0510.html">
+            <h2>Digest: 2026-04-02 05:10</h2>
+            <p class="date">Published on Apr 02, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-01-1350.html">
+            <h2>Digest: 2026-04-01 13:50</h2>
+            <p class="date">Published on Apr 01, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-01-0900.html">
+            <h2>Digest: 2026-04-01 09:00</h2>
+            <p class="date">Published on Apr 01, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-04-01-0510.html">
+            <h2>Digest: 2026-04-01 05:10</h2>
+            <p class="date">Published on Apr 01, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-31-2130.html">
+            <h2>Digest: 2026-03-31 21:30</h2>
+            <p class="date">Published on Mar 31, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-31-1350.html">
+            <h2>Digest: 2026-03-31 13:50</h2>
+            <p class="date">Published on Mar 31, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-31-0900.html">
+            <h2>Digest: 2026-03-31 09:00</h2>
+            <p class="date">Published on Mar 31, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-31-0510.html">
+            <h2>Digest: 2026-03-31 05:10</h2>
+            <p class="date">Published on Mar 31, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-30-1350.html">
+            <h2>Digest: 2026-03-30 13:50</h2>
+            <p class="date">Published on Mar 30, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-30-0930.html">
+            <h2>Digest: 2026-03-30 09:30</h2>
+            <p class="date">Published on Mar 30, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-30-0900.html">
+            <h2>Digest: 2026-03-30 09:00</h2>
+            <p class="date">Published on Mar 30, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-30-0510.html">
+            <h2>Digest: 2026-03-30 05:10</h2>
+            <p class="date">Published on Mar 30, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-29-2130.html">
+            <h2>Digest: 2026-03-29 21:30</h2>
+            <p class="date">Published on Mar 29, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-28-0510.html">
+            <h2>Digest: 2026-03-28 05:10</h2>
+            <p class="date">Published on Mar 28, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-27-2130.html">
+            <h2>Digest: 2026-03-27 21:30</h2>
+            <p class="date">Published on Mar 27, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-27-0900.html">
+            <h2>Digest: 2026-03-27 09:00</h2>
+            <p class="date">Published on Mar 27, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-27-0510.html">
+            <h2>Digest: 2026-03-27 05:10</h2>
+            <p class="date">Published on Mar 27, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-26-2130.html">
+            <h2>Digest: 2026-03-26 21:30</h2>
+            <p class="date">Published on Mar 26, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-26-1350.html">
+            <h2>Digest: 2026-03-26 13:50</h2>
+            <p class="date">Published on Mar 26, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-26-0900.html">
+            <h2>Digest: 2026-03-26 09:00</h2>
+            <p class="date">Published on Mar 26, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-26-0510.html">
+            <h2>Digest: 2026-03-26 05:10</h2>
+            <p class="date">Published on Mar 26, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-25-2130.html">
+            <h2>Digest: 2026-03-25 21:30</h2>
+            <p class="date">Published on Mar 25, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-25-1350.html">
+            <h2>Digest: 2026-03-25 13:50</h2>
+            <p class="date">Published on Mar 25, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-25-0900.html">
+            <h2>Digest: 2026-03-25 09:00</h2>
+            <p class="date">Published on Mar 25, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-25-0510.html">
+            <h2>Digest: 2026-03-25 05:10</h2>
+            <p class="date">Published on Mar 25, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-24-1350.html">
+            <h2>Digest: 2026-03-24 13:50</h2>
+            <p class="date">Published on Mar 24, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-24-0900.html">
+            <h2>Digest: 2026-03-24 09:00</h2>
+            <p class="date">Published on Mar 24, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-24-0510.html">
+            <h2>Digest: 2026-03-24 05:10</h2>
+            <p class="date">Published on Mar 24, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-23-2130.html">
+            <h2>Digest: 2026-03-23 21:30</h2>
+            <p class="date">Published on Mar 23, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-23-1350.html">
+            <h2>Digest: 2026-03-23 13:50</h2>
+            <p class="date">Published on Mar 23, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-23-0900.html">
+            <h2>Digest: 2026-03-23 09:00</h2>
+            <p class="date">Published on Mar 23, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-23-0510.html">
+            <h2>Digest: 2026-03-23 05:10</h2>
+            <p class="date">Published on Mar 23, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-21-0510.html">
+            <h2>Digest: 2026-03-21 05:10</h2>
+            <p class="date">Published on Mar 21, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-20-2130.html">
+            <h2>Digest: 2026-03-20 21:30</h2>
+            <p class="date">Published on Mar 20, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-20-1350.html">
+            <h2>Digest: 2026-03-20 13:50</h2>
+            <p class="date">Published on Mar 20, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-20-0900.html">
+            <h2>Digest: 2026-03-20 09:00</h2>
+            <p class="date">Published on Mar 20, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-20-0510.html">
+            <h2>Digest: 2026-03-20 05:10</h2>
+            <p class="date">Published on Mar 20, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-19-2130.html">
+            <h2>Digest: 2026-03-19 21:30</h2>
+            <p class="date">Published on Mar 19, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-19-1350.html">
+            <h2>Digest: 2026-03-19 13:50</h2>
+            <p class="date">Published on Mar 19, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-19-0900.html">
+            <h2>Digest: 2026-03-19 09:00</h2>
+            <p class="date">Published on Mar 19, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-19-0510.html">
+            <h2>Digest: 2026-03-19 05:10</h2>
+            <p class="date">Published on Mar 19, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-18-2130.html">
+            <h2>Digest: 2026-03-18 21:30</h2>
+            <p class="date">Published on Mar 18, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-18-1350.html">
+            <h2>Digest: 2026-03-18 13:50</h2>
+            <p class="date">Published on Mar 18, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-18-1237.html">
+            <h2>Digest: 2026-03-18 12:37</h2>
+            <p class="date">Published on Mar 18, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-18-1215.html">
+            <h2>Digest: 2026-03-18 12:15</h2>
+            <p class="date">Published on Mar 18, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-18-1205.html">
+            <h2>Digest: 2026-03-18 12:05</h2>
+            <p class="date">Published on Mar 18, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-18-1145.html">
+            <h2>Digest: 2026-03-18 11:45</h2>
+            <p class="date">Published on Mar 18, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-18-1130.html">
+            <h2>Digest: 2026-03-18 11:30</h2>
+            <p class="date">Published on Mar 18, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-18-0900.html">
+            <h2>Digest: 2026-03-18 09:00</h2>
+            <p class="date">Published on Mar 18, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-18-0510.html">
+            <h2>Digest: 2026-03-18 05:10</h2>
+            <p class="date">Published on Mar 18, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-18-0235.html">
+            <h2>Digest: 2026-03-18 02:35</h2>
+            <p class="date">Published on Mar 18, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-17-2130.html">
+            <h2>Digest: 2026-03-17 21:30</h2>
+            <p class="date">Published on Mar 17, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-17-1350.html">
+            <h2>Digest: 2026-03-17 13:50</h2>
+            <p class="date">Published on Mar 17, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-17-0900.html">
+            <h2>Digest: 2026-03-17 09:00</h2>
+            <p class="date">Published on Mar 17, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-17-0510.html">
+            <h2>Digest: 2026-03-17 05:10</h2>
+            <p class="date">Published on Mar 17, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-16-2130.html">
+            <h2>Digest: 2026-03-16 21:30</h2>
+            <p class="date">Published on Mar 16, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-16-1350.html">
+            <h2>Digest: 2026-03-16 13:50</h2>
+            <p class="date">Published on Mar 16, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-16-0900.html">
+            <h2>Digest: 2026-03-16 09:00</h2>
+            <p class="date">Published on Mar 16, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-16-0510.html">
+            <h2>Digest: 2026-03-16 05:10</h2>
+            <p class="date">Published on Mar 16, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-13-2130.html">
+            <h2>Digest: 2026-03-13 21:30</h2>
+            <p class="date">Published on Mar 13, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-13-1350.html">
+            <h2>Digest: 2026-03-13 13:50</h2>
+            <p class="date">Published on Mar 13, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-13-0900.html">
+            <h2>Digest: 2026-03-13 09:00</h2>
+            <p class="date">Published on Mar 13, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-13-0510.html">
+            <h2>Digest: 2026-03-13 05:10</h2>
+            <p class="date">Published on Mar 13, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-12-2130.html">
+            <h2>Digest: 2026-03-12 21:30</h2>
+            <p class="date">Published on Mar 12, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-12-1412.html">
+            <h2>Digest: 2026-03-12 14:12</h2>
+            <p class="date">Published on Mar 12, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-12-0900.html">
+            <h2>Digest: 2026-03-12 09:00</h2>
+            <p class="date">Published on Mar 12, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-11-2130.html">
+            <h2>Digest: 2026-03-11 21:30</h2>
+            <p class="date">Published on Mar 11, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-11-1459.html">
+            <h2>Digest: 2026-03-11 14:59</h2>
+            <p class="date">Published on Mar 11, 2026</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="digests/2026-03-11-1447.html">
+            <h2>Digest: 2026-03-11 14:47</h2>
+            <p class="date">Published on Mar 11, 2026</p>
+        </a>
+    </div>
+
 </body>
 </html>
