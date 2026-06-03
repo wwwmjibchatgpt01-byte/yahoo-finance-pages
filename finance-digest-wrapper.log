@@ -1,0 +1,770 @@
+[finance-wrapper] starting digest build for 2026-05-19-0510.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-19-0510.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-19-0510.html
+{
+  "digest": "2026-05-19-0510.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-19-0510.html",
+  "git": "e6bfde7",
+  "headline": "00403A破發引爆百萬人揪心，台股融資逆勢大增續戰四萬大關"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-19-0510.html
+[finance-wrapper] starting digest build for 2026-05-19-0930.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-19-0930.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-19-0930.html
+{
+  "digest": "2026-05-19-0930.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-19-0930.html",
+  "git": "c028af4",
+  "headline": "台股四萬點關口震盪，記憶體族群集體跳水，PCB與重電族群逆勢突圍"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-19-0930.html
+[finance-wrapper] starting digest build for 2026-05-19-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-19-1350.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-19-1350.html
+{
+  "digest": "2026-05-19-1350.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-19-1350.html",
+  "git": "1cc2d6d",
+  "headline": "台股回檔記憶體族群慘遭跌停血洗，川普嗆台言論與英特爾良率消息擾動半導體信心"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-19-1350.html
+[finance-wrapper] starting digest build for 2026-05-19-2130.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-19-2130.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-19-2130.html
+{
+  "digest": "2026-05-19-2130.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-19-2130.html",
+  "git": "b0582fc",
+  "headline": "520前夕記憶體族群慘跌入停，金管會喊話基本面穩健"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-19-2130.html
+[finance-wrapper] starting digest build for 2026-05-20-0510.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-20-0510.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-20-0510.html
+{
+  "digest": "2026-05-20-0510.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-20-0510.html",
+  "git": "de6fd8c",
+  "headline": "520前夕台股連三崩失守月線，避險資金湧入中華電信創新高"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-20-0510.html
+[finance-wrapper] starting digest build for 2026-05-20-0930.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-20-0930.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-20-0930.html
+{
+  "digest": "2026-05-20-0930.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-20-0930.html",
+  "git": "6c31208",
+  "headline": "台股震盪恐慌與基本面防線對峙，記憶體族群在殺盤後尋求止跌契機"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-20-0930.html
+[finance-wrapper] starting digest build for 2026-05-20-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-20-1350.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-20-1350.html
+{
+  "digest": "2026-05-20-1350.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-20-1350.html",
+  "git": "dfd8a3c",
+  "headline": "三星全面罷工點燃記憶體行情，台股五二○重挫七百點力守四萬大關"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-20-1350.html
+[finance-wrapper] starting digest build for 2026-05-20-2130.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-20-2130.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-20-2130.html
+{
+  "digest": "2026-05-20-2130.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-20-2130.html",
+  "git": "b7ecbf4",
+  "headline": "蘇媽搶先抵台引爆AI話題，台股四萬點險守，三星工會明起全面罷工"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-20-2130.html
+[finance-wrapper] starting digest build for 2026-05-21-0510.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-21-0510.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-21-0510.html
+{
+  "digest": "2026-05-21-0510.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-21-0510.html",
+  "git": "1a19676",
+  "headline": "三星罷工喊卡緩解供應鏈疑慮，美光領漲記憶體，蘇媽抵台再掀AI熱潮"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-21-0510.html
+[finance-wrapper] starting digest build for 2026-05-21-0930.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-21-0930.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-21-0930.html
+{
+  "digest": "2026-05-21-0930.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-21-0930.html",
+  "git": "c08120c",
+  "headline": "輝達營收創高宣布 800 億美金回購，台股早盤狂飆 1300 點重返四萬一"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-21-0930.html
+[finance-wrapper] starting digest build for 2026-05-21-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+Traceback (most recent call last):
+  File "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/finance_digest_wrapper.py", line 673, in <module>
+    raise SystemExit(main(sys.argv[1:]))
+                     ~~~~^^^^^^^^^^^^^^
+  File "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/finance_digest_wrapper.py", line 604, in main
+    sections = call_gemini_flash(prompt)
+  File "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/finance_digest_wrapper.py", line 299, in call_gemini_flash
+    response_payload = extract_json_object(response_text)
+  File "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/finance_digest_wrapper.py", line 281, in extract_json_object
+    raise ValueError("No JSON object found in Gemini output")
+ValueError: No JSON object found in Gemini output
+[finance-wrapper] starting digest build for 2026-05-21-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-21-1350.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-21-1350.html
+{
+  "digest": "2026-05-21-1350.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-21-1350.html",
+  "git": "346433a",
+  "headline": "輝達財報神救援帶動台股暴漲千點，記憶體族群領軍亞股報復性反彈"
+}
+[finance-wrapper] starting digest build for 2026-05-21-2130.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-21-2130.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-21-2130.html
+{
+  "digest": "2026-05-21-2130.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-21-2130.html",
+  "git": "86cb3d0",
+  "headline": "台股寫史上第5大漲點狂噴1347點，AMD聯手台積電2奈米引發半導體派對"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-21-2130.html
+[finance-wrapper] starting digest build for 2026-05-22-0510.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-22-0510.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-22-0510.html
+{
+  "digest": "2026-05-22-0510.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-22-0510.html",
+  "git": "1f2264c",
+  "headline": "台股爆量噴漲逾千點站上四萬一，記憶體與 AI 供應鏈領航大行情"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-22-0510.html
+[finance-wrapper] starting digest build for 2026-05-22-0930.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-22-0930.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-22-0930.html
+{
+  "digest": "2026-05-22-0930.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-22-0930.html",
+  "git": "074e56e",
+  "headline": "AMD 蘇媽百億美金加持，台股早盤強彈衝破 42,000 點創新高"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-22-0930.html
+[finance-wrapper] starting digest build for 2026-05-22-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-22-1350.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-22-1350.html
+{
+  "digest": "2026-05-22-1350.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-22-1350.html",
+  "git": "9e800f3",
+  "headline": "台股狂飆千點站上四萬一關卡，蘇姿丰看好 AI PC 邁入高速成長期"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-22-1350.html
+[finance-wrapper] starting digest build for 2026-05-22-2130.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-22-2130.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-22-2130.html
+{
+  "digest": "2026-05-22-2130.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-22-2130.html",
+  "git": "c2f8487",
+  "headline": "台股狂飆九百點站上四萬二新高，記憶體族群領軍外資認錯回補"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-22-2130.html
+[finance-wrapper] starting digest build for 2026-05-25-0510.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-25-0510.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-25-0510.html
+{
+  "digest": "2026-05-25-0510.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-25-0510.html",
+  "git": "8f515ff",
+  "headline": "黃仁勳旋風與美光擴產計畫引爆市場，台股站上 42k 關卡期待地緣政治解封"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-25-0510.html
+[finance-wrapper] starting digest build for 2026-05-25-0930.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-25-0930.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-25-0930.html
+{
+  "digest": "2026-05-25-0930.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-25-0930.html",
+  "git": "bc43cf6",
+  "headline": "台股早盤暴漲千點衝過四萬三，黃仁勳旋風與美伊和談共促市場狂歡"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-25-0930.html
+[finance-wrapper] starting digest build for 2026-05-25-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-25-1350.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-25-1350.html
+{
+  "digest": "2026-05-25-1350.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-25-1350.html",
+  "git": "277f377",
+  "headline": "美伊和平曙光帶動亞股噴發，台股權值股領軍衝刺四萬三"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-25-1350.html
+[finance-wrapper] starting digest build for 2026-05-25-2130.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-25-2130.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-25-2130.html
+{
+  "digest": "2026-05-25-2130.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-25-2130.html",
+  "git": "5f72300",
+  "headline": "「仁來瘋」帶飛台股衝破四萬三，聯發科亮燈破四千元關卡"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-25-2130.html
+[finance-wrapper] starting digest build for 2026-05-26-0510.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-26-0510.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-26-0510.html
+{
+  "digest": "2026-05-26-0510.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-26-0510.html",
+  "git": "478b9a4",
+  "headline": "「仁來瘋」助威台股狂飆1376點破紀錄，黃仁勳示警電力為經濟成長關鍵"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-26-0510.html
+[finance-wrapper] starting digest build for 2026-05-26-0930.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-26-0930.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-26-0930.html
+{
+  "digest": "2026-05-26-0930.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-26-0930.html",
+  "git": "db8a140",
+  "headline": "黃仁勳憂電力缺口引重電熱議，美伊和談拉扯致油價重挫"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-26-0930.html
+[finance-wrapper] starting digest build for 2026-05-26-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-26-1350.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-26-1350.html
+{
+  "digest": "2026-05-26-1350.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-26-1350.html",
+  "git": "afcfd77",
+  "headline": "記憶體與金融強勢領軍，台股市值超越印度躍升全球第五"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-26-1350.html
+[finance-wrapper] starting digest build for 2026-05-26-2130.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-26-2130.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-26-2130.html
+{
+  "digest": "2026-05-26-2130.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-26-2130.html",
+  "git": "9d36bf4",
+  "headline": "台股爆 1.5 兆天量震盪，記憶體族群逆勢狂飆，華邦電美光強漲近一成"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-26-2130.html
+[finance-wrapper] starting digest build for 2026-05-27-0510.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-27-0510.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-27-0510.html
+{
+  "digest": "2026-05-27-0510.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-27-0510.html",
+  "git": "95879bc",
+  "headline": "川普金口加持美光市值破兆，記憶體族群狂歡帶領費半走揚"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-27-0510.html
+[finance-wrapper] starting digest build for 2026-05-27-0930.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-27-0930.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-27-0930.html
+{
+  "digest": "2026-05-27-0930.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-27-0930.html",
+  "git": "9839453",
+  "headline": "美光噴發領軍記憶體族群狂飆，台股站上 4 萬 4 關卡再創新高"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-27-0930.html
+[finance-wrapper] starting digest build for 2026-05-27-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-27-1350.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-27-1350.html
+{
+  "digest": "2026-05-27-1350.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-27-1350.html",
+  "git": "e96bce4",
+  "headline": "記憶體與代工雙雄強勢領漲，美光狂飆帶動台韓半導體族群噴發"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-27-1350.html
+[finance-wrapper] starting digest build for 2026-05-27-2130.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-27-2130.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-27-2130.html
+{
+  "digest": "2026-05-27-2130.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-27-2130.html",
+  "git": "ebcba2c",
+  "headline": "聯電漲停領軍台股量價創高，黃仁勳 AI 旋風與台積電漲價傳聞成焦點"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-27-2130.html
+[finance-wrapper] starting digest build for 2026-05-28-0510.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-28-0510.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-28-0510.html
+{
+  "digest": "2026-05-28-0510.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-28-0510.html",
+  "git": "7cba724",
+  "headline": "輝達年砸1500億美元深耕台灣，記憶體與晶圓代工雙強領漲台股夜盤"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-28-0510.html
+[finance-wrapper] starting digest build for 2026-05-28-0930.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-28-0930.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-28-0930.html
+{
+  "digest": "2026-05-28-0930.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-28-0930.html",
+  "git": "c15be95",
+  "headline": "黃仁勳宣示每年在台砸千億美金，美伊局勢反覆引發市場劇震"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-28-0930.html
+[finance-wrapper] starting digest build for 2026-05-28-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-28-1350.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-28-1350.html
+{
+  "digest": "2026-05-28-1350.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-28-1350.html",
+  "git": "deeaacc",
+  "headline": "中東戰火突襲美軍基地，台股劇烈震盪回測四萬四關卡"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-28-1350.html
+[finance-wrapper] starting digest build for 2026-05-28-2130.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-28-2130.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-28-2130.html
+{
+  "digest": "2026-05-28-2130.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-28-2130.html",
+  "git": "9e0730b",
+  "headline": "台股天量劇震失守 4 萬 4，美伊戰雲與 Fed 鷹派訊號衝擊盤勢"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-28-2130.html
+[finance-wrapper] starting digest build for 2026-05-29-0510.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-29-0510.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-29-0510.html
+{
+  "digest": "2026-05-29-0510.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-29-0510.html",
+  "git": "fd16167",
+  "headline": "黃仁勳力挺台積領先十年，台股紅燈續亮但盤勢天量震盪"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-29-0510.html
+[finance-wrapper] starting digest build for 2026-05-29-0930.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-29-0930.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-29-0930.html
+{
+  "digest": "2026-05-29-0930.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-29-0930.html",
+  "git": "48016d9",
+  "headline": "記憶體族群集體噴發帶領台股強勢翻紅，盤中揚升逾千點攻克 44670 關卡"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-29-0930.html
+[finance-wrapper] starting digest build for 2026-05-29-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-29-1350.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-29-1350.html
+{
+  "digest": "2026-05-29-1350.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-29-1350.html",
+  "git": "52f17f1",
+  "headline": "黃仁勳兆元宴與戴爾缺貨預警雙重引爆，華通華邦電飆漲、老AI族群全員集結"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-29-1350.html
+[finance-wrapper] starting digest build for 2026-05-29-2130.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-29-2130.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-05-29-2130.html
+{
+  "digest": "2026-05-29-2130.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-29-2130.html",
+  "git": "107ef2b",
+  "headline": "AI拉動GDP上修至9.64%新高，台股狂飆千點站上44700點外資橫掃800億"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-05-29-2130.html
+[finance-wrapper] starting digest build for 2026-06-01-0510.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-01-0510.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-01-0510.html
+{
+  "digest": "2026-06-01-0510.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-01-0510.html",
+  "git": "48bce83",
+  "headline": "台股五月狂飆近六千點收4.4萬，COMPUTEX開幕前夕資金聚焦AI與記憶體"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-01-0510.html
+[finance-wrapper] starting digest build for 2026-06-01-0930.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-01-0930.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-01-0930.html
+{
+  "digest": "2026-06-01-0930.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-01-0930.html",
+  "git": "6301f58",
+  "headline": "台股噴漲逾800點刷新歷史新高，記憶體族群領軍三星與華邦電強攻"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-01-0930.html
+[finance-wrapper] starting digest build for 2026-06-01-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-01-1350.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-01-1350.html
+{
+  "digest": "2026-06-01-1350.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-01-1350.html",
+  "git": "9411538",
+  "headline": "AI與記憶體狂潮席捲，台股盤中狂飆逾千點再衝45931點新高"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-01-1350.html
+[finance-wrapper] starting digest build for 2026-06-01-2130.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-01-2130.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-01-2130.html
+{
+  "digest": "2026-06-01-2130.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-01-2130.html",
+  "git": "e2cd9c6",
+  "headline": "黃仁勳背板效應與記憶體財報驚艷，台股噴發 600 點創 45K 新高"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-01-2130.html
+[finance-wrapper] starting digest build for 2026-06-02-0510.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-02-0510.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-02-0510.html
+{
+  "digest": "2026-06-02-0510.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-02-0510.html",
+  "git": "7c9e552",
+  "headline": "AI巨頭熱炒宴引爆記憶體行情，中東封鎖威脅成油價變數"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-02-0510.html
+[finance-wrapper] starting digest build for 2026-06-02-0930.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-02-0930.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-02-0930.html
+{
+  "digest": "2026-06-02-0930.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-02-0930.html",
+  "git": "8318617",
+  "headline": "AI 與記憶體雙箭頭領軍，台股衝破 45,000 點，中東局勢推升油價隱憂"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-02-0930.html
+[finance-wrapper] starting digest build for 2026-06-02-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-02-1350.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-02-1350.html
+{
+  "digest": "2026-06-02-1350.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-02-1350.html",
+  "git": "c59d7bc",
+  "headline": "記憶體族群威剛華邦電強攻領漲，巴菲特加持Alphabet激勵AI續航力"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-02-1350.html
+[finance-wrapper] starting digest build for 2026-06-02-2130.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-02-2130.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-02-2130.html
+{
+  "digest": "2026-06-02-2130.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-02-2130.html",
+  "git": "97d5f3f",
+  "headline": "COMPUTEX 點火記憶體全線噴發，Alphabet 獲波克夏注資與美股空頭撤退"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-02-2130.html
+[finance-wrapper] starting digest build for 2026-06-03-0510.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-03-0510.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-03-0510.html
+{
+  "digest": "2026-06-03-0510.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-03-0510.html",
+  "git": "066b9a4",
+  "headline": "記憶體族群狂飆南亞科漲停，台股市值逼近150兆元天價"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-03-0510.html
+[finance-wrapper] starting digest build for 2026-06-03-0930.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-03-0930.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-03-0930.html
+{
+  "digest": "2026-06-03-0930.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-03-0930.html",
+  "git": "76ee622",
+  "headline": "台股創天價攻上 4 萬 6，中東戰火再起推升油價"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-03-0930.html
+[finance-wrapper] starting digest build for 2026-06-03-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-03-1350.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-03-1350.html
+{
+  "digest": "2026-06-03-1350.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-03-1350.html",
+  "git": "5c653c6",
+  "headline": "台股開戶數逼近千萬五大關，美對台擬課關稅反被解讀為利多"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-03-1350.html
+[finance-wrapper] starting digest build for 2026-06-03-2130.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] telegram failure notification failed: 400 Client Error: Bad Request for url: https://api.telegram.org/bot8723242129:AAGCYcNHwYTBqCkAblkRnPt9fkRsPa2VSLQ/sendMessage
+Traceback (most recent call last):
+  File "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/finance_digest_wrapper.py", line 673, in <module>
+    raise SystemExit(main(sys.argv[1:]))
+                     ~~~~^^^^^^^^^^^^^^
+  File "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/finance_digest_wrapper.py", line 604, in main
+    sections = call_gemini_flash(prompt)
+  File "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/finance_digest_wrapper.py", line 286, in call_gemini_flash
+    stdout = run_command(
+        [
+    ...<7 lines>...
+        ]
+    )
+  File "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/finance_digest_wrapper.py", line 71, in run_command
+    completed = subprocess.run(
+        command,
+    ...<4 lines>...
+        timeout=timeout,
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 556, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1220, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 2153, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1267, in _check_timeout
+    raise TimeoutExpired(
+    ...<2 lines>...
+            stderr=b''.join(stderr_seq) if stderr_seq else None)
+subprocess.TimeoutExpired: Command '['gemini', '--output-format', 'json', '--model', 'gemini-3-flash-preview', '--prompt', '你是財經摘要編輯。請只根據下面提供的資料，產出嚴格 JSON，不能輸出 markdown code fence，不能輸出額外說明。\n\n        目標時段：2026-06-03 2130（Asia/Taipei）\n\n        JSON schema:\n        {\n          "headline": "一行中文標題",\n          "executive_summary": ["重點1", "重點2", "重點3"],\n          "global_markets": ["重點1", "重點2", "重點3"],\n          "taiwan_markets": ["重點1", "重點2", "重點3"],\n          "ptt_sentiment": ["重點1", "重點2", "重點3"],\n          "takeaways": ["重點1", "重點2", "重點3"]\n        }\n\n        規則:\n        - 使用繁體中文。\n        - 內容要像真人整理重點，不要使用「不是A，而是B」這類模板句。\n        - 不要編造數字；報酬率與漲跌只能引用記憶體報酬腳本內容。\n        - 若資料不足，就直接說資料有限，不要幻想。\n        - `ptt_sentiment` 必須以本地 PTT 腳本輸出為主。\n\n        [LOCAL_MEMORY_REPORT]\n        今日報酬與 YTD 整理（2026-06-03）\n\n記憶體族群：\n- 南亞科：-4.29% (-18.00)，401.50 元，YTD +108.03%\n- 華邦電：-3.79% (-7.00)，177.50 元，YTD +116.02%\n- 旺宏：-7.69% (-13.50)，162.00 元，YTD +310.65%\n- 威剛：-1.60% (-7.50)，462.00 元，YTD +70.83%\n- 十銓：-1.81% (-5.50)，299.00 元，YTD +58.20%\n- 宇瞻：-2.91% (-7.50)，250.00 元，YTD +121.24%\n- 群聯：-4.79% (-135.00)，2685.00 元，YTD +85.17%\n- SK 海力士：-0.13% (-3000.00)，2360000.00 元，YTD +263.25%\n- 三星電子：+3.30% (+11500.00)，360500.00 元，YTD +201.29%\n- 美光：+0.44% (+4.67)，1068.77 元，YTD +274.63%\n\n媽媽持股：\n- 富邦金：-0.44% (-0.50)，113.00 元，YTD +17.59%\n- 中華電：-0.70% (-1.00)，141.00 元，YTD +8.05%\n- 鴻海：+2.49% (+7.50)，309.00 元，YTD +34.06%\n- 長榮航：+1.21% (+0.45)，37.70 元，YTD +3.15%\n- 燿華：-0.91% (-0.60)，65.20 元，YTD +139.71%\n- 聯電：-7.77% (-11.00)，130.50 元，YTD +164.97%\n- 台塑：+2.16% (+1.10)，52.00 元，YTD +33.33%\n- 玉山金：+2.48% (+0.80)，33.00 元，YTD -2.22%\n- 華通：-1.48% (-4.00)，266.50 元，YTD +189.12%\n\n漲幅排行：\n1. 三星電子 +3.30%\n2. 鴻海 +2.49%\n3. 玉山金 +2.48%\n4. 台塑 +2.16%\n5. 長榮航 +1.21%\n6. 美光 +0.44%\n7. SK 海力士 -0.13%\n8. 富邦金 -0.44%\n9. 中華電 -0.70%\n10. 燿華 -0.91%\n11. 華通 -1.48%\n12. 威剛 -1.60%\n13. 十銓 -1.81%\n14. 宇瞻 -2.91%\n15. 華邦電 -3.79%\n16. 南亞科 -4.29%\n17. 群聯 -4.79%\n18. 旺宏 -7.69%\n19. 聯電 -7.77%\n\n未成功抓取\n- SanDisk (SNDK) (WDC)：Insufficient data\n- 台積電 (2330)：Insufficient data\n- 元大台灣50 (0050)：Insufficient data\n\n        [LOCAL_PTT_HOT]\n        PTT_STOCK_DATA_START\nTOTAL_POSTS: 30\n--- POST_1 ---\nPUSH: 爆\nDATE: 6/03\nTITLE: [新聞] 阮慕驊反擊！秀4帳戶已暴賺2千餘萬元\nLINK: https://www.ptt.cc/bbs/Stock/M.1780483005.A.A40.html\nSUMMARY: 文章標題 請使用 原新聞標題 勿刪減或自創標題，違者4-1處分 原文標題： 阮慕驊反擊！秀4帳戶已暴賺2千餘萬元\u3000霸氣喊：公開這些就好免得嚇到酸民 原文連結： https://www.knews.com.tw/news/DA3EC9650C239D1EF0458A29CB85DC7C 發布時間： 2026/06/03 15:28 記者署名：記者 陳力維  原文內容：  財經作家、主持人阮慕驊日前因在台股創下歷史新高時，選擇減碼三分之一持股，遭部分網 友狂酸為「反指標」、「賣飛了」，後續台股創高他只能後悔。對此，今（6/3）天阮慕驊 於社群平台強勢反擊，曬出手中4個證券帳戶的對帳單，已實現的獲利...\n  [鄉民推文]: 不就是賣飛了嗎== | 都是別人的帳戶 | 以他的資產 這還真的沒賺很多 | 賣飛了 | 還要跟朋友借4個帳戶才有2000喔 | 以他的年紀… | 全力賣飛 | 所以這一波有多少人賺到兩千萬入袋呢? | 減1/3也要被嗆 網友標準真高 | 幾千萬的帳戶，買賣的竟然都是零股 | 只是本多 操作不予置評 | 你看錯方向賣飛又不會怎樣 死不認錯才是問題 | 為什麼需要這麼多帳戶 | 大方承認實際上就是少賺啊 | 所以放到現在應該賺更多啊，就真賣飛 | 股版一堆屌打他== | 楊雲翔才真的是爆賺吧！ | 減碼沒怎樣 賣飛也沒怎樣 不就自己選擇== | 硬要扯過去獲利 那跟老蘇有啥差 去年關稅也是神 | 跟網友認真 就中陷阱了 | 一堆零股 == | 空蛙多蛙能賺錢的就是好蛙. | 少賺不是賺？ | 貼單證明賣飛嗎？ | 股本隨便一個少年股神都贏 | 股版 | 股民這兩年平均賺481萬喔 | 真的賺 自己單幹就好 幹嘛出來拋頭露面 | 感覺跟網友認真了 | 楊老師 老婆漂亮 小孩又很懂事 人生勝利組\n--- POST_2 ---\nPUSH: 爆\nDATE: 6/03\nTITLE: [閒聊] 2026/06/03 盤後閒聊\nLINK: https://www.ptt.cc/bbs/Stock/M.1780466557.A.96F.html\nSUMMARY: 台\u3000股\u300046459.16\u3000▲901.85 (+1.98%)\u30001兆4508.77億 台指06\u300046868   \u3000▲765    (+1.66%)\u3000\u3000\u300055,711口 櫃買指\u3000\u3000446.82\u3000▲  6.18 (+1.40%)\u3000\u3000 3215.64億  日盤  台指期\u3000自營商     -29 投信 +1,539 外資   +177 台指選\u3000自營商 +17,170 投信    -11 外資 -1,300  小台指期\u3000自營商  +438 投信     +3 外資 +2,710  上市  漲停家數 (+10%) 59 (東泥、力麗、華城、和桐、中纖、佳世達、飛宏、鑫禾、錸寶、                ...\n  [鄉民推文]: 段! | 斷水流 | http://i.imgur.com/UvZPzOT.jpg | 空蛙:明天崩! G蛙:2440T忠誠. 中小傳慘蛙:吃錯藥了? | https://i.imgur.com/WqxRmTY.jpeg | https://i.imgur.com/FoRCPYR.jpeg | 午安 台積電繼續壓頭 | https://i.imgur.com/qhPpfYb.gif | https://i.imgur.com/b23jwsT.jpeg  空頭 被大屠殺 | VVVVVVVVVVVVVVVVVVVVVVVVVV | https://l.urusai.cc/TmHX6.jpg | https://i.urusai.cc/alT7w.jpg | http://i.imgur.com/4euNw1Q.jpg | https://i.urusai.cc/CKa9U.jpg | https://i.urusai.cc/0v624.jpg | https://l.urusai.cc/nj8eq.jpg | 一詠https://x.com/____hitoyo____/media | 買正2就好 不用選股多簡單 | 午安 呆股主升段 | 9....9.....5...... | 斷 | https://reurl.cc/WbmvRO  三個美女陪玩 有夠爽~~ | 漲到沒人了 | http://i.imgur.com/74s4FTB.jpg | 果然老蘇又出老招了 指數大漲你手上的股票有漲嗎 | 今天三燈  不過全賣了 | 老蘇你手中的呢 | https://i.mopix.cc/NgMxxA.jpg來當爽蛇鴨o.0 | 外資 小補 | 外資期貨小回補？\n--- POST_3 ---\nPUSH: 爆\nDATE: 6/03\nTITLE: [情報] 115年06月03日 三大法人買賣金額統計表\nLINK: https://www.ptt.cc/bbs/Stock/M.1780470893.A.80C.html\nSUMMARY: http://www.twse.com.tw/zh/page/trading/fund/BFI82U.html  115年06月03日 三大法人買賣金額統計表  單位名稱        買進金額(億元)  賣出金額(億元)  買賣差額(億元)  自營商(自行買賣)   113.81          84.30           +29.51  自營商(避險)       393.32         396.87            -3.54  投  信             671.94         616.21           +55.72  外資及陸資        5...\n  [鄉民推文]: 誰還沒買 | 儲值400E | 避險基金還在賣 好了拉 | 誰 | 誰 | 滿倉幹進去 | 內資拉 小兒被迫買 | 各位不要怕 外資要來抬轎 之前賣太多了 | 99二弟 | 誰在 | 誰在賣 | 不是我 | 誰在賣 | 我賣了 | 小兒持續認錯 | 誰在賣 | 小兒都低賣高買喔 | 外資會跑光？？ | 三月賣九千多億 現在很難追 | 只有我賣 哇操 | 今天都買金融股吧 | 昨天自營倒貨是在…？ | 誰在賣??? | Fomo 而已…. | 法人過真爽買500e 漲千點 | 誰在賣 | 小鵝空單溫腥提醒：避險 勿自擾 | 散戶又買一大堆 | 外資買不停 | 不過明天應該要跌了 依照慣性\n--- POST_4 ---\nPUSH: 爆\nDATE: 6/03\nTITLE: [情報] 0603 上市外資買賣超排行\nLINK: https://www.ptt.cc/bbs/Stock/M.1780474167.A.7AA.html\nSUMMARY: 1. 標題：0603 上市外資買賣超排行  2. 來源：TWSE  3. 網址：https://www.twse.com.tw/zh/trading/foreign/twt38u.html  4. 內文：  買超排行  證券代號        證券名稱                買超張數 00403A          主動統一升級50          152,511 2303            聯電                    74,044 2890            永豐金                  55,408 3481            群創    ...\n  [鄉民推文]: 昨天賣小英今天又買？ | 哇，友達危險 | 二哥！！ | 99二弟 | 992弟 | 又買神達 | 99二哥啊 | 99牙科 | 99公公 怎麼買都有散戶賣 | 昨天買華邦今天就賣到第一名喔 | 華邦電慘遭出貨 | 友達賣到燈???? | 99華邦OAO | 狂接 | 99二弟 | 緯創掰 | https://i.imgur.com/GqVtVAr.jpeg | 笑死 | 上市溢價賣 現在折價買 外資賺翻了 | 友達群創輪著買賣? | 小兒國巨真的賣爽爽 | 2D土洋對做 | 99長榮航 | 這麼多人在幫二弟求救 | 永豐準備噴上40 | 小兒肉鬆要全部倒給大哥484 | 被強迫吃二哥 | 399公公 | 外資出手買京元電跟矽格，有佈局下半年的樣子 | 小兒接二D的刀, 力道不夠哦\n--- POST_5 ---\nPUSH: 爆\nDATE: 6/03\nTITLE: [標的] 持股健檢\nLINK: https://www.ptt.cc/bbs/Stock/M.1780477578.A.7CE.html\nSUMMARY: 今天大盤上漲了900點，但是只有我的持股都是綠的 以下是近期買的，本希望是有買對族群，只是沒想到~  請教各位是否放著還有機會? 自己覺得公司不差也有業績但是~ 五月底已經認賠放很久的綠的股票(美債+台泥+富錦寶齡+友訊大概約賠12萬)，想 說終於下定決心換股，有機會把賠的回來，只是沒想到自己是個韭菜~選股很糟糕  聯電 – 143.5買入...等到投信賣完後會起來嗎? 盟立- 均價192買入~好慘 立敦-107買入~更慘 日電貿-210買入~希望出關後有好表現  之前賺錢式的是有買到南茂+2萬...就這樣了   麻煩請大家給我建議 謝謝  Ps.沒錢攤了  -- ※ 發信站: 批踢踢實業坊(...\n  [鄉民推文]: 這成本短期追好高… | 標語是 我的青春我的汗水... | 追高仔 你只能檢討你的心態 | 全部賣掉.換成0050 | 全部賣掉換正2 | 誰貼張日電貓 | 買0050放著 | 全部賣掉換0050！ | 績效沒贏正2的全換掉 | 沒有一家我想持有的。。。 | 一張不賣 奇蹟自來 還有錢就買還沒漲的 | 這為什麼不買0050 | 都是追高...... | 大漲一大段才會出現在你的選股標的裡是嗎 | 通通都是追高 讚 | https://i.mopix.cc/aMK86N.jpg | 這貓咪可愛吧 | 追高又不會停損 那還有得賠 | 為什麼聯電要去追前面多一個1的價格 | 都高高 | 單？ | 貓咪可愛 | 聯電還要被殺一個禮拜吧 | 勇者無懼 | 全換正二變  圖 | 都漲這麼多才在追高，我的天 | 直接蓋牌到年底就好 | 全部砍掉，改買0050 + 00735 + 00988 | 你很晚追 | 追高達人 給推\n--- POST_6 ---\nPUSH: 85\nDATE: 6/03\nTITLE: [新聞] 快訊／科威特機場遭伊朗飛彈、無人機攻擊多人傷\u3000航班停飛\nLINK: https://www.ptt.cc/bbs/Stock/M.1780480856.A.5F9.html\nSUMMARY: 文章標題 請使用 原新聞標題 勿刪減或自創標題，違者4-1處分 原文標題： 快訊／科威特機場遭伊朗飛彈、無人機攻擊多人傷\u3000航班停飛  原文連結： https://news.tvbs.com.tw/world/3220669  發布時間： 2026/06/03 14:51  記者署名： 謝景沛 報導  原文內容： 科威特國際機場今（3）日遭到伊朗無人機與飛彈襲擊，科威特民航機構與軍方隨即證實 ，機場多處設施在遭到轟炸後遭受「嚴重破壞」，且現場已有數名人員受傷，目前已緊急 啟動最高級別緊急應對措施。為了確保安全，科威特航空當局宣布即刻起「暫停所有航班 起降」，所有入境班機一律改降其他地區機場，封鎖...\n  [鄉民推文]: 利空鈍化了 | No one car! | 他國事務 | 沒人在乎 | 玩具飛機跟鞭炮 | 老蘇很在乎阿 恐慌蛙也很在乎 | 沒人在乎 | 噴噴噴 | 沒人鳥 | 人肉鹹鹹了啦 | Who car | 沒人在乎 | 要跌趕快跌好嗎，不跌要怎麼上車= = | 我就說你們這兩個小王八蛋沒有種 | 雷虎 | 等美國又派兵過去在叫我. | 窩門科威特人 | (′・ω・‵) 安啦 再蓋一個（誤 | 恐怖主義那套 | No one cars | https://i.imgur.com/yKJ2CtE.jpeg | Zz 路邊一條 | 有種跌回月線， | 沒人在乎 | 大媽 三普...窩還有家人要養～揪命阿QQ | 又又又在轟鄰國 | 若有跌下來時想加碼正二！ | 要噴嚕 | 什麼屁點大的事情也在報 | 美國不幫一下防空 哭哭\n--- POST_7 ---\nPUSH: 73\nDATE: 6/03\nTITLE: [請益] 真的有「單一個體」能左右股市嗎\nLINK: https://www.ptt.cc/bbs/Stock/M.1780475900.A.526.html\nSUMMARY: 今天看到建仔的東家股市表現亮眼，突然讓我想起一個經典的都市傳說：「想當年王葛格 只要在洋基隊拿下勝投，隔天台灣股市就會大漲。」   雖然這聽起來很像球迷之間的玄學或都市傳說，但這也讓我很好奇：從金融歷史或經濟 學的角度來看，世界上真的可能存在「單一個體（人或特定事件）」的影響力，大到足以 實質帶動整個大盤股市嗎？   還是說，這種現象純粹只是統計上的巧合（巧合相關），或者是因為贏球集體心情好， 進而引發的心理學效應？大家怎麼看？  -- ※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 42.77.147.88 (臺灣) ※ 文章網址: https://www.ptt.cc/bbs/Sto...\n  [鄉民推文]: 8zz? | 川哥 | 川已經表演給你看多久了 | 川 | 谷？ | 看黃仁勳直撥玩當沖 | 已經那麼多次了 | 川：你居然懷疑？ | 川普 | 世界之王 X 川 | 哎你把taco等人看做啥啊 | 黃仁勳，認真想搞事的川普 | 現在就黃仁勳跟阿川 一句話暴漲暴跌 | 你是在工三小東西？ | 川投顧喊假的嗎? | 看川寶兒子的投報率你還不知道？ | 川普 | 川皇最強是去年4月到9月這段期間，根本喊水會結凍， | 股市隨他喊，k線自動產生 | 世界上8成股票在少數人手裡 其他韭是你 | 老川 老黃 | TACO都表演多久了 | 美國總統權力太大 | 還真不少 | https://i.imgur.com/8qlKs7S.gif | 新垣結衣啊 | 個股很容易，尤其是小股本一天成交幾百張那種 | 王建民只是都市傳說而已，實際上並沒有 | 一大堆好不好，川普、聯準會、富可敵國的大企業幾 | 個CEO、非美股的話隨便一個金融巨獸有魚死網破的意\n--- POST_8 ---\nPUSH: 65\nDATE: 6/03\nTITLE: [新聞] 快訊》群創（3481）遭列處置股！12檔飆股\nLINK: https://www.ptt.cc/bbs/Stock/M.1780485503.A.F95.html\nSUMMARY: 文章標題 請使用 原新聞標題 勿刪減或自創標題，違者4-1處分 原文標題：  快訊》群創（3481）遭列處置股！12檔飆股「抓去關」新名單曝，明起處置到6/17  原文連結：  https://www.storm.mg/lifestyle/11138202  發布時間：  06/03 18:23  記者署名： 魏甫丞  原文內容：  台股近日攻上4萬6千點關卡，部分短線強勢股也因漲幅、週轉率或券商買賣比重等條件達標，被主管機關列入處置名單。證券交易所與櫃買中心今（3）日公布最新處置資訊，共有12檔個股自明（4）日起改採分盤撮合，處置期間至6月17日止。其中，近期交易熱絡的面板股群創（3481）...\n  [鄉民推文]: 99 | 飆股認證 | 包子進蒸籠了 小心出籠燙手！！ | 這個包子 我們不要了 | 證交所認證的飆股  被關又有人不爽了 呵呵 | 華新科不給出來 | 越關越大尾 | 官方認證飆股.. | 玻璃開搞 | 你們的人喊到大行情了  夏慕尼沒有了 | 你是不是想空包子 | 蒸出來更香 | 買起來 | 處置這種爛制度什麼時候消失？？？ | 白癡處置到底啥時要弄掉 | 這樣只好拉戀人了 | 83檔列入注意股是三小 乾脆全部都注意 | 還好今天賣掉了 | 包子都賺一百趴去了 誰管它關不關阿XD | 越關越大尾 關出來變100 | 今天沒有注意 結果明天直接處置 根本就看他心情 | 華新科不給玩欸 | 越關越... | 有夠垃圾的制度 | 下個玻璃被關的不是正達就是友達 | 結果包子還是要入獄 | 鴻名燈7天了 好奇誰有持有 | 亞洲納斯達克 哈哈 | 垃圾制度 | 友達又沒玻璃\n--- POST_9 ---\nPUSH: 57\nDATE: 6/03\nTITLE: [情報] 8046南電 5月營收 y+35.82% m-0.24%\nLINK: https://www.ptt.cc/bbs/Stock/M.1780472309.A.48C.html\nSUMMARY: 標題：  8046南電 5月營收 y+35.82% m-0.24%  來源：  公開資訊觀測站  網址：  https://mops.twse.com.tw/mops/#/web/t05st10_ifrs  內文：  本資料由 (上市公司) 南電 公司提供  民國115年05月 單位：新台幣仟元 項目    營業收入淨額 本月：  4,440,287 去年同期：      3,269,216 增減金額：      1,171,071 增減百分比：    35.82 本年累計：      20,068,385 去年累計：      14,918,592 增減金額：      5,149,793 ...\n  [鄉民推文]: 一根 | 月減 | 月減gg | 死去 | ABF營收一直不怎麼樣 可是會狂噴 | 衰退了 | 好差... | 看營收做股票 開空 | 崩 | ==== 月減定噴 | 停利點去年六月100塊*1.35=135 | 全聯委屈了 | 壓不住了，明天一根 | 群聯好委屈 | 請你下去 | 主動套住你 | 爛 回不去1000了 | 笑死 投信整天炒 | 崩 | 牙科委屈大了~ | 月減 | 景碩獲利最鳥，主力最會炒 | 記憶體委屈了 | 記憶卡蛙真的委屈 | 比價聯亞的好公司 | 還行吧 用EPS看應該已經賺贏去年一整年了? | 記憶體表示：蛤？？？？？ | 有點挫 | ABF一直都是看未來...2026到了就看2027.. | 賺爛，明天漲停\n--- POST_10 ---\nPUSH: 53\nDATE: 6/03\nTITLE: [新聞] 高盛喊台股上看5萬1！認AI紅利延續「一\nLINK: https://www.ptt.cc/bbs/Stock/M.1780476926.A.657.html\nSUMMARY: 原新聞標題:高盛喊台股上看5萬1！認AI紅利延續「一路旺到2028」  原文連結：https://reurl.cc/np3xjD  發布時間：2026/06/03 16:07  記者署名：沈惟中  原文內容：  高盛集團（Goldman Sachs）指出，由於北亞地區的企業盈餘成長強勁，建議投資人加碼  台灣股市，並將台股加權指數未來12個月目標設定為51000點。同時，也將南韓Kospi指數  目標價由9000點大幅上調至12000點。高盛指出，AI熱潮正持續推動以科技股為主的市場  獲利增長。  AI狂潮推升三巨頭市值破兆  據《彭博》報導，今年以來台股加權指數已大漲60%，主要功臣為台積...\n  [鄉民推文]: 高盛...... | 一路旺到2028，穩到不能再穩 | 100*30=3000 台積電 | 台灣漲成這樣只有48%？沒看錯吧 | 高盛 | 谷大師說了，不要賺最後一分錢！！ | 看來是差不多了 | 那GG怎麼還沒3000 | 現在2026就快四萬七，漲到2028至少也要喊8萬吧？ | 被黃金男騙過幾次...這次會不一樣嗎 | 五萬點只剩10% 本周末前就到了 | 一個月5000點  2028上10萬點 | 這在菜市場我們稱話漁仔 | 明天 蒸糕丸 | 高盛反買別墅靠海 | 白癡嗎 這個月就5萬了 至少喊10萬吧 | 6萬9 | 伍萬壹! | 台股的強勁 高盛喊盤都跟不上 | 漲到五萬就喊六萬 | 說個笑話 還在看5萬? | 6月6萬7月7萬 | 然後轉頭大賣 | 汪汪汪 | 高盛出馬 我落跑 掰掰 | 蒸丸 | 認真？準備增貸1000萬歐印 | 5萬1看不起誰 6萬1吧 | 公道價8萬1 | 公道價\n--- POST_11 ---\nPUSH: 46\nDATE: 6/03\nTITLE: [請益] 該把台積電換成正二嗎？\nLINK: https://www.ptt.cc/bbs/Stock/M.1780482584.A.30B.html\nSUMMARY: https://i.verb.tw/hk0wEIqr.jpg   目前持有倉位 台積電，均價1757.8元，佔比21% 00631L，均價25.75元，佔比34% 00685L，均價279.33元，佔比45%   近六個月漲幅 台積電：69.5% 00631L：156.3% 00685L：161.1%   若台積電上漲1元，會帶動大盤增加8點 台積電到達3000元時，大盤會增加4600點 屆時其它權值股勢必隨之大漲   如果台積電換正二 可以完整吃到所有權值股漲幅   若看好台積電發展 是否應該換成50正二/大盤正二？  目前台積電質押中，2.5% 已經質押台積電買正二了  謝謝大家指教 從去...\n  [鄉民推文]: 勸你睡覺，聽科斯托的 | 問就是歐印 | 這樣可以了啦，不用換。難道你要一個人吃完一個雙 | 雞腿便當 | 問就是換 | 台積質押買正二 | 太貪不好 留點肉給大家 | 好像正2都不會下來 | 會問代表你不缺錢，不用了 | 問就是換 | 最近也在考慮把手上的gg換正2… | 質押就不用動啦，能借就不用還了 | 不建議 會賺太多不想上班 | 這績效超讚的好不好 | 看來台股已經漲到連再平衡的風險準則都不需要了 | 八成正二了啊 | 太慢了 全換大台 | 問就是換 將自身經驗 同個時間點 正2與台積 | 為什麼現在才問？ 一直以來正二績效從來沒輸過gg | ok | 00631L 0050正2 內含36%台積電注意一下跟其他正2 | TSM +635% 正2 有+1019% 但前面有很長時間 | 的差別 GG不動的時候他會落後其他正2約 0.5%左右 | 正2一直輸給台積 前2年 拉G盤 GG遙遙領先 | 肯定要換的吧 | 賺好慢   融資正二  給你參考 | 00631L 已經大幅增加GG倉位不是純正2 | 賣掉台積電現貨用期貨做2倍槓桿台積電 | 你的陣型已經很進攻了還要換...有事嗎 | 你的成本跟我好像 我是有換一些去 但沒全換\n--- POST_12 ---\nPUSH: 46\nDATE: 6/03\nTITLE: [情報]1605華新賣華邦電30,000張賺3,407,463仟元\nLINK: https://www.ptt.cc/bbs/Stock/M.1780481984.A.79A.html\nSUMMARY: 1. 標題：(補充115/02/26公告)本公司董事會決議處分華邦電子股份有限公司普通股  2. 來源：公開資訊觀測站  3. 網址：https://mops.twse.com.tw/mops/#/web/home  4. 內文：  1.證券名稱: 華邦電子股份有限公司普通股 2.交易日期:115/3/3~115/6/3 3.董事會通過日期: 民國115年2月26日 4.其他核決日期: 不適用 5.交易數量、每單位價格及交易總金額: (1)交易數量：30,000,000股普通股 (2)每單位價格：每股約新台幣141.03元 (3)交易總金額：新台幣4,230,773仟元 6.處分利益（或損失）...\n  [鄉民推文]: 爆賺 連上帝都羨慕 | 焦師傅 | 華新~華邦電 笑而不語. ... | 哇塞賺爛 | 這算本業吧 | 完 | 爸爸我好冷 | 焦你做股票 | 真的賺爛！ | 就是你，不過我跑了 | 2027 TP 1000 現在魚嘴而已 根本賣在低點 | 爺爺拿點養老金花花 | 焦師傅教你高點在哪 | 焦家教你玩股 | 8888888 | 賺爛 | 均價141賣飛 | 高割離席 好厲害 | 焦家教你玩股票 | 焦爸賣飛 | 賺爛 | 賣飛還這麼賺 | 高割離席 | 賺爛 | 這是賣出訊號嗎？ | 焦你做股票這次賺爛 | 早說不要跟焦師傅拚拳 他小孩都傳承他真功夫喔 | 丸子 昔有董娘賣股 今有… | 還有兩百多億快三百億 肯定繼續賣 | 賣太早\n--- POST_13 ---\nPUSH: 42\nDATE: 6/03\nTITLE: [情報] 6/3  台股主動ETF買賣超\nLINK: https://www.ptt.cc/bbs/Stock/M.1780486242.A.F8F.html\nSUMMARY: 1.標題：主動ETF持股買賣超 (6/3) 2.來源：股格精奇 3.網址：https://stoxgauge.com/ 4.內文：  6/3  台股主動ETF買超前十名  代碼  名稱      買超金額(萬)   漲跌幅%   主要來源 3665  貿聯-KY   107,644          5.01%   00991A 2317  鴻海      55,002           2.49%   00403A 6223  旺矽      43,070           6.98%   00403A 6584  南俊國際  39,402           0.30%   00992...\n  [鄉民推文]: 幹 原來是403在搞群聯 | 00992A最近一個月的績效+1.6% | 爛到有剩 | 貿聯前幾個禮拜當垃圾在倒 現在又想到買回了喔 | 幹403你媽的 | 403你他媽 | 主動式近一個月績效簡直不忍看 | 主動買氣已過 | 主動式烙賽 | 我大鐵華團隨時歡迎主動追高華碩 | 慘 沒買到 | 老天爺保佑主動們沒撿角去買金融股。 | 300的公公 是想參加除息嗎 | 403你他媽 | 403感覺超韭 感覺下個940 | 瑤姐這麼快就下神壇了嗎 | 403超ㄏ | 3044主動套住你認輸了喔 | 哇操買300多的鴻海 | 石頭900還在追 慢慢追吧 | 981A不買廣達了 | 403 你他媽 | ==高股息、主動亂拉漲停後的下場是啥大家懂的。 | 主動式怎麼感覺有點散戶追高殺低的操作法？ | 漢唐賣爽沒 | 過幾天主動式噴爛又開始轉風向了信不信 | 瑤妹妹？？ | 992A要是噴爛，我就全部出清 | 992我早就出清了 爛死 | 403目前為止的表現真的不怎麼樣\n--- POST_14 ---\nPUSH: 41\nDATE: 6/03\nTITLE: [新聞] 正達砸10億 投資HDD產線\nLINK: https://www.ptt.cc/bbs/Stock/M.1780470987.A.AC9.html\nSUMMARY: 文章標題 請使用 原新聞標題 勿刪減或自創標題，違者4-1處分 原文標題：正達砸10億 投資HDD產線 請勿刪減或自創標題，違者4-1處分，此行請刪除 原文連結：https://reurl.cc/Z2kNxW [0m 網址超過一行，請用縮網址，連結不能點擊者板規 1-2-2 處分。  發布時間：2026.06.02  03:00  工商時報  袁顥庭 請勿張貼超過3天新聞 記者署名： 原文內容：  正達（3149）舉行股東常會，通過各項議案，並完成董事改選，會後董事會推舉許庭禎擔 任董事長，原董事長鍾志明卸任、仍擔任董事。正達推動轉型，今年投資10億元打造伺服 器存儲硬碟玻璃碟盤（HDD）產品...\n  [鄉民推文]: 還在虧錢就是還有Fu糗 | 大粽王 | 黃國師董事  這名子好帥XD | 台玻已經崩了 | 昨天的舊聞了 | 明天一根 | 有話題就是噴 | 歐印 | 轉大人 | 昨天做空的人 還在嗎 | 有喔 玩真的喔 | 主要跟康寧噴噴爽 | 出貨文? | 出貨文 | 最近漲了不少,出了這篇新聞 恩...懂得都懂 | 撈了一張，還沒賺上，99正達 | 三樓老大~台玻又不稿這個 | 一下光通一下玻璃現在又HHD? | 這支跟到的題材真的多，都是現在最噴那種 | 錸德中環也噴耶，該不會光碟也要大爆發吧嘻嘻 | HDD? | 不過這檔好像是老董換了後才開噴 | 光通 玻璃 最噴的都有 上上禮拜才50 | 明天跌停 | 玻璃硬碟這塊除了HOYA就剩他了 | 等大人 | 玻璃硬碟？玻璃基板後還有這麼一個酷玩意 | 還有軍工 話題滿滿 | 這路線的價值建立在計憶體持續貴爆了的情況 == | 記憶體\n--- POST_15 ---\nPUSH: 40\nDATE: 6/03\nTITLE: [情報] 2451創見 5月營收\nLINK: https://www.ptt.cc/bbs/Stock/M.1780473570.A.6C3.html\nSUMMARY: https://mops.twse.com.tw/mops/#/web/t51sb10  項目    營業收入淨額 本月      6,297,950 去年同期          1,105,232 增減金額          5,192,718 增減百分比        469.83 本年累計          27,375,670 去年累計          5,160,797 增減金額          22,214,873 增減百分比        430.45 備註 / 營收變化原因說明 本月營收較去年同期增加主係市場價格上漲所致  yoy 469.83% mom -15.46%  ...\n  [鄉民推文]: 笑死 | 明天一根 | Mom減這麼多 | 低價庫存沒了 丸子 | 數字不太對吧 | 月減 is over | 抓最後一個 | 丸 | 廢 | 沒低價庫存了 快跑 | 再見囉 沒庫存惹 | 庫存沒了。回檔！！ | 拿不到貨 丸子！ | 便宜庫存沒了 要吃屎了 | 模組廠看起來不妙 | 模組廠 蛋雕 888888888888 | 減 | 躲處置吧 | 只是買的人變少吧 | 便宜庫存慢慢要沒了嗎？ | 庫存沒了 再見 | 要下山囉～～～ | 下面一位～ | ...... | 丸子 | 丸子 | 派對結束？ | 月減 完啦 | 庫存是不是快沒了？？GG | 完蛋囉\n--- POST_16 ---\nPUSH: 39\nDATE: 6/03\nTITLE: [新聞] 男女熱衷台股的年紀不同 一年齡成分水嶺\nLINK: https://www.ptt.cc/bbs/Stock/M.1780476054.A.C31.html\n--- POST_17 ---\nPUSH: 33\nDATE: 6/03\nTITLE: Re: [標的] 2891 中信金怎麼了?\nLINK: https://www.ptt.cc/bbs/Stock/M.1780487770.A.F6A.html\n--- POST_18 ---\nPUSH: 30\nDATE: 6/03\nTITLE: [新聞] AI浪潮重塑日股版圖 鎧俠市值一度超越豐\nLINK: https://www.ptt.cc/bbs/Stock/M.1780474450.A.049.html\n--- POST_19 ---\nPUSH: 22\nDATE: 6/03\nTITLE: Re: [新聞] 阿貝爾時代迄今最大AI押注！Alphabet\nLINK: https://www.ptt.cc/bbs/Stock/M.1780474280.A.51B.html\n--- POST_20 ---\nPUSH: 20\nDATE: 6/03\nTITLE: [情報] 熱門國內成分股ETF近期績效\nLINK: https://www.ptt.cc/bbs/Stock/M.1780487526.A.CC8.html\n--- POST_21 ---\nPUSH: 17\nDATE: 6/03\nTITLE: [情報] 2323 中環 今日買賣公告4買進4賣出皆賺\nLINK: https://www.ptt.cc/bbs/Stock/M.1780484280.A.279.html\n--- POST_22 ---\nPUSH: 17\nDATE: 6/03\nTITLE: [情報] 5475 德宏 5月自結 0.43 年增 609.07%\nLINK: https://www.ptt.cc/bbs/Stock/M.1780490087.A.79F.html\n--- POST_23 ---\nPUSH: 16\nDATE: 6/03\nTITLE: [情報] 2636 台驊控股賣長榮1,500張賺26,425仟元\nLINK: https://www.ptt.cc/bbs/Stock/M.1780474278.A.1F3.html\n--- POST_24 ---\nPUSH: 15\nDATE: 6/03\nTITLE: [標的] 2402 毅嘉 多\nLINK: https://www.ptt.cc/bbs/Stock/M.1780475305.A.9D6.html\n--- POST_25 ---\nPUSH: 10\nDATE: 6/03\nTITLE: [標的] 3054立萬利 威剛集團 飆股基因 歐印多\nLINK: https://www.ptt.cc/bbs/Stock/M.1780482716.A.4C6.html\n--- POST_26 ---\nPUSH: 10\nDATE: 6/03\nTITLE: Re: [標的] 00924 復華標普成長500 無腦多\nLINK: https://www.ptt.cc/bbs/Stock/M.1780483096.A.47A.html\n--- POST_27 ---\nPUSH: 10\nDATE: 6/03\nTITLE: [情報] 6510精測 5月營收\nLINK: https://www.ptt.cc/bbs/Stock/M.1780489072.A.6A9.html\n--- POST_28 ---\nPUSH: 9\nDATE: 6/03\nTITLE: [標的] 持股健檢\nLINK: https://www.ptt.cc/bbs/Stock/M.1780485209.A.997.html\n--- POST_29 ---\nPUSH: 5\nDATE: 6/03\nTITLE: [情報] 0603 上市櫃外資投信買超金額排行\nLINK: https://www.ptt.cc/bbs/Stock/M.1780482648.A.C2C.html\n--- POST_30 ---\nPUSH: 5\nDATE: 6/03\nTITLE: Re: [新聞] 黃仁勳強勢宣布「重塑個人電腦」\u3000輝達A\nLINK: https://www.ptt.cc/bbs/Stock/M.1780489010.A.CFD.html\nPTT_STOCK_DATA_END\n\n        [LOCAL_PTT_DIGEST]\n        [FAILED] /Users/mini1/.openclaw/workspace/ptt_venv/bin/python3 /Users/mini1/.openclaw/workspace/ptt_stock_digest.py\nCommand \'[\'/Users/mini1/.openclaw/workspace/ptt_venv/bin/python3\', \'/Users/mini1/.openclaw/workspace/ptt_stock_digest.py\']\' timed out after 60 seconds\n\n        [YAHOO_US_HEADLINES]\n        Skip to navigation; Skip to main content; Skip to right column; Today\'s news; Climate change; Mental health; Sexual health; Healthy eating\n\n        [YAHOO_TW_HEADLINES]\n        2026 COMPUTEX電腦展; 距離美股收盤還有06小時28分鐘; 道瓊工業 51,067.24 240.55; 那斯達克 27,107.43 13.53; S&P 500 7,601.91 7.87; 費城半導體 13,930.56 204.29; 台股「錢淹腳目」刷新高 百檔亮燈鋪紅地毯; 房市也變「熟齡」北市屋齡37年最老\n\n        [CNA_FINANCE_HEADLINES]\n        建大：印尼市場增溫\u3000越南廠打入美國新創電動車胎; 大大寬頻興櫃後首次股東會\u3000布局AI算力與資料中心; 台美深化無人機合作  金屬中心與國防科技大廠Anduril簽備忘錄; 徐旭東續任亞泥董事長\u3000徐國安首入董事會; AI題材續熱台股創高\u3000新台幣升0.5分收31.44元; 恩智浦：實體AI關鍵是神經系統\u3000機器即時反應和理解; 伊朗和談不順\u3000科技題材及AI需求仍帶動亞股漲勢; 電腦展助攻\u3000林修銘：證交所扮全球資金與AI企業橋梁']' timed out after 120 seconds
+[finance-wrapper] starting digest build for 2026-06-03-2130.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-03-2130.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-03-2130.html
+{
+  "digest": "2026-06-03-2130.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-03-2130.html",
+  "git": "9f4f56e",
+  "headline": "台股狂飆九百點創四萬六新高，高盛看好五萬一，記憶體族群卻逆勢重挫"
+}
