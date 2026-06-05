@@ -1,12 +1,17 @@
 import os
 import glob
+import re
 from datetime import datetime
 
 digests_dir = '/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests'
 index_path = '/Users/mini1/.openclaw/workspace/yahoo-finance-pages/index.html'
 
 files = glob.glob(os.path.join(digests_dir, '*.html'))
-files = sorted([os.path.basename(f) for f in files], reverse=True)
+valid_digest = re.compile(r'^\d{4}-\d{2}-\d{2}-\d{4}\.html$')
+files = sorted(
+    [os.path.basename(f) for f in files if valid_digest.match(os.path.basename(f))],
+    reverse=True,
+)
 
 html = """<!DOCTYPE html>
 <html lang="zh-TW">
