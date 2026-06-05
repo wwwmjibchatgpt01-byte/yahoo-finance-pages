@@ -278,26 +278,51 @@ def extract_json_object(text: str) -> dict[str, Any]:
             continue
         if isinstance(parsed, dict):
             return parsed
-    raise ValueError("No JSON object found in Gemini output")
+    raise ValueError("No JSON object found in model output")
 
 
-def call_gemini_flash(prompt: str) -> SectionBundle:
-    log("calling gemini flash")
-    stdout = run_command(
-        [
-            "gemini",
-            "--output-format",
-            "json",
-            "--model",
-            "gemini-3-flash-preview",
-            "--prompt",
-            prompt,
-        ]
+def load_primary_model() -> tuple[str, str, str]:
+    data = json.loads(OPENCLAW_CONFIG.read_text())
+    model_ref = (
+        (((data.get("agents") or {}).get("defaults") or {}).get("model") or {}).get("primary")
+        or "lmstudio/google/gemma-4-26b-a4b"
     )
-    payload = extract_json_object(stdout)
-    response_text = payload.get("response", "")
+    provider_id, model_id = model_ref.split("/", 1)
+    provider = ((data.get("models") or {}).get("providers") or {}).get(provider_id) or {}
+    base_url = str(provider.get("baseUrl") or "").rstrip("/")
+    if not base_url:
+        raise RuntimeError(f"Missing baseUrl for model provider: {provider_id}")
+    return model_ref, base_url, model_id
+
+
+def call_primary_model(prompt: str) -> tuple[SectionBundle, str]:
+    model_ref, base_url, model_id = load_primary_model()
+    log(f"calling primary model {model_ref}")
+    response = requests.post(
+        f"{base_url}/chat/completions",
+        json={
+            "model": model_id,
+            "messages": [
+                {
+                    "role": "system",
+                    "content": "你是財經摘要編輯。只輸出符合使用者 schema 的 JSON，不要輸出 markdown code fence。",
+                },
+                {"role": "user", "content": prompt},
+            ],
+            "temperature": 0.2,
+            "max_tokens": 2500,
+        },
+        timeout=240,
+    )
+    response.raise_for_status()
+    payload = response.json()
+    response_text = (
+        (((payload.get("choices") or [{}])[0]).get("message") or {}).get("content")
+        or ((payload.get("choices") or [{}])[0]).get("text")
+        or ""
+    )
     response_payload = extract_json_object(response_text)
-    log("gemini flash returned structured response")
+    log(f"primary model returned structured response: {model_ref}")
 
     def as_list(key: str) -> list[str]:
         value = response_payload.get(key, [])
@@ -308,13 +333,16 @@ def call_gemini_flash(prompt: str) -> SectionBundle:
         return []
 
     headline = str(response_payload.get("headline", "")).strip() or "財經摘要"
-    return SectionBundle(
-        executive_summary=as_list("executive_summary"),
-        global_markets=as_list("global_markets"),
-        taiwan_markets=as_list("taiwan_markets"),
-        ptt_sentiment=as_list("ptt_sentiment"),
-        takeaways=as_list("takeaways"),
-        headline=headline,
+    return (
+        SectionBundle(
+            executive_summary=as_list("executive_summary"),
+            global_markets=as_list("global_markets"),
+            taiwan_markets=as_list("taiwan_markets"),
+            ptt_sentiment=as_list("ptt_sentiment"),
+            takeaways=as_list("takeaways"),
+            headline=headline,
+        ),
+        model_ref,
     )
 
 
@@ -372,7 +400,7 @@ def render_memory_table(rows: list[dict[str, str]]) -> str:
     )
 
 
-def build_digest_html(*, date_str: str, slot: str, sections: SectionBundle, memory_rows: list[dict[str, str]]) -> str:
+def build_digest_html(*, date_str: str, slot: str, sections: SectionBundle, memory_rows: list[dict[str, str]], model_label: str) -> str:
     title = f"{date_str} {slot} 財經摘要"
     return f"""<!DOCTYPE html>
 <html lang="zh-TW">
@@ -536,7 +564,7 @@ def build_digest_html(*, date_str: str, slot: str, sections: SectionBundle, memo
         <div><a href="https://feeds.feedburner.com/rsscna/finance">CNA Finance RSS</a></div>
         <div>本地腳本：`fetch_ptt_a.py`、`ptt_stock_digest.py`、`fetch_memory_report.py`</div>
       </div>
-      <footer>Model: google-gemini-cli/gemini-3-flash-preview</footer>
+      <footer>Model: {escape(model_label)}</footer>
     </section>
   </div>
 </body>
@@ -601,13 +629,14 @@ def main(argv: list[str]) -> int:
             local_data=local_data,
             news_data=news_data,
         )
-        sections = call_gemini_flash(prompt)
+        sections, model_label = call_primary_model(prompt)
         memory_rows = parse_memory_rows(local_data["memory_report"])
         html = build_digest_html(
             date_str=target_date,
             slot=slot,
             sections=sections,
             memory_rows=memory_rows,
+            model_label=model_label,
         )
 
         if args.dry_run:
