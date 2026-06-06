@@ -34,13 +34,15 @@ The wrapper is the source of truth for:
 3. Writing the digest to `digests/YYYY-MM-DD-HHMM.html`.
 4. Rebuilding `index.html` as the index page only.
 5. Committing and pushing changed digest/index files.
-6. Sending Telegram notification when configured.
+6. Returning wrapper JSON that includes the public GitHub Pages digest URL.
+7. Sending Telegram notification when configured.
 
 ## Goal & Execution Steps
 For each scheduled run or fallback run:
 1. Read this `RUNBOOK.md`.
 2. Execute the canonical wrapper command for the target slot.
 3. Report the wrapper JSON output or the exact command error.
+4. If the wrapper returns JSON, the final reply must explicitly include its `url` field, not just the local filesystem path.
 
 ## Cron Guardrails
 - Do all shell execution directly in the isolated cron session.

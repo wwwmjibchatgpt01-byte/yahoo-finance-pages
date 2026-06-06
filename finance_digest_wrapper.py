@@ -29,6 +29,7 @@ PTT_DIGEST = WORKSPACE / "ptt_stock_digest.py"
 PTT_VENV_PYTHON = WORKSPACE / "ptt_venv/bin/python3"
 MEMORY_REPORT = WORKSPACE / "skills/today-returns/scripts/fetch_memory_report.py"
 TZ = ZoneInfo("Asia/Taipei")
+PUBLIC_BASE_URL = "https://wwwmjibchatgpt01-byte.github.io/yahoo-finance-pages"
 
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -60,6 +61,10 @@ class SectionBundle:
 
 def log(message: str) -> None:
     print(f"[finance-wrapper] {message}", file=sys.stderr, flush=True)
+
+
+def digest_public_url(digest_name: str) -> str:
+    return f"{PUBLIC_BASE_URL}/digests/{digest_name}"
 
 
 def run_command(
@@ -281,69 +286,107 @@ def extract_json_object(text: str) -> dict[str, Any]:
     raise ValueError("No JSON object found in model output")
 
 
-def load_primary_model() -> tuple[str, str, str]:
+def load_model_candidates() -> list[tuple[str, str, str]]:
     data = json.loads(OPENCLAW_CONFIG.read_text())
-    model_ref = (
-        (((data.get("agents") or {}).get("defaults") or {}).get("model") or {}).get("primary")
-        or "lmstudio/google/gemma-4-26b-a4b"
-    )
-    provider_id, model_id = model_ref.split("/", 1)
-    provider = ((data.get("models") or {}).get("providers") or {}).get(provider_id) or {}
-    base_url = str(provider.get("baseUrl") or "").rstrip("/")
-    if not base_url:
-        raise RuntimeError(f"Missing baseUrl for model provider: {provider_id}")
-    return model_ref, base_url, model_id
+    defaults_model = (((data.get("agents") or {}).get("defaults") or {}).get("model") or {})
+    providers = ((data.get("models") or {}).get("providers") or {})
+
+    model_refs: list[str] = []
+    if isinstance(defaults_model, str):
+        model_refs.append(defaults_model)
+    elif isinstance(defaults_model, dict):
+        primary = str(defaults_model.get("primary") or "").strip()
+        if primary:
+            model_refs.append(primary)
+        for fallback in defaults_model.get("fallbacks") or []:
+            fallback_ref = str(fallback or "").strip()
+            if fallback_ref:
+                model_refs.append(fallback_ref)
+
+    if not model_refs:
+        model_refs = ["lmstudio/google/gemma-4-26b-a4b"]
+
+    candidates: list[tuple[str, str, str]] = []
+    seen: set[str] = set()
+    for model_ref in model_refs:
+        if "/" not in model_ref or model_ref in seen:
+            continue
+        seen.add(model_ref)
+        provider_id, model_id = model_ref.split("/", 1)
+        provider = providers.get(provider_id) or {}
+        base_url = str(provider.get("baseUrl") or "").rstrip("/")
+        api = str(provider.get("api") or "openai-completions").strip()
+        if not base_url:
+            log(f"skipping model without baseUrl: {model_ref}")
+            continue
+        if api != "openai-completions":
+            log(f"skipping non-openai-completions provider for wrapper: {model_ref} ({api})")
+            continue
+        candidates.append((model_ref, base_url, model_id))
+
+    if not candidates:
+        raise RuntimeError("No usable openai-completions model candidates found in openclaw.json")
+
+    return candidates
 
 
 def call_primary_model(prompt: str) -> tuple[SectionBundle, str]:
-    model_ref, base_url, model_id = load_primary_model()
-    log(f"calling primary model {model_ref}")
-    response = requests.post(
-        f"{base_url}/chat/completions",
-        json={
-            "model": model_id,
-            "messages": [
-                {
-                    "role": "system",
-                    "content": "你是財經摘要編輯。只輸出符合使用者 schema 的 JSON，不要輸出 markdown code fence。",
+    errors: list[str] = []
+    for model_ref, base_url, model_id in load_model_candidates():
+        log(f"calling model {model_ref}")
+        try:
+            response = requests.post(
+                f"{base_url}/chat/completions",
+                json={
+                    "model": model_id,
+                    "messages": [
+                        {
+                            "role": "system",
+                            "content": "你是財經摘要編輯。只輸出符合使用者 schema 的 JSON，不要輸出 markdown code fence。",
+                        },
+                        {"role": "user", "content": prompt},
+                    ],
+                    "temperature": 0.2,
+                    "max_tokens": 2500,
                 },
-                {"role": "user", "content": prompt},
-            ],
-            "temperature": 0.2,
-            "max_tokens": 2500,
-        },
-        timeout=240,
-    )
-    response.raise_for_status()
-    payload = response.json()
-    response_text = (
-        (((payload.get("choices") or [{}])[0]).get("message") or {}).get("content")
-        or ((payload.get("choices") or [{}])[0]).get("text")
-        or ""
-    )
-    response_payload = extract_json_object(response_text)
-    log(f"primary model returned structured response: {model_ref}")
+                timeout=240,
+            )
+            response.raise_for_status()
+            payload = response.json()
+            response_text = (
+                (((payload.get("choices") or [{}])[0]).get("message") or {}).get("content")
+                or ((payload.get("choices") or [{}])[0]).get("text")
+                or ""
+            )
+            response_payload = extract_json_object(response_text)
+            log(f"model returned structured response: {model_ref}")
 
-    def as_list(key: str) -> list[str]:
-        value = response_payload.get(key, [])
-        if isinstance(value, list):
-            return [str(item).strip() for item in value if str(item).strip()]
-        if isinstance(value, str) and value.strip():
-            return [value.strip()]
-        return []
+            def as_list(key: str) -> list[str]:
+                value = response_payload.get(key, [])
+                if isinstance(value, list):
+                    return [str(item).strip() for item in value if str(item).strip()]
+                if isinstance(value, str) and value.strip():
+                    return [value.strip()]
+                return []
 
-    headline = str(response_payload.get("headline", "")).strip() or "財經摘要"
-    return (
-        SectionBundle(
-            executive_summary=as_list("executive_summary"),
-            global_markets=as_list("global_markets"),
-            taiwan_markets=as_list("taiwan_markets"),
-            ptt_sentiment=as_list("ptt_sentiment"),
-            takeaways=as_list("takeaways"),
-            headline=headline,
-        ),
-        model_ref,
-    )
+            headline = str(response_payload.get("headline", "")).strip() or "財經摘要"
+            return (
+                SectionBundle(
+                    executive_summary=as_list("executive_summary"),
+                    global_markets=as_list("global_markets"),
+                    taiwan_markets=as_list("taiwan_markets"),
+                    ptt_sentiment=as_list("ptt_sentiment"),
+                    takeaways=as_list("takeaways"),
+                    headline=headline,
+                ),
+                model_ref,
+            )
+        except Exception as exc:  # noqa: BLE001
+            error = f"{model_ref}: {exc}"
+            errors.append(error)
+            log(f"model failed, trying next fallback: {error}")
+
+    raise RuntimeError("All configured finance digest models failed: " + " | ".join(errors))
 
 
 def parse_memory_rows(memory_report: str) -> list[dict[str, str]]:
@@ -613,11 +656,23 @@ def main(argv: list[str]) -> int:
     slot = normalize_slot(args.slot, now)
     digest_name = f"{target_date}-{slot}.html"
     digest_path = DIGESTS_DIR / digest_name
+    public_url = digest_public_url(digest_name)
     slot_label = f"{target_date} {slot[:2]}:{slot[2:]}"
 
     try:
         if digest_path.exists():
-            print(f"[skip] digest already exists: {digest_path}")
+            print(
+                json.dumps(
+                    {
+                        "status": "skipped",
+                        "digest": digest_name,
+                        "path": str(digest_path),
+                        "url": public_url,
+                    },
+                    ensure_ascii=False,
+                    indent=2,
+                )
+            )
             return 0
 
         log(f"starting digest build for {digest_name}")
@@ -662,6 +717,7 @@ def main(argv: list[str]) -> int:
                 [
                     f"財經摘要已更新：{slot_label}",
                     digest_name,
+                    public_url,
                     sections.headline,
                     f"git: {git_result}",
                 ]
@@ -671,8 +727,10 @@ def main(argv: list[str]) -> int:
         print(
             json.dumps(
                 {
+                    "status": "ok",
                     "digest": digest_name,
                     "path": str(digest_path),
+                    "url": public_url,
                     "git": git_result,
                     "headline": sections.headline,
                 },
