@@ -768,3 +768,108 @@ subprocess.TimeoutExpired: Command '['gemini', '--output-format', 'json', '--mod
   "git": "9f4f56e",
   "headline": "台股狂飆九百點創四萬六新高，高盛看好五萬一，記憶體族群卻逆勢重挫"
 }
+[finance-wrapper] starting digest build for 2026-06-04-0510.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-04-0510.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-04-0510.html
+{
+  "digest": "2026-06-04-0510.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-04-0510.html",
+  "git": "05f2cba",
+  "headline": "台股狂飆九百點創歷史新高，AI紅利與權值股領軍上演錢淹腳目"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-04-0510.html
+[finance-wrapper] starting digest build for 2026-06-04-0930.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-04-0930.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-04-0930.html
+{
+  "digest": "2026-06-04-0930.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-04-0930.html",
+  "git": "da42b2b",
+  "headline": "台股盤中急殺失守四萬六關卡，博通盤後重挫衝擊 AI 族群信心"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-04-0930.html
+[finance-wrapper] starting digest build for 2026-06-04-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-04-1350.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-04-1350.html
+{
+  "digest": "2026-06-04-1350.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-04-1350.html",
+  "git": "7e5df6e",
+  "headline": "台積電股東會看好前景難敵權值股修正，鴻海重挫逾5%拖累盤勢"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-04-1350.html
+[finance-wrapper] starting digest build for 2026-06-04-2130.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-04-2130.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-04-2130.html
+{
+  "digest": "2026-06-04-2130.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-04-2130.html",
+  "git": "e45f2a7",
+  "headline": "台股重挫近 800 點失守 46K，魏哲家「作夢說」開嗆三星並表態漲價"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-04-2130.html
+[finance-wrapper] starting digest build for 2026-06-05-0510.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-05-0510.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-05-0510.html
+{
+  "digest": "2026-06-05-0510.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-05-0510.html",
+  "git": "9593e2f",
+  "headline": "台股失守四六關卡老AI熄火，魏哲家強勢表態代工漲價與對手做夢說"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-05-0510.html
+[finance-wrapper] starting digest build for 2026-06-05-0930.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-05-0930.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-05-0930.html
+{
+  "digest": "2026-06-05-0930.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-05-0930.html",
+  "git": "d4e9e5b",
+  "headline": "台股早盤暴跌逾千點失守四萬五大關，記憶體族群集體血洗慘跌逾 7%"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-05-0930.html
+[finance-wrapper] starting digest build for 2026-06-05-1350.html
+[finance-wrapper] collecting local script outputs
+[finance-wrapper] fetching Yahoo/CNA headlines
+[finance-wrapper] calling gemini flash
+[finance-wrapper] gemini flash returned structured response
+[finance-wrapper] wrote digest to /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-05-1350.html
+[finance-wrapper] rebuilding index
+[finance-wrapper] publishing git changes for 2026-06-05-1350.html
+{
+  "digest": "2026-06-05-1350.html",
+  "path": "/Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-05-1350.html",
+  "git": "f7f93d3",
+  "headline": "台股盤中重挫近800點，記憶體族群受輝達規格傳聞衝擊全線慘跌"
+}
+[skip] digest already exists: /Users/mini1/.openclaw/workspace/yahoo-finance-pages/digests/2026-06-05-1350.html
